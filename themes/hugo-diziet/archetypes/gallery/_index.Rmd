@@ -1,0 +1,14 @@
+---
+title: "{{ title }}"
+date: {{ date }}
+summary: ''
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "diziet", "R", "diziet.R"))
+```
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery()
+```

@@ -1,0 +1,24 @@
+---
+title: "Ridges"
+date: 2021-05-01
+summary: '"'
+trailer: "splash/preview/ridges.png"
+splash:
+  image: "./image/ridge_arves_00.png"
+  caption: "Ridges"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
+```
+
+> Distinct and shifted lines visualized from digital elevation model datasets.
+
+The central idea is to convert 3D point sets to 2D lines. Digital Elevation Model (DEM) represents elevation as function of latitude and longitude. These illustrations are made of multiple lines of elevation as a function of longitude, for discrete latitude values. Overplotting is avoided (hidden lines) by checking for a minimal distance between two lines. Variation comes from the scale and location of the geographical region and from the parameterization of the line clipping method.
+
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png")
+```
+

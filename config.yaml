@@ -1,0 +1,27 @@
+baseurl: /
+relativeurls: yes
+publishDir: docs
+title: ' '
+theme: hugo-diziet
+permalinks:
+  post: /post/:slug/
+  project: /project/:slug/
+params:
+  description: A visual blog about algorithmic art, mainly designed for pen plotters.
+  disqusShortname: ''
+  footer: Code and comments on [github](https://github.com/picasa/generative)
+  footnotereturnlinkcontents: ↩
+  googleAnalytics: ''
+  ignoreFiles:
+    - \.Rmd$
+    - \.Rmarkdown$
+    - _files$
+    - _cache$
+  languageCode: en-us
+  preserveTaxonomyNames: yes
+  site: https://djnavarro.github.io/hugo-diziet
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: yes

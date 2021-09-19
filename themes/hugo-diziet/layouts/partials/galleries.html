@@ -1,0 +1,31 @@
+<section class="gallery-area">
+  <div class="container">
+  <div class="highlight">
+  <div class="gal">
+  <div class="row">
+
+  {{ range .Sections }}
+  {{ range .Sections }}
+  {{ if isset .Params "trailer" }}
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+      <a href="{{ .URL }}">
+        <img class="img-fluid" src={{ .Params.Trailer | relURL }}>
+        <div class="gal-caption-box">
+          <div class="gal-caption-text">
+            {{ .Title | markdownify }}
+          </div>
+        </div>
+      </a>
+    </div>
+
+  {{ end }}
+  {{ end }}
+  {{ end }}
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+</section>

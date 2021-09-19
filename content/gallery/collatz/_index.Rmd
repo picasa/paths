@@ -1,0 +1,23 @@
+---
+title: "Collatz"
+date: 2021-06-01
+summary: '"'
+trailer: "splash/preview/collatz.png"
+splash:
+  image: "./image/collatz_stem_01_traced.png"
+  caption: "Collatz"
+---
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
+```
+
+> Curves parameterized from integer sequences and positioned according to basic botanical rules.
+
+A sequence of integers is generated from a set of rules (here, the Collatz [sequence](https://en.wikipedia.org/wiki/Collatz_conjecture)). Then, a curve is defined by mapping sequence elements to segment length, with a fixed angle between segments. Multiple curves are computed to constitute a node, and multiple nodes to constitute a stem. The only random elements are initial value for the sequence, and the angle between curve segments.
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(preview_fmt = "png")
+```
+
