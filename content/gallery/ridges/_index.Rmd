@@ -8,6 +8,10 @@ splash:
   caption: "Ridges"
 ---
 
+<style>
+.splash-caption-tweak {color: black}
+</style>
+
 ```{r include=FALSE}
 root <- rprojroot::find_root("_hugodown.yaml")
 source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))

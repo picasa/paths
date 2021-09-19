@@ -8,14 +8,19 @@ splash:
   caption: "Asemic"
 ---
 
+<style>
+.splash-caption-tweak {color: black}
+</style>
+
 ```{r include=FALSE}
 root <- rprojroot::find_root("_hugodown.yaml")
 source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 ```
 
-> Asemic characters and words generated with splines controlled by sampling control-points.
+> **Asemic characters and words generated with splines controlled by sampling control-points.**
 
-Glyphs are generated with splines defined by few control point sampled from a 2D space (square, ellipse). Glyphs are then mapped to characters to generate paragraphs with sensible text-like aesthetics. From there, script-like writing is emulated by drawing glyphs independently from each others. If the the control points for individual glyphs are concatenated, the algorithm can generate words or longer, more detailed and complex shapes (when acting on control point number).
+This serie was developed after reading [Anders Hoff](https://inconvergent.net/generative/sand-glyphs/) works on  [asemic](https://en.wikipedia.org/wiki/Asemic_writing) writing.  
+Glyphs are generated with splines defined by few control point sampled from a 2D space (square, ellipse). Glyphs are then mapped to characters to generate paragraphs with sensible text-like aesthetics. From there, script-like writing is emulated by drawing glyphs independently from each others. If the control points for multiple glyphs are concatenated or increased, the algorithm can generate words or longer, more detailed and complex shapes.
 
 
 ```{r echo=FALSE, results='asis'}

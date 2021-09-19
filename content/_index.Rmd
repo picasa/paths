@@ -11,3 +11,6 @@ trailer: ""
 
 > A visual blog about algorithmic art, mainly designed for pen plotters.
 
+I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. While this process enables drawing with enhanced repetition and precision, it limits the use of fills or line width variation.
+
+This site presents some digital and real outputs and documents the ideas underlying the functioning of the algorithms. Most of the code to study and reproduce these outputs is released [here](https://github.com/picasa/generative) with an open license.

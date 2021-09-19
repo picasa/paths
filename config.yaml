@@ -19,7 +19,7 @@ params:
     - _cache$
   languageCode: en-us
   preserveTaxonomyNames: yes
-  site: https://djnavarro.github.io/hugo-diziet
+  site: 
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
