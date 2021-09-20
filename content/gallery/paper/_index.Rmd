@@ -1,0 +1,26 @@
+---
+title: "Paper"
+date: 2021-01-01
+summary: '"'
+trailer: "splash/preview/paper.png"
+splash:
+  image: ../../splash/image/paper.jpg
+  caption: "Paper"
+---
+
+<style>
+.splash-caption-tweak {color: white; text-shadow: 0px 0px 15px black}
+</style>
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
+```
+
+> Example of plotted works.
+
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(full_fmt = "jpg", preview_fmt = "jpg")
+```
+
