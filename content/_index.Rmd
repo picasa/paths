@@ -9,6 +9,11 @@ splash:
 trailer: ""
 ---
 
+<style>
+.splash-caption-tweak {color: white; text-shadow: 0px 0px 15px black}
+.splash-caption-suffix {color: white; text-shadow: 0px 0px 15px black}
+</style>
+
 > A visual blog about algorithmic art, mainly designed for pen plotters.
 
 I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. While this process enables drawing with enhanced repetition and precision, it limits the use of fills or line width variation.
