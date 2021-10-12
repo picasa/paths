@@ -19,7 +19,9 @@ source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 
 > Cellular-like features generated from tessellation of point sets.  
 
-This algorithm first generates a point set, using either a deterministic (ODE) or stochastic method. Then a space tessellation method is used on a subset of the original point set. The aim was to search for a balance between the algorithm capacity to generate various outputs (but needing a curation step) and its capacity to produce aesthetic but overly similar outputs (narrow parameterization). This solution also allows to explore different scales, provided the initial point set is sufficiently large.
+This algorithm first generates a point set, using either a deterministic (ODE) or stochastic method. Then, a space tessellation method is used on a subset of the original point set. This method is used for different features loosely inspired by cellular biology (e.g. cells, tissues, vessels), that are assembled as different layers.
+
+The aim was to search for a balance between the algorithm capacity to generate various outputs (but needing a curation step) and its capacity to produce aesthetic but overly similar outputs (narrow parameterization). This solution also allows to explore different scales, provided the initial point set is sufficiently large.
 
 ```{r echo=FALSE, results='asis'}
 diziet$make_gallery(preview_fmt = "png")

@@ -1,1 +1,1 @@
-Repository for the website hosted at [casadebaig.netlify.app](https://casadebaig.netlify.app/).
+Repository my #rtistry output hosted at [casadebaig.netlify.app](https://casadebaig.netlify.app/). Build with R and [Hugo](https://gohugo.io), using the [blogdown](https://github.com/rstudio/blogdown) and [diziet](https://github.com/djnavarro/hugo-diziet) theme.

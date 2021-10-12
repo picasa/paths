@@ -2,9 +2,9 @@
 title: "Asemic"
 date: 2021-04-01
 summary: '"'
-trailer: "gallery/asemic/preview/text_cursive_02.png"
+trailer: "gallery/asemic/preview/word_n_complex_0802.png"
 splash:
-  image: "./image/text_cursive_02.png"
+  image: "./image/word_n_complex_0802.png"
   caption: "Asemic"
 ---
 
@@ -19,8 +19,9 @@ source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 
 > **Asemic characters and words generated with splines controlled by sampling control-points.**
 
-This serie was developed after reading [Anders Hoff](https://inconvergent.net/generative/sand-glyphs/) works on  [asemic](https://en.wikipedia.org/wiki/Asemic_writing) writing.  
-Glyphs are generated with splines defined by few control point sampled from a 2D space (square, ellipse). Glyphs are then mapped to characters to generate paragraphs with sensible text-like aesthetics. From there, script-like writing is emulated by drawing glyphs independently from each others. If the control points for multiple glyphs are concatenated or increased, the algorithm can generate words or longer, more detailed and complex shapes.
+This serie was developed after reading [Anders Hoff](https://inconvergent.net/generative/sand-glyphs/) works on  [asemic](https://en.wikipedia.org/wiki/Asemic_writing) writing. In a first step, glyphs are generated with splines defined by few control point sampled from a 2D space (square, ellipse). Limiting the number of generated glyphs, by mapping then to characters allows to produce words or paragraphs with sensible text-like aesthetics.
+
+From there, script-like writing is emulated by drawing glyphs independently from each others. If the control points for multiple glyphs are concatenated or increased, the algorithm can generate words or longer, more detailed and complex shapes. The example below are using two random seeds: one for the character set, and one for the text sequence used as layout.
 
 
 ```{r echo=FALSE, results='asis'}
