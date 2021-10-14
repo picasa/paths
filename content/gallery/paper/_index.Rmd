@@ -1,10 +1,10 @@
 ---
 title: "Paper"
-date: 2023-01-01
+date: 2021-10-01
 summary: '"'
 trailer: "splash/preview/paper.png"
 splash:
-  image: ../../splash/image/paper.jpg
+  image: "../../splash/image/paper.jpg"
   caption: "Paper"
 ---
 
