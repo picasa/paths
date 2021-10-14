@@ -17,7 +17,7 @@ root <- rprojroot::find_root("_hugodown.yaml")
 source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 ```
 
-> **Asemic characters and words generated with splines controlled by sampling control-points.**
+> **Asemic characters and words generated with splines controlled by random control-points.**
 
 This serie was developed after reading [Anders Hoff](https://inconvergent.net/generative/sand-glyphs/) works on  [asemic](https://en.wikipedia.org/wiki/Asemic_writing) writing. In a first step, glyphs are generated with splines defined by few control point sampled from a 2D space (square, ellipse). Limiting the number of generated glyphs, by mapping then to characters allows to produce words or paragraphs with sensible text-like aesthetics.
 

@@ -1,6 +1,6 @@
 ---
 title: "Paper"
-date: 2021-01-01
+date: 2023-01-01
 summary: '"'
 trailer: "splash/preview/paper.png"
 splash:
@@ -17,7 +17,7 @@ root <- rprojroot::find_root("_hugodown.yaml")
 source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 ```
 
-> Example of plotted works.
+> A subset of digital works that are plotted on paper.
 
 
 ```{r echo=FALSE, results='asis'}

@@ -15,7 +15,7 @@ splash:
 .splash-caption-tweak {color: black}
 </style>
 <blockquote>
-<p><strong>Asemic characters and words generated with splines controlled by sampling control-points.</strong></p>
+<p><strong>Asemic characters and words generated with splines controlled by random control-points.</strong></p>
 </blockquote>
 <p>This serie was developed after reading <a href="https://inconvergent.net/generative/sand-glyphs/">Anders Hoff</a> works on <a href="https://en.wikipedia.org/wiki/Asemic_writing">asemic</a> writing. In a first step, glyphs are generated with splines defined by few control point sampled from a 2D space (square, ellipse). Limiting the number of generated glyphs, by mapping then to characters allows to produce words or paragraphs with sensible text-like aesthetics.</p>
 <p>From there, script-like writing is emulated by drawing glyphs independently from each others. If the control points for multiple glyphs are concatenated or increased, the algorithm can generate words or longer, more detailed and complex shapes. The example below are using two random seeds: one for the character set, and one for the text sequence used as layout.</p>
