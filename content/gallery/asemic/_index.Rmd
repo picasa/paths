@@ -19,10 +19,11 @@ source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 
 > **Asemic characters and words generated with splines controlled by random control-points.**
 
-This serie was developed after reading [Anders Hoff](https://inconvergent.net/generative/sand-glyphs/) works on  [asemic](https://en.wikipedia.org/wiki/Asemic_writing) writing. In a first step, glyphs are generated with splines defined by few control point sampled from a 2D space (square, ellipse). Limiting the number of generated glyphs, by mapping then to characters allows to produce words or paragraphs with sensible text-like aesthetics.
+This serie was developed after reading [Anders Hoff](https://inconvergent.net/generative/sand-glyphs/) works on  [asemic](https://en.wikipedia.org/wiki/Asemic_writing) writing. In his algorithm, individual shapes (glyphs) are generated with splines defined by few control points sampled from a 2D space (square, ellipse), and glyphs are concatenated together to create cursive-like writing.
 
-From there, script-like writing is emulated by drawing glyphs independently from each others. If the control points for multiple glyphs are concatenated or increased, the algorithm can generate words or longer, more detailed and complex shapes. The example below are using two random seeds: one for the character set, and one for the text sequence used as layout.
+Here, to produce words or paragraphs with sensible text-like aesthetics, I limited the number of generated glyphs and mapped them to a fixed set of characters: the represented glyph sequence is a function of a generated text (e.g. Lorem ipsum).
 
+Variation can be obtained by acting on the glyph aggregation method. If the glyphs are drawn independently from each other, the algorithm emulates scrip writing. More detailed symbols can be obtained by concatenating a few glyphs (2-4) before mapping them to characters. Increasing the number of spline control points also produces refined shapes, but quickly becomes too complex. The examples below are using two random seeds: one for the character set, and one for the text sequence used as layout.
 
 ```{r echo=FALSE, results='asis'}
 diziet$make_gallery(preview_fmt = "png")

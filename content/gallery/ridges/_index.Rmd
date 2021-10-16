@@ -17,7 +17,7 @@ root <- rprojroot::find_root("_hugodown.yaml")
 source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 ```
 
-> Distinct and shifted lines visualized from digital elevation model datasets.
+> **Distinct and shifted lines visualized from digital elevation model datasets.**
 
 The central idea is to convert 3D point sets to 2D lines. Digital Elevation Model (DEM) represents elevation as function of latitude and longitude. In France, the national geographic institute makes this DEM available in Open-Data ([RGE](https://geoservices.ign.fr/rgealti), up to a 1m resolution). 
 

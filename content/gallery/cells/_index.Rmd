@@ -17,7 +17,7 @@ root <- rprojroot::find_root("_hugodown.yaml")
 source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 ```
 
-> Cellular-like features generated from tessellation of point sets.  
+> **Cellular-like features generated from tessellation of point sets.**
 
 This algorithm first generates a point set, using either a deterministic (ODE) or stochastic method. Then, a space tessellation method is used on a subset of the original point set. This method is used for different features loosely inspired by cellular biology (e.g. cells, tissues, vessels), that are assembled as different layers.
 

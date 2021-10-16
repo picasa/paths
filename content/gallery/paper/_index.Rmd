@@ -17,7 +17,7 @@ root <- rprojroot::find_root("_hugodown.yaml")
 source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
 ```
 
-> A subset of digital works that are plotted on paper.
+> **A subset of digital works that are plotted on paper.**
 
 
 ```{r echo=FALSE, results='asis'}
