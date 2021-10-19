@@ -9,7 +9,7 @@ permalinks:
 params:
   description: A visual blog about algorithmic art, mainly designed for pen plotters.
   disqusShortname: ''
-  footer: ~ Source for [website](https://github.com/picasa/paths) and [code](https://github.com/picasa/generative) ~
+  footer: ~ CC-BY-4.0 License, [source](https://github.com/picasa/paths) ~
   footnotereturnlinkcontents: ↩
   googleAnalytics: ''
   ignoreFiles:
