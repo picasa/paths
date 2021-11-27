@@ -18,7 +18,8 @@ splash:
 <p><strong>Curves parameterized from integer sequences and positioned according to basic botanical rules.</strong></p>
 </blockquote>
 <p>This study focus on a very simple generator, here a sequence of numbers generated from a set of rules. In this case, I used the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">Collatz</a> sequence because it has a decreasing, random-looking pattern, which is a nice feature for plant structures (e.g. the internode distribution on a stem).<br />
-This sequence is used to define a curve, by mapping sequence elements to segment length, with a random angle between segments. Multiple curves are computed to constitute a node, and multiple nodes to constitute a stem. The only random elements are the initial value of the sequence, and the angle distribution between curve segments.</p>
+This sequence is used to define a curve, by mapping sequence elements to segment length, with a random angle between segments. Multiple curves are computed to constitute a node, and multiple nodes to constitute a stem / individual. Further recursion can be used to create populations of multiple individuals, with random or community-dependent features.<br />
+The main random elements are the initial value of the sequence, and the angle distribution between curve segments.</p>
 <p>On this serie, rather than properly computing hidden line or polygons, I used an external algorithm (bitmap tracing) which had the nice side-effect of reshaping and merging some paths.</p>
 <div class="gal">
 <div class="container-fluid">
@@ -52,6 +53,9 @@ This sequence is used to define a curve, by mapping sequence elements to segment
 </div>
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
 <a href="image/collatz_stem_03.png"><img width = 100% src="preview/collatz_stem_03.png"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/collatz_stem_04.png"><img width = 100% src="preview/collatz_stem_04.png"></a>
 </div>
 </div>
 </div>
