@@ -1,0 +1,38 @@
+---
+title: "Dispyr"
+date: 2021-12-01
+summary: '"'
+trailer: "splash/preview/dispyr.jpg"
+splash:
+  image: "./image/dispyr_398.jpg"
+  caption: "Dispyr"
+---
+
+<style>
+.splash-caption-tweak {color: black}
+</style>
+
+```{r include=FALSE}
+root <- rprojroot::find_root("_hugodown.yaml")
+source(file.path(root, "themes", "hugo-diziet", "R", "diziet.R"))
+```
+
+> **Random pieces of the Pyrénées mountain range.**
+
+This series is an attempt for generating etching-like drawings, by adding noise and removing data to create a more natural rendering.
+
+The algorithm first samples random locations in the Pyrénées mountain range, defined as a region about 20 km wide around the French-Spain border. For each location, elevation data on a 20 x 15 km rectangle area are obtained from a digital elevation model, here with the [elevatr](https://github.com/jhollist/elevatr) R package.  
+Then, this 3D point set is processed to produce multiple lines of elevation as a function of longitude, for discrete latitude values. The intersections between lines are avoided by checking for a minimum distance between a point at a given longitude and its neighbourhood.  
+Finally, the overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). Four methods are randomly chosen, resulting in discarding about 80 % of the information present in the initial dataset : 
+
+* **clear**: for each ridgeline, the method samples 30 % of the data and adds moderate jitter on elevation values. 
+* **mist**: same process as *clear* method, and adding missing data when the elevation is below a threshold.
+* **snow**: same process as *mist* method, but data removal is also a function of a slope threshold.
+* **strips**: whole strips of lines are removed when the elevation variation is below a threshold. Additionally, an important jitter is added as a function of local slope value.  
+
+
+
+```{r echo=FALSE, results='asis'}
+diziet$make_gallery(full_fmt = "jpg", preview_fmt = "jpg")
+```
+

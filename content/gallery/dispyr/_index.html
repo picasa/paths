@@ -1,0 +1,131 @@
+---
+title: "Dispyr"
+date: 2021-12-01
+summary: '"'
+trailer: "splash/preview/dispyr.jpg"
+splash:
+  image: "./image/dispyr_398.jpg"
+  caption: "Dispyr"
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<style>
+.splash-caption-tweak {color: black}
+</style>
+<blockquote>
+<p><strong>Random pieces of the Pyrénées mountain range.</strong></p>
+</blockquote>
+<p>This series is an attempt for generating etching-like drawings, by adding noise and removing data to create a more natural rendering.</p>
+<p>The algorithm first samples random locations in the Pyrénées mountain range, defined as a region about 20 km wide around the French-Spain border. For each location, elevation data on a 20 x 15 km rectangle area are obtained from a digital elevation model, here with the <a href="https://github.com/jhollist/elevatr">elevatr</a> R package.<br />
+Then, this 3D point set is processed to produce multiple lines of elevation as a function of longitude, for discrete latitude values. The intersections between lines are avoided by checking for a minimum distance between a point at a given longitude and its neighbourhood.<br />
+Finally, the overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). Four methods are randomly chosen, resulting in discarding about 80 % of the information present in the initial dataset :</p>
+<ul>
+<li><strong>clear</strong>: for each ridgeline, the method samples 30 % of the data and adds moderate jitter on elevation values.</li>
+<li><strong>mist</strong>: same process as <em>clear</em> method, and adding missing data when the elevation is below a threshold.</li>
+<li><strong>snow</strong>: same process as <em>mist</em> method, but data removal is also a function of a slope threshold.</li>
+<li><strong>strips</strong>: whole strips of lines are removed when the elevation variation is below a threshold. Additionally, an important jitter is added as a function of local slope value.</li>
+</ul>
+<div class="gal">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_09.jpg"><img width = 100% src="preview/dispyr_09.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_100.jpg"><img width = 100% src="preview/dispyr_100.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_102.jpg"><img width = 100% src="preview/dispyr_102.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_104.jpg"><img width = 100% src="preview/dispyr_104.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_125.jpg"><img width = 100% src="preview/dispyr_125.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_127.jpg"><img width = 100% src="preview/dispyr_127.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_145.jpg"><img width = 100% src="preview/dispyr_145.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_173.jpg"><img width = 100% src="preview/dispyr_173.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_197.jpg"><img width = 100% src="preview/dispyr_197.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_199.jpg"><img width = 100% src="preview/dispyr_199.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_228.jpg"><img width = 100% src="preview/dispyr_228.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_241.jpg"><img width = 100% src="preview/dispyr_241.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_266.jpg"><img width = 100% src="preview/dispyr_266.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_312.jpg"><img width = 100% src="preview/dispyr_312.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_316.jpg"><img width = 100% src="preview/dispyr_316.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_320.jpg"><img width = 100% src="preview/dispyr_320.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_354.jpg"><img width = 100% src="preview/dispyr_354.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_359.jpg"><img width = 100% src="preview/dispyr_359.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_377.jpg"><img width = 100% src="preview/dispyr_377.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_398.jpg"><img width = 100% src="preview/dispyr_398.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_402.jpg"><img width = 100% src="preview/dispyr_402.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_434.jpg"><img width = 100% src="preview/dispyr_434.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_436.jpg"><img width = 100% src="preview/dispyr_436.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_438.jpg"><img width = 100% src="preview/dispyr_438.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_456.jpg"><img width = 100% src="preview/dispyr_456.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_47.jpg"><img width = 100% src="preview/dispyr_47.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_475.jpg"><img width = 100% src="preview/dispyr_475.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_480.jpg"><img width = 100% src="preview/dispyr_480.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_488.jpg"><img width = 100% src="preview/dispyr_488.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_56.jpg"><img width = 100% src="preview/dispyr_56.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_62.jpg"><img width = 100% src="preview/dispyr_62.jpg"></a>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2">
+<a href="image/dispyr_69.jpg"><img width = 100% src="preview/dispyr_69.jpg"></a>
+</div>
+</div>
+</div>
+</div>
