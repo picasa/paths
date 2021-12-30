@@ -4,7 +4,7 @@ date: 2021-12-01
 summary: '"'
 trailer: "splash/preview/dispyr.jpg"
 splash:
-  image: "./image/dispyr_398.jpg"
+  image: "../../splash/image/dispyr.png"
   caption: "Dispyr"
 ---
 
@@ -12,22 +12,21 @@ splash:
 
 
 <style>
-.splash-caption-tweak {color: black}
+.splash-caption-tweak {color: white; text-shadow: 0px 0px 15px black}
 </style>
 <blockquote>
 <p><strong>Random pieces of the Pyrénées mountain range.</strong></p>
 </blockquote>
-<p>This series is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a more natural rendering.</p>
+<p>This series is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a more natural rendering. Below is an example of 32 random outputs from this algorithm.</p>
 <p>The algorithm first samples random locations in the Pyrénées mountain range, defined as a region about 20 km wide around the French-Spain border. For each location, elevation data on a 20 x 15 km rectangle area are obtained from a digital elevation model, here with the <a href="https://github.com/jhollist/elevatr">elevatr</a> R package.<br />
 Then, this 3D point set is processed into 2D, by computing multiple lines of elevation as a function of longitude, for discrete latitude values. The intersections between lines are avoided by checking for a minimum distance between a point at a given longitude and its neighbourhood.<br />
 Finally, the overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). Four methods are used, resulting in discarding about 80 % of the information present in the initial dataset :</p>
 <ul>
-<li><em>clear</em>: for each ridgeline, the method samples 30 % of the data and adds moderate jitter on elevation values.</li>
-<li><em>mist</em>: same process as <em>clear</em> method, and adding missing data when the elevation is below a threshold.</li>
-<li><em>snow</em>: same process as <em>mist</em> method, but data removal is also a function of a slope threshold.</li>
-<li><em>strips</em>: whole strips of lines are removed when the elevation variation is below a threshold. Additionally, an important jitter is added as a function of local slope value.</li>
+<li><em>clear</em> : for each ridgeline, the method samples 30 % of the data and adds moderate jitter on elevation values.</li>
+<li><em>mist</em> : same process as <em>clear</em> method, and adding missing data when the elevation is below a threshold.</li>
+<li><em>snow</em> : same process as <em>mist</em> method, but data removal is also a function of a slope threshold.</li>
+<li><em>strips</em> : whole strips of lines are removed when the elevation variation is below a threshold. Additionally, an important jitter is added as a function of local slope value.</li>
 </ul>
-<p>Below is an example of 32 random outputs from this algorithm.</p>
 <div class="gal">
 <div class="container-fluid">
 <div class="row">
