@@ -1,0 +1,48 @@
+---
+title: ""
+format: 
+  html :
+    fontsize: 120%
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  fields: [image, title]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+:::{.column-body-outset}
+
+![](img/background.svg){width="120%"}
+
+
+::: {.grid}
+
+::: {.g-col-2}
+![](img/profile.png)
+:::
+
+::: {.g-col-10}
+
+> **A visual blog about algorithmic art, mainly designed for pen plotters.**
+
+:::
+
+:::
+
+I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. While this process enables drawing with enhanced repetition and precision, it limits the range of techniques available (fills or hatching have to be programmed, pen pressure is constant). Somehow, i assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
+
+This site presents mostly digital outputs and some [paper](/posts/paper/index.qmd) drawings, and documents the ideas underlying the functioning of the algorithms. Most of the code to study and reproduce these outputs is released on [github {{< fa brands github >}}](https://github.com/picasa/generative_examples). Overall, making visual art is very new to me, in my day job I am a [scientist {{< fa brands orcid >}}](https://orcid.org/0000-0001-7225-936X) working in plant biology.  
+Unless stated otherwise, the art on this site is released under a [{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://creativecommons.org/licenses/by-sa/4.0/) open license: you are free to reuse the work as long as you attribute the original to me, and derivative works must use the same licence. 
+
+Feel free to contact me via [email {{< fa brands github >}}](https://github.com/picasa) for any questions related to this place or if you wish to order a plotter print from a work. I'm also somehow using social networks ([{{< fa brands twitter >}}](https://twitter.com/pircasa) or <a rel="me" href="https://ecoevo.social/@casadebaig">{{< fa brands mastodon >}}</a>). You can also support me through the energy-efficient tezos blockchain, where I sometimes release works with the casadebaig.tez ns.
+
+:::
+
+
+
+

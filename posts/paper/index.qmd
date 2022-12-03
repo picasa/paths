@@ -1,0 +1,25 @@
+---
+title: "Papers"
+author: "Pierre Casadebaig"
+date: "2021-01-01"
+categories: [plotter]
+image: "img/preview.png"
+format:  html
+---
+
+```{r, include=FALSE}
+source(here::here("R/0_functions_web.r"))
+```
+
+
+> ### A selection of my digital works that are traced on paper using a pen-plotter (AxiDraw A3/V3).
+
+```{r, echo=FALSE, results='asis', eval=TRUE}
+#| column: screen-inset-right
+
+make_gallery()
+
+```
+
+
+
