@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>art.casadebaig.net/LICENSE.html</loc>
+    <lastmod>2022-12-04T14:36:22.413Z</lastmod>
+  </url>
+  <url>
     <loc>art.casadebaig.net/posts/paper/index.html</loc>
-    <lastmod>2022-12-03T22:04:25.152Z</lastmod>
+    <lastmod>2022-12-04T14:36:22.766Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/asemic/index.html</loc>
-    <lastmod>2022-12-03T22:04:25.515Z</lastmod>
+    <lastmod>2022-12-04T14:36:23.092Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/cells/index.html</loc>
-    <lastmod>2022-12-03T22:04:25.853Z</lastmod>
+    <lastmod>2022-12-04T14:36:23.451Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/ridges/index.html</loc>
-    <lastmod>2022-12-03T22:04:26.180Z</lastmod>
+    <lastmod>2022-12-04T14:36:23.792Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/collatz/index.html</loc>
-    <lastmod>2022-12-03T22:04:26.536Z</lastmod>
+    <lastmod>2022-12-04T14:36:24.129Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/dispyr/index.html</loc>
-    <lastmod>2022-12-03T22:04:33.286Z</lastmod>
+    <lastmod>2022-12-04T14:36:31.003Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/attractors/index.html</loc>
-    <lastmod>2022-12-03T22:04:33.610Z</lastmod>
+    <lastmod>2022-12-04T14:36:43.132Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/index.html</loc>
-    <lastmod>2022-12-03T22:04:35.666Z</lastmod>
+    <lastmod>2022-12-04T14:36:45.567Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/about.html</loc>
-    <lastmod>2022-12-03T22:04:37.656Z</lastmod>
+    <lastmod>2022-12-04T14:36:31.994Z</lastmod>
   </url>
 </urlset>
