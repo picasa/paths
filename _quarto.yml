@@ -19,7 +19,7 @@ execute:
 format:
   html:
     fontsize: 100%
-    linkcolor: "#f3c693"
+    linkcolor: "#859599"
     theme: 
       dark: darkly
       light: flatly

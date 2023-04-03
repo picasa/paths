@@ -1,1 +1,13 @@
 /* css styles */
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-container-v {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
