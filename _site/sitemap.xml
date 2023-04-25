@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>art.casadebaig.net/LICENSE.html</loc>
-    <lastmod>2023-04-03T20:31:45.961Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/paper/index.html</loc>
-    <lastmod>2023-04-03T20:31:46.327Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/asemic/index.html</loc>
-    <lastmod>2023-04-03T20:31:46.679Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/cells/index.html</loc>
-    <lastmod>2023-04-03T20:31:47.047Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/ridges/index.html</loc>
-    <lastmod>2023-04-03T20:31:47.365Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/collatz/index.html</loc>
-    <lastmod>2023-04-03T20:31:47.707Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/dispyr/index.html</loc>
-    <lastmod>2023-04-03T20:31:54.634Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/attractors/index.html</loc>
-    <lastmod>2023-04-03T20:31:54.951Z</lastmod>
-  </url>
-  <url>
     <loc>art.casadebaig.net/index.html</loc>
-    <lastmod>2023-04-03T20:31:55.317Z</lastmod>
+    <lastmod>2023-04-25T08:10:33.788Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/about.html</loc>
-    <lastmod>2023-04-03T20:31:55.619Z</lastmod>
+    <lastmod>2023-04-25T08:04:49.096Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/LICENSE.html</loc>
+    <lastmod>2023-04-25T08:04:49.868Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/attractors/index.html</loc>
+    <lastmod>2023-04-25T08:04:50.392Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/asemic/index.html</loc>
+    <lastmod>2023-04-25T08:04:50.980Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/collatz/index.html</loc>
+    <lastmod>2023-04-25T08:04:51.564Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/cells/index.html</loc>
+    <lastmod>2023-04-25T08:04:52.224Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/ridges/index.html</loc>
+    <lastmod>2023-04-25T08:04:52.776Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/works/paper/index.html</loc>
+    <lastmod>2023-04-25T08:04:53.400Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/works/dispyr/index.html</loc>
+    <lastmod>2023-04-25T08:04:58.940Z</lastmod>
   </url>
 </urlset>

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Pierre Casadebaig">
+<meta name="dcterms.date" content="2021-05-01">
 
-<title>Paths -</title>
+<title>Paths - Ridges</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,77 +62,19 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-list-works .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-list-works'] = new List('listing-list-works', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-list-research .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-list-research'] = new List('listing-list-research', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Paths</span>
     </a>
   </div>
@@ -144,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../../../about.html">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -167,153 +107,78 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Ridges</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">generative</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Pierre Casadebaig </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 1, 2021</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
-<div class="column-body-outset" style="font-size: 100%; margin-bottom: 2cm;">
-<div class="grid">
-<div class="g-col-6 center-container-v">
-<p><img src="img/profile.svg" class="img-fluid"></p>
-</div>
-<div class="g-col-6 center-container-v">
+
 <blockquote class="blockquote">
-<p><strong>A visual blog about algorithmic art, mainly designed for pen plotters.</strong></p>
+<h3 id="distinct-and-shifted-lines-visualized-from-digital-elevation-model-datasets." class="anchored">Distinct and shifted lines visualized from digital elevation model datasets.</h3>
 </blockquote>
+<p>The central idea is to convert 3D point sets to 2D lines. Digital Elevation Model (DEM) represents elevation as function of latitude and longitude. In France, the national geographic institute makes this DEM available in Open-Data (<a href="https://geoservices.ign.fr/rgealti">RGE</a>, up to a 1m resolution). These illustrations are made of multiple lines of elevation as a function of longitude, for discrete latitude values. Overplotting is avoided (hidden lines) by checking for a minimal distance between two lines. Variation comes from the scale and location of the geographical region and from the parameterization of the line clipping method.<br>
+Adding noise or removing information from the original DEM data seems to create more a more natural rendering. This option was explored in the <a href="../../../posts/dispyr"><em>dispyr</em></a> series</p>
+<div class="cell column-screen-inset-right">
+<div class="gal">
+<div class="container-fluid">
+<div class="grid">
+<div class="g-col-6 g-col-md-3">
+<a href="img/gallery/ridge_00_pyrenee.png"><img width="100%" src="img/preview/ridge_00_pyrenee.png"></a>
+</div>
+<div class="g-col-6 g-col-md-3">
+<a href="img/gallery/ridge_01_ossau.png"><img width="100%" src="img/preview/ridge_01_ossau.png"></a>
+</div>
+<div class="g-col-6 g-col-md-3">
+<a href="img/gallery/ridge_02_loudenvielle.png"><img width="100%" src="img/preview/ridge_02_loudenvielle.png"></a>
+</div>
+<div class="g-col-6 g-col-md-3">
+<a href="img/gallery/ridge_03_arves.png"><img width="100%" src="img/preview/ridge_03_arves.png"></a>
+</div>
+<div class="g-col-6 g-col-md-3">
+<a href="img/gallery/ridge_04_heric.png"><img width="100%" src="img/preview/ridge_04_heric.png"></a>
+</div>
+<div class="g-col-6 g-col-md-3">
+<a href="img/gallery/ridge_05_leisse.png"><img width="100%" src="img/preview/ridge_05_leisse.png"></a>
 </div>
 </div>
-<p>I’m curious how creative coding, by reducing the time between implementing changes and observing their effects, can develop intuition for making visual art.</p>
-<p>I am using the <a href="https://www.r-project.org/">R</a> programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. While this process enhances repetition and precision, it limits the range of techniques available (fills or hatching have to be programmed, pen pressure is constant). Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.</p>
-<p>This site documents the ideas underlying the functioning of the algorithms, along with some digital outputs. Most of the code to study and reproduce these works is released on <a href="https://github.com/picasa/generative_examples">github <i class="fa-brands fa-github" aria-label="github"></i></a>. While making visual art is very new to me, I’m also learning and experimenting in my day job as <a href="https://orcid.org/0000-0001-7225-936X">scientist <i class="fa-brands fa-orcid" aria-label="orcid"></i></a> in plant biology.<br>
-Unless stated otherwise, the art on this site is released under a <a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i></a> open license: you are free to reuse the work as long as you attribute the original to me, and derivative works must use the same license.</p>
-<p><br></p>
-<section id="digital-and-traced-works" class="level3">
-<h3 class="anchored" data-anchor-id="digital-and-traced-works">Digital and traced works</h3>
-<hr>
-<div id="listing-list-works" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1669330800000" data-listing-file-modified-sort="1682409803882" data-listing-reading-time-sort="18.88">
-<a href="./posts/works/dispyr/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/works/dispyr/img/preview.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dispyr
-</h5>
 </div>
 </div>
-</a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="plotter" data-listing-date-sort="1609455600000" data-listing-file-modified-sort="1670256594015" data-listing-reading-time-sort="0.11">
-<a href="./posts/works/paper/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/works/paper/img/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Papers
-</h5>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="research-directions-on-various-systems" class="level3">
-<h3 class="anchored" data-anchor-id="research-directions-on-various-systems">Research directions on various systems</h3>
-<hr>
-<div id="listing-list-research" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="generative" data-listing-date-sort="1631138400000" data-listing-file-modified-sort="1682409879577" data-listing-reading-time-sort="0.66">
-<a href="./posts/research/cells/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/research/cells/img/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Cells
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="generative" data-listing-date-sort="1622498400000" data-listing-file-modified-sort="1670256593483" data-listing-reading-time-sort="0.94">
-<a href="./posts/research/collatz/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/research/collatz/img/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Collatz
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="generative" data-listing-date-sort="1619820000000" data-listing-file-modified-sort="1682346906507" data-listing-reading-time-sort="0.68">
-<a href="./posts/research/ridges/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/research/ridges/img/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ridges
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="generative" data-listing-date-sort="1617228000000" data-listing-file-modified-sort="1670256593103" data-listing-reading-time-sort="0.89">
-<a href="./posts/research/asemic/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/research/asemic/img/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Asemic
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="generative" data-listing-date-sort="1612134000000" data-listing-file-modified-sort="1670256593239" data-listing-reading-time-sort="1.05">
-<a href="./posts/research/attractors/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/research/attractors/img/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Attractors
-</h5>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-</div>
-
 
 
 

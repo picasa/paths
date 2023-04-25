@@ -2,18 +2,27 @@
 title: ""
 format: html 
 listing:
-  contents: posts
-  sort: "date desc"
-  type: grid
-  fields: [image, title]
-  categories: false
-  sort-ui: false
-  filter-ui: false
+  - id: list-works
+    contents: "posts/works/*/*.qmd"
+    sort: "date desc"
+    type: grid
+    fields: [image, title]
+    categories: false
+    sort-ui: false
+    filter-ui: false
+  - id: list-research
+    contents: "posts/research/*/*.qmd"
+    sort: "date desc"
+    type: grid
+    fields: [image, title]
+    categories: false
+    sort-ui: false
+    filter-ui: false
 page-layout: full
 title-block-banner: true
 ---
 
-:::{.column-body-outset style="font-size: 120%; margin-bottom: 2cm;"}
+:::{.column-body-outset style="font-size: 100%; margin-bottom: 2cm;"}
 
 
 ::: {.grid}
@@ -33,10 +42,26 @@ title-block-banner: true
 
 I'm curious how creative coding, by reducing the time between implementing changes and observing their effects, can develop intuition for making visual art.
 
-I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. While this process enhance repetition and precision, it limits the range of techniques available (fills or hatching have to be programmed, pen pressure is constant). Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
+I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. While this process enhances repetition and precision, it limits the range of techniques available (fills or hatching have to be programmed, pen pressure is constant). Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
 
 This site documents the ideas underlying the functioning of the algorithms, along with some digital outputs. Most of the code to study and reproduce these works is released on [github {{< fa brands github >}}](https://github.com/picasa/generative_examples). While making visual art is very new to me, I'm also learning and experimenting in my day job as [scientist {{< fa brands orcid >}}](https://orcid.org/0000-0001-7225-936X) in plant biology.  
-Unless stated otherwise, the art on this site is released under a [{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://creativecommons.org/licenses/by-sa/4.0/) open license: you are free to reuse the work as long as you attribute the original to me, and derivative works must use the same licence. 
+Unless stated otherwise, the art on this site is released under a [{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://creativecommons.org/licenses/by-sa/4.0/) open license: you are free to reuse the work as long as you attribute the original to me, and derivative works must use the same license.  
+
+<br>
+
+### Digital and traced works
+
+---
+
+::: {#list-works}
+:::
+
+### Research directions on various systems 
+
+---
+
+::: {#list-research}
+:::
 
 :::
 

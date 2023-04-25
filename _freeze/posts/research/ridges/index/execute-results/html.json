@@ -1,0 +1,14 @@
+{
+  "hash": "3163636031d75a9bf0ba077660caac48",
+  "result": {
+    "markdown": "---\ntitle: \"Ridges\"\nauthor: \"Pierre Casadebaig\"\ndate: \"2021-05-01\"\ncategories: [generative]\nimage: \"img/preview.png\"\nformat:  html\n---\n\n\n\n\n\n> ### Distinct and shifted lines visualized from digital elevation model datasets.\n\nThe central idea is to convert 3D point sets to 2D lines. Digital Elevation Model (DEM) represents elevation as function of latitude and longitude. In France, the national geographic institute makes this DEM available in Open-Data ([RGE](https://geoservices.ign.fr/rgealti), up to a 1m resolution). \nThese illustrations are made of multiple lines of elevation as a function of longitude, for discrete latitude values. Overplotting is avoided (hidden lines) by checking for a minimal distance between two lines. Variation comes from the scale and location of the geographical region and from the parameterization of the line clipping method.  \nAdding noise or removing information from the original DEM data seems to create more a more natural rendering. This option was explored in the [*dispyr*](/posts/dispyr) series\n\n\n\n::: {.cell .column-screen-inset-right}\n<div class=\"gal\"><div class=\"container-fluid\"><div class=\"grid\"><div class=\"g-col-6 g-col-md-3\"><a href=\"img/gallery/ridge_00_pyrenee.png\"><img width = 100% src=\"img/preview/ridge_00_pyrenee.png\"></a></div>\n<div class=\"g-col-6 g-col-md-3\"><a href=\"img/gallery/ridge_01_ossau.png\"><img width = 100% src=\"img/preview/ridge_01_ossau.png\"></a></div>\n<div class=\"g-col-6 g-col-md-3\"><a href=\"img/gallery/ridge_02_loudenvielle.png\"><img width = 100% src=\"img/preview/ridge_02_loudenvielle.png\"></a></div>\n<div class=\"g-col-6 g-col-md-3\"><a href=\"img/gallery/ridge_03_arves.png\"><img width = 100% src=\"img/preview/ridge_03_arves.png\"></a></div>\n<div class=\"g-col-6 g-col-md-3\"><a href=\"img/gallery/ridge_04_heric.png\"><img width = 100% src=\"img/preview/ridge_04_heric.png\"></a></div>\n<div class=\"g-col-6 g-col-md-3\"><a href=\"img/gallery/ridge_05_leisse.png\"><img width = 100% src=\"img/preview/ridge_05_leisse.png\"></a></div></div>\n</div>\n</div>\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,1 @@
+/home/casadebaig/Documents/Personnel/generative_dispyr/R/0_rendering.r
