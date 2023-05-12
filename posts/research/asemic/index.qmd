@@ -5,6 +5,9 @@ date: "2021-04-01"
 categories: [generative]
 image: "img/preview.png"
 format:  html
+filters:
+   - lightbox
+lightbox: auto
 ---
 
 ```{r, include=FALSE}
@@ -14,18 +17,24 @@ source(here::here("R/0_functions_web.r"))
 
 > ### Asemic characters and words generated with splines controlled by random control-points.
 
-This serie was developed after reading [Anders Hoff](https://inconvergent.net/generative/sand-glyphs/) works on  [asemic](https://en.wikipedia.org/wiki/Asemic_writing) writing. In his algorithm, individual shapes (glyphs) are generated with splines defined by few control points sampled from a 2D space (square, ellipse), and glyphs are concatenated together to create cursive-like writing.
+This system was developed after reading [Anders Hoff](https://inconvergent.net/generative/sand-glyphs/) works on  [asemic](https://en.wikipedia.org/wiki/Asemic_writing) writing. In his algorithm, individual shapes (glyphs) are generated with splines defined by few control points sampled from a 2D space (square, ellipse), and glyphs are concatenated together to create cursive-like writing.
 
 Here, to produce words or paragraphs with sensible text-like aesthetics, I limited the number of generated glyphs and mapped them to a fixed set of characters: the represented glyph sequence is a function of a generated text (e.g. Lorem ipsum).
 
 Variation can be obtained by acting on the glyph aggregation method. If the glyphs are drawn independently from each other, the algorithm emulates script writing. More detailed symbols can be obtained by concatenating a few glyphs (2-4) before mapping them to characters. Increasing the number of spline control points also produces refined shapes, but quickly becomes too complex. The examples below are using two random seeds: one for the character set, and one for the text sequence used as layout.
 
-```{r, echo=FALSE, results='asis', eval=TRUE}
-#| column: screen-inset-right
+<br>
 
-make_gallery()
+::: {.column-body-outset .gallery}
+```{r}
+#| echo: false
+#| results: asis
+
+make_gallery(output = "md")
 
 ```
+::: 
+
 
 
 

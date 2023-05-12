@@ -5,6 +5,9 @@ date: "2021-05-01"
 categories: [generative]
 image: "img/preview.png"
 format:  html
+filters:
+   - lightbox
+lightbox: auto
 ---
 
 ```{r, include=FALSE}
@@ -18,13 +21,16 @@ The central idea is to convert 3D point sets to 2D lines. Digital Elevation Mode
 These illustrations are made of multiple lines of elevation as a function of longitude, for discrete latitude values. Overplotting is avoided (hidden lines) by checking for a minimal distance between two lines. Variation comes from the scale and location of the geographical region and from the parameterization of the line clipping method.  
 Adding noise or removing information from the original DEM data seems to create a more natural rendering. This option was explored in the [*dispyr*](/posts/works/dispyr) series
 
+<br>
 
-```{r, echo=FALSE, results='asis', eval=TRUE}
-#| column: screen-inset-right
+::: {.column-body-outset .gallery}
+```{r}
+#| echo: false
+#| results: asis
 
-make_gallery()
+make_gallery(output = "md")
 
 ```
-
+::: 
 
 

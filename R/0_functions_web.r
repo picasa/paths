@@ -1,9 +1,10 @@
 # render ####
 
-# generate a list of markdown links to images
+# generate a list of links to images
 make_gallery <- function(
     scale = 0.24, output = "html",
-    preview = "img/preview", full = "img/gallery") {
+    preview = "img/preview", full = "img/gallery",
+    group = "default", reverse = FALSE) {
   
   # list files
   file_preview <- list.files(preview, full.names = TRUE)
@@ -12,16 +13,24 @@ make_gallery <- function(
   switch(
     output,
     
-    # generate a list of markdown links
     md = {
       
+      # order links
+      files <- if (reverse) rev(file_full) else file_full
+      
+      # create links
+      links <- glue::glue("<div> ![]({files}){{group=\"{group}\"}} </div>")
+      
+      return(links)
+    },
+    
+    # generate a list of nested markdown links
+    md_nested = {
+      
       # set up column sizing
-      scale = glue::glue("{{width=\"{scale * 100}%\"}}")
+      scale <- glue::glue("{{width=\"{scale * 100}%\"}}")
       
       # create md links
-      preview <- glue::glue("![]({file_preview})")
-      full <- glue::glue("![]({file_full})")
-      
       links <- glue::glue("[![]({file_preview}){scale}]({file_full})")
       
       return(links)
@@ -30,7 +39,7 @@ make_gallery <- function(
     
     # generate a bootstrap container.
     # code adapted from https://github.com/djnavarro/hugo-diziet
-    html = {
+    diziet = {
       
       # create images links
       links <- paste0(

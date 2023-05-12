@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,50 +154,45 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <h3 id="curves-parameterized-from-integer-sequences-and-positioned-according-to-basic-botanical-rules." class="anchored">Curves parameterized from integer sequences and positioned according to basic botanical rules.</h3>
 </blockquote>
-<p>This study focus on a very simple generator, here a sequence of numbers generated from a set of rules. In this case, I used the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">Collatz</a> sequence because it has a decreasing, random-looking pattern, which is a nice feature for plant structures (e.g.&nbsp;the internode distribution on a stem).<br>
+<p>This system focuses on a very simple generator, here a sequence of numbers generated from a set of rules. In this case, I used the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">Collatz</a> sequence because it has a decreasing, random-looking pattern, which is a nice feature for plant structures (e.g.&nbsp;the internode distribution on a stem).<br>
 This sequence is used to define a curve, by mapping sequence elements to segment length, with a random angle between segments. Multiple curves are computed to constitute a node, and multiple nodes to constitute a stem / individual. Further recursion can be used to create populations of multiple individuals, with random or community-dependent features.<br>
 The main random elements are the initial value of the sequence, and the angle distribution between curve segments.</p>
 <p>I explained this approach a bit more in details during a talk at an art show, slides are available <a href="https://github.com/picasa/slides_code_to_ink">here</a>.</p>
 <p>On this series, rather than properly computing hidden line or polygons, I used an external algorithm (bitmap tracing) which had the nice side-effect of reshaping and merging some paths.</p>
-<div class="cell column-screen-inset-right">
-<div class="gal">
-<div class="container-fluid">
-<div class="grid">
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_field_00.png"><img width="100%" src="img/preview/collatz_field_00.png"></a>
+<p><br></p>
+<div class="column-body-outset gallery">
+<div>
+<a href="img/gallery/collatz_field_00.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_field_00.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_field_01.png"><img width="100%" src="img/preview/collatz_field_01.png"></a>
+<div>
+<a href="img/gallery/collatz_field_01.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_field_01.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_field_02.png"><img width="100%" src="img/preview/collatz_field_02.png"></a>
+<div>
+<a href="img/gallery/collatz_field_02.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_field_02.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_individuals_01.png"><img width="100%" src="img/preview/collatz_individuals_01.png"></a>
+<div>
+<a href="img/gallery/collatz_individuals_01.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_individuals_01.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_individuals_02.png"><img width="100%" src="img/preview/collatz_individuals_02.png"></a>
+<div>
+<a href="img/gallery/collatz_individuals_02.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_individuals_02.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_mixture_00.png"><img width="100%" src="img/preview/collatz_mixture_00.png"></a>
+<div>
+<a href="img/gallery/collatz_mixture_00.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_mixture_00.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_mixture_03.png"><img width="100%" src="img/preview/collatz_mixture_03.png"></a>
+<div>
+<a href="img/gallery/collatz_mixture_03.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_mixture_03.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_stem_00.png"><img width="100%" src="img/preview/collatz_stem_00.png"></a>
+<div>
+<a href="img/gallery/collatz_stem_00.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_stem_00.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_stem_01.png"><img width="100%" src="img/preview/collatz_stem_01.png"></a>
+<div>
+<a href="img/gallery/collatz_stem_01.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_stem_01.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_stem_03.png"><img width="100%" src="img/preview/collatz_stem_03.png"></a>
+<div>
+<a href="img/gallery/collatz_stem_03.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_stem_03.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/collatz_stem_04.png"><img width="100%" src="img/preview/collatz_stem_04.png"></a>
-</div>
-</div>
-</div>
+<div>
+<a href="img/gallery/collatz_stem_04.png" class="lightbox" data-gallery="default"><img src="img/gallery/collatz_stem_04.png" class="img-fluid"></a>
 </div>
 </div>
 
@@ -450,6 +448,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"loop":true,"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom"});</script>
 
 
 

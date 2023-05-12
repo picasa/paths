@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,32 +154,27 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <h3 id="distinct-and-shifted-lines-visualized-from-digital-elevation-model-datasets." class="anchored">Distinct and shifted lines visualized from digital elevation model datasets.</h3>
 </blockquote>
-<p>The central idea is to convert 3D point sets to 2D lines. Digital Elevation Model (DEM) represents elevation as function of latitude and longitude. In France, the national geographic institute makes this DEM available in Open-Data (<a href="https://geoservices.ign.fr/rgealti">RGE</a>, up to a 1m resolution). These illustrations are made of multiple lines of elevation as a function of longitude, for discrete latitude values. Overplotting is avoided (hidden lines) by checking for a minimal distance between two lines. Variation comes from the scale and location of the geographical region and from the parameterization of the line clipping method.<br>
-Adding noise or removing information from the original DEM data seems to create more a more natural rendering. This option was explored in the <a href="../../../posts/dispyr"><em>dispyr</em></a> series</p>
-<div class="cell column-screen-inset-right">
-<div class="gal">
-<div class="container-fluid">
-<div class="grid">
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/ridge_00_pyrenee.png"><img width="100%" src="img/preview/ridge_00_pyrenee.png"></a>
+<p>The central idea is to convert 3D point sets to 2D lines. Digital Elevation Model (DEM) represents elevation as a function of latitude and longitude. In France, the national geographic institute makes this DEM available in Open-Data (<a href="https://geoservices.ign.fr/rgealti">RGE</a>, up to a 1m resolution). These illustrations are made of multiple lines of elevation as a function of longitude, for discrete latitude values. Overplotting is avoided (hidden lines) by checking for a minimal distance between two lines. Variation comes from the scale and location of the geographical region and from the parameterization of the line clipping method.<br>
+Adding noise or removing information from the original DEM data seems to create a more natural rendering. This option was explored in the <a href="../../../posts/works/dispyr"><em>dispyr</em></a> series</p>
+<p><br></p>
+<div class="column-body-outset gallery">
+<div>
+<a href="img/gallery/ridge_00_pyrenee.png" class="lightbox" data-gallery="default"><img src="img/gallery/ridge_00_pyrenee.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/ridge_01_ossau.png"><img width="100%" src="img/preview/ridge_01_ossau.png"></a>
+<div>
+<a href="img/gallery/ridge_01_ossau.png" class="lightbox" data-gallery="default"><img src="img/gallery/ridge_01_ossau.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/ridge_02_loudenvielle.png"><img width="100%" src="img/preview/ridge_02_loudenvielle.png"></a>
+<div>
+<a href="img/gallery/ridge_02_loudenvielle.png" class="lightbox" data-gallery="default"><img src="img/gallery/ridge_02_loudenvielle.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/ridge_03_arves.png"><img width="100%" src="img/preview/ridge_03_arves.png"></a>
+<div>
+<a href="img/gallery/ridge_03_arves.png" class="lightbox" data-gallery="default"><img src="img/gallery/ridge_03_arves.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/ridge_04_heric.png"><img width="100%" src="img/preview/ridge_04_heric.png"></a>
+<div>
+<a href="img/gallery/ridge_04_heric.png" class="lightbox" data-gallery="default"><img src="img/gallery/ridge_04_heric.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/ridge_05_leisse.png"><img width="100%" src="img/preview/ridge_05_leisse.png"></a>
-</div>
-</div>
-</div>
+<div>
+<a href="img/gallery/ridge_05_leisse.png" class="lightbox" data-gallery="default"><img src="img/gallery/ridge_05_leisse.png" class="img-fluid"></a>
 </div>
 </div>
 
@@ -432,6 +430,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":true,"descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});</script>
 
 
 

@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,75 +154,70 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <h3 id="asemic-characters-and-words-generated-with-splines-controlled-by-random-control-points." class="anchored">Asemic characters and words generated with splines controlled by random control-points.</h3>
 </blockquote>
-<p>This serie was developed after reading <a href="https://inconvergent.net/generative/sand-glyphs/">Anders Hoff</a> works on <a href="https://en.wikipedia.org/wiki/Asemic_writing">asemic</a> writing. In his algorithm, individual shapes (glyphs) are generated with splines defined by few control points sampled from a 2D space (square, ellipse), and glyphs are concatenated together to create cursive-like writing.</p>
+<p>This system was developed after reading <a href="https://inconvergent.net/generative/sand-glyphs/">Anders Hoff</a> works on <a href="https://en.wikipedia.org/wiki/Asemic_writing">asemic</a> writing. In his algorithm, individual shapes (glyphs) are generated with splines defined by few control points sampled from a 2D space (square, ellipse), and glyphs are concatenated together to create cursive-like writing.</p>
 <p>Here, to produce words or paragraphs with sensible text-like aesthetics, I limited the number of generated glyphs and mapped them to a fixed set of characters: the represented glyph sequence is a function of a generated text (e.g.&nbsp;Lorem ipsum).</p>
 <p>Variation can be obtained by acting on the glyph aggregation method. If the glyphs are drawn independently from each other, the algorithm emulates script writing. More detailed symbols can be obtained by concatenating a few glyphs (2-4) before mapping them to characters. Increasing the number of spline control points also produces refined shapes, but quickly becomes too complex. The examples below are using two random seeds: one for the character set, and one for the text sequence used as layout.</p>
-<div class="cell column-screen-inset-right">
-<div class="gal">
-<div class="container-fluid">
-<div class="grid">
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_0_script_0110.png"><img width="100%" src="img/preview/text_0_script_0110.png"></a>
+<p><br></p>
+<div class="column-body-outset gallery">
+<div>
+<a href="img/gallery/text_0_script_0110.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_0_script_0110.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_0_script_0210.png"><img width="100%" src="img/preview/text_0_script_0210.png"></a>
+<div>
+<a href="img/gallery/text_0_script_0210.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_0_script_0210.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_0_script_0310.png"><img width="100%" src="img/preview/text_0_script_0310.png"></a>
+<div>
+<a href="img/gallery/text_0_script_0310.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_0_script_0310.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_0_script_0510.png"><img width="100%" src="img/preview/text_0_script_0510.png"></a>
+<div>
+<a href="img/gallery/text_0_script_0510.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_0_script_0510.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_3_merge_0110.png"><img width="100%" src="img/preview/text_3_merge_0110.png"></a>
+<div>
+<a href="img/gallery/text_3_merge_0110.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_3_merge_0110.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_3_merge_0510.png"><img width="100%" src="img/preview/text_3_merge_0510.png"></a>
+<div>
+<a href="img/gallery/text_3_merge_0510.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_3_merge_0510.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_3_merge_1310.png"><img width="100%" src="img/preview/text_3_merge_1310.png"></a>
+<div>
+<a href="img/gallery/text_3_merge_1310.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_3_merge_1310.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_3_merge_1610.png"><img width="100%" src="img/preview/text_3_merge_1610.png"></a>
+<div>
+<a href="img/gallery/text_3_merge_1610.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_3_merge_1610.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_3_vertical_0510.png"><img width="100%" src="img/preview/text_3_vertical_0510.png"></a>
+<div>
+<a href="img/gallery/text_3_vertical_0510.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_3_vertical_0510.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_3_vertical_1210.png"><img width="100%" src="img/preview/text_3_vertical_1210.png"></a>
+<div>
+<a href="img/gallery/text_3_vertical_1210.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_3_vertical_1210.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_3_vertical_1310.png"><img width="100%" src="img/preview/text_3_vertical_1310.png"></a>
+<div>
+<a href="img/gallery/text_3_vertical_1310.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_3_vertical_1310.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_3_vertical_1610.png"><img width="100%" src="img/preview/text_3_vertical_1610.png"></a>
+<div>
+<a href="img/gallery/text_3_vertical_1610.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_3_vertical_1610.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_n_cursive_0110.png"><img width="100%" src="img/preview/text_n_cursive_0110.png"></a>
+<div>
+<a href="img/gallery/text_n_cursive_0110.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_n_cursive_0110.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_n_cursive_0410.png"><img width="100%" src="img/preview/text_n_cursive_0410.png"></a>
+<div>
+<a href="img/gallery/text_n_cursive_0410.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_n_cursive_0410.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_n_cursive_0510.png"><img width="100%" src="img/preview/text_n_cursive_0510.png"></a>
+<div>
+<a href="img/gallery/text_n_cursive_0510.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_n_cursive_0510.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/text_n_cursive_0710.png"><img width="100%" src="img/preview/text_n_cursive_0710.png"></a>
+<div>
+<a href="img/gallery/text_n_cursive_0710.png" class="lightbox" data-gallery="default"><img src="img/gallery/text_n_cursive_0710.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/word_n_complex_0502.png"><img width="100%" src="img/preview/word_n_complex_0502.png"></a>
+<div>
+<a href="img/gallery/word_n_complex_0502.png" class="lightbox" data-gallery="default"><img src="img/gallery/word_n_complex_0502.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/word_n_complex_0802.png"><img width="100%" src="img/preview/word_n_complex_0802.png"></a>
+<div>
+<a href="img/gallery/word_n_complex_0802.png" class="lightbox" data-gallery="default"><img src="img/gallery/word_n_complex_0802.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/word_n_complex_1402.png"><img width="100%" src="img/preview/word_n_complex_1402.png"></a>
+<div>
+<a href="img/gallery/word_n_complex_1402.png" class="lightbox" data-gallery="default"><img src="img/gallery/word_n_complex_1402.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/word_n_complex_1602.png"><img width="100%" src="img/preview/word_n_complex_1602.png"></a>
-</div>
-</div>
-</div>
+<div>
+<a href="img/gallery/word_n_complex_1602.png" class="lightbox" data-gallery="default"><img src="img/gallery/word_n_complex_1602.png" class="img-fluid"></a>
 </div>
 </div>
 
@@ -475,6 +473,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":true});</script>
 
 
 

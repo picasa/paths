@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -154,39 +157,34 @@ ul.task-list li input[type="checkbox"] {
 <p>This work explores the capacity of discrete dynamical systems to generate a large diversity of point sets. It is based on this <a href="https://sprott.physics.wisc.edu/pubs/paper203.pdf">paper</a> from J.C Sprott in 1993, recently <a href="http://paulbourke.net/fractals/sprott/">reproduced</a> by Paul Bourke. Henrik Lindberg also <a href="https://blog.k2h.se/post/hunting-for-attractors/">published</a> an R implementation of the quadratic map functions used here.</p>
 <p>The algorithm is based on a system of difference equations, with 12 parameters. The first step is to sample the parameter space by using a discrete scale of 26 values for each parameter so that each sample can be assigned a “name” with 12 letters. A second step discards failed solutions (convergence to a point, divergence) and filters the aesthetic ones, based on a set of criteria (Lyapunov exponent, summary of point density distribution, correlation). Overall, very few solutions are selected (~ 0.1 %).</p>
 <p>While this method is a very good generator for diverse 2D shapes, it is not compatible with pen-plotting because of the difficulty to create paths from those point sets - the points are not ordered by the iterations of the difference equation, and jumps from one position to another. One solution is to define the relative neighbourhood <a href="https://en.wikipedia.org/wiki/Relative_neighborhood_graph">graph</a> on a subsample of the simulated set of points.</p>
-<div class="cell column-screen-inset-right">
-<div class="gal">
-<div class="container-fluid">
-<div class="grid">
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/graph_rn_DNVAAFAHSLPK.png"><img width="100%" src="img/preview/graph_rn_DNVAAFAHSLPK.png"></a>
+<p><br></p>
+<div class="column-body-outset gallery">
+<div>
+<a href="img/gallery/set_collection_03.png" class="lightbox" data-gallery="default"><img src="img/gallery/set_collection_03.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/graph_rn_GWMEASBXSDLY.png"><img width="100%" src="img/preview/graph_rn_GWMEASBXSDLY.png"></a>
+<div>
+<a href="img/gallery/scatter_VSFOXGJOUPMN.png" class="lightbox" data-gallery="default"><img src="img/gallery/scatter_VSFOXGJOUPMN.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/graph_rn_VVKLLANMEDGG.png"><img width="100%" src="img/preview/graph_rn_VVKLLANMEDGG.png"></a>
+<div>
+<a href="img/gallery/scatter_QEKMAEGMTOGY.png" class="lightbox" data-gallery="default"><img src="img/gallery/scatter_QEKMAEGMTOGY.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/graph_rn_XMGMBDILSCFO.png"><img width="100%" src="img/preview/graph_rn_XMGMBDILSCFO.png"></a>
+<div>
+<a href="img/gallery/scatter_ICYQHWWGJLCL.png" class="lightbox" data-gallery="default"><img src="img/gallery/scatter_ICYQHWWGJLCL.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/scatter_BUOSBOVJJLFJ.png"><img width="100%" src="img/preview/scatter_BUOSBOVJJLFJ.png"></a>
+<div>
+<a href="img/gallery/scatter_BUOSBOVJJLFJ.png" class="lightbox" data-gallery="default"><img src="img/gallery/scatter_BUOSBOVJJLFJ.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/scatter_ICYQHWWGJLCL.png"><img width="100%" src="img/preview/scatter_ICYQHWWGJLCL.png"></a>
+<div>
+<a href="img/gallery/graph_rn_XMGMBDILSCFO.png" class="lightbox" data-gallery="default"><img src="img/gallery/graph_rn_XMGMBDILSCFO.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/scatter_QEKMAEGMTOGY.png"><img width="100%" src="img/preview/scatter_QEKMAEGMTOGY.png"></a>
+<div>
+<a href="img/gallery/graph_rn_VVKLLANMEDGG.png" class="lightbox" data-gallery="default"><img src="img/gallery/graph_rn_VVKLLANMEDGG.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/scatter_VSFOXGJOUPMN.png"><img width="100%" src="img/preview/scatter_VSFOXGJOUPMN.png"></a>
+<div>
+<a href="img/gallery/graph_rn_GWMEASBXSDLY.png" class="lightbox" data-gallery="default"><img src="img/gallery/graph_rn_GWMEASBXSDLY.png" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/set_collection_03.png"><img width="100%" src="img/preview/set_collection_03.png"></a>
-</div>
-</div>
-</div>
+<div>
+<a href="img/gallery/graph_rn_DNVAAFAHSLPK.png" class="lightbox" data-gallery="default"><img src="img/gallery/graph_rn_DNVAAFAHSLPK.png" class="img-fluid"></a>
 </div>
 </div>
 
@@ -442,6 +440,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","openEffect":"zoom","loop":true});</script>
 
 
 

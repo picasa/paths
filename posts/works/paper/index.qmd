@@ -1,10 +1,13 @@
 ---
 title: "Papers"
 author: "Pierre Casadebaig"
-date: "2021-01-01"
+date: "2022-01-01"
 categories: [plotter]
 image: "img/preview.png"
 format:  html
+filters:
+   - lightbox
+lightbox: auto
 ---
 
 ```{r, include=FALSE}
@@ -12,14 +15,20 @@ source(here::here("R/0_functions_web.r"))
 ```
 
 
-> ### A selection of my digital works that are traced on paper using a pen-plotter (AxiDraw A3/V3).
+> ### A selection digital works traced on paper using a pen-plotter.
 
-```{r, echo=FALSE, results='asis', eval=TRUE}
-#| column: screen-inset-right
+A pen plotter works much like a human hand holding a pen or pencil. It is a two dimensional robotic arm with pen-holder, and this arm moves across the paper to draw lines - I'm using an AxiDraw model (A3/V3). The plotter receives instructions from a computer that drives the precise movements of the arm. These instructions (vector files) are the results produced by running a hopefully creative code.
 
-make_gallery()
+As if exploring the space defined by various parameters in the coding part was not enough, much is left to explore in the plotting process. In these few work, I merely tested different paper textures and colors, different pens (technical, felt, brush) and paint mediums (ink, acrylic).
+
+<br>
+
+::: {.column-body-outset .gallery}
+```{r}
+#| echo: false
+#| results: asis
+
+make_gallery(output = "md", reverse = TRUE)
 
 ```
-
-
-
+::: 

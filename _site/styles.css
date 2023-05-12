@@ -1,4 +1,4 @@
-/* css styles */
+/* css classes */
 
 .center-image {
   display: block;
@@ -10,4 +10,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-auto-flow: dense;
+}
+
+.gallery > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

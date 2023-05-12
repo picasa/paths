@@ -5,6 +5,9 @@ date: "2021-02-01"
 categories: [generative]
 image: "img/preview.png"
 format:  html
+filters:
+   - lightbox
+lightbox: auto
 ---
 
 ```{r, include=FALSE}
@@ -20,13 +23,16 @@ The algorithm is based on a system of difference equations, with 12 parameters. 
 
 While this method is a very good generator for diverse 2D shapes, it is not compatible with pen-plotting because of the difficulty to create paths from those point sets - the points are not ordered by the iterations of the difference equation, and jumps from one position to another. One solution is to define the relative neighbourhood [graph](https://en.wikipedia.org/wiki/Relative_neighborhood_graph) on a subsample of the simulated set of points.
 
+<br>
 
-```{r, echo=FALSE, results='asis', eval=TRUE}
-#| column: screen-inset-right
+::: {.column-body-outset .gallery}
+```{r}
+#| echo: false
+#| results: asis
 
-make_gallery()
+make_gallery(output = "md")
 
 ```
-
+::: 
 
 

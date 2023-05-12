@@ -101,7 +101,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -213,7 +216,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content"><section id="aims-and-inspiration" class="level2"><h2 class="anchored" data-anchor-id="aims-and-inspiration">Aims and inspiration</h2>
 <p>This work is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a natural rendering of random fragments of the Pyrénées.</p>
 <p>I was searching for an hybrid between the simplicity and efficiency of a famous data visualization in <a href="https://blogs.scientificamerican.com/sa-visual/pop-culture-pulsar-origin-story-of-joy-division-s-unknown-pleasures-album-cover-video/">astronomy</a> and the impressive Meridian <a href="https://opensea.io/collection/meridian-by-matt-deslauriers">serie</a> by Matt Deslauriers. Moreover, to be able to use a pen-plotter to trace the images on paper, the algorithm should produce relatively long lines rather than the myriad of short segments that make Meridian appealing.</p>
-<p><img src="./img/pulses.jpg" class="img-fluid" width="300"><img src="./img/meridian_638.webp" class="img-fluid" width="300"></p>
+<p><a href="./img/pulses.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./img/pulses.jpg" class="img-fluid" width="300"></a> <a href="./img/meridian_638.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./img/meridian_638.webp" class="img-fluid" width="300"></a></p>
 <blockquote class="blockquote">
 <p><strong>left</strong> : “Successive pulses from the first pulsar discovered, CP 1919, are here superimposed vertically. The pulses occur every 1.337 seconds. They are caused by rapidly spinning neutron star.” From The Cambridge Encyclopaedia of Astronomy.<br><strong>right</strong> : Meridian #638</p>
 </blockquote>
@@ -249,7 +252,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/plot_features-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/plot_features-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/plot_features-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div>
 </div>
 </div></div></section><section id="rendering-style" class="level3"><h3 class="anchored" data-anchor-id="rendering-style">Rendering style</h3>
@@ -276,7 +282,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/plot_sampling-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/plot_sampling-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="index_files/figure-html/plot_sampling-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div>
 </div>
 </div></div></section><section id="slicing-the-landscape-into-lines" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="slicing-the-landscape-into-lines">Slicing the landscape into lines</h3>
@@ -314,13 +323,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/plot_shift-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/plot_shift-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="index_files/figure-html/plot_shift-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/plot_shift-2.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/plot_shift-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="index_files/figure-html/plot_shift-2.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/plot_shift-3.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/plot_shift-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="index_files/figure-html/plot_shift-3.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div>
 </div>
 </div></div><p>The shifting step calculates the difference from the reference elevation as a linear function of its rank from the foreground (figure B). Increasing the slope of this function impacts the perspective, towards a more aerial view of the landscape, eventually reducing the number of intersecting lines (figure C). Using non-linear functions creates unrealistic but interesting perspectives.</p>
@@ -351,14 +369,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>In the code above, the intersections between lines are avoided by checking for a minimum distance between a point at a given <em>x</em> position and its neighbourhood along <em>y</em>, and removing the point if any points in the neighbourhood falls below this distance (<em>z_threshold</em> parameter). To avoid computing the distance matrix for all points (74<sup>4</sup>, in this small area), we only check for intersections along a limited range (<em>n_lag</em> parameter, between 0 and 300 y ranks). Increasing the threshold parameter creates clearer distinction between the sides of mountains.</p>
 <div class="cell column-body quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="index_files/figure-html/plot_intersect-1.png" class="img-fluid" width="450"></p>
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
+<figure class="figure"><p><a href="index_files/figure-html/plot_intersect-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="index_files/figure-html/plot_intersect-1.png" class="img-fluid figure-img" width="450"></a></p>
+</figure>
 </div>
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="index_files/figure-html/plot_intersect-2.png" class="img-fluid" width="450"></p>
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
+<figure class="figure"><p><a href="index_files/figure-html/plot_intersect-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="index_files/figure-html/plot_intersect-2.png" class="img-fluid figure-img" width="450"></a></p>
+</figure>
 </div>
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="index_files/figure-html/plot_intersect-3.png" class="img-fluid" width="450"></p>
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
+<figure class="figure"><p><a href="index_files/figure-html/plot_intersect-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="index_files/figure-html/plot_intersect-3.png" class="img-fluid figure-img" width="450"></a></p>
+</figure>
 </div>
 </div>
 </div>
@@ -368,7 +389,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><img src="img/fig_intersection.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="img/fig_intersection.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="img/fig_intersection.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 <blockquote class="blockquote">
 <p>Effect of <em>shift</em> (in rows) and <em>threshold</em> (in columns) parameter combination on the landscape rendering (16 km<sup>2</sup>).</p>
 </blockquote>
@@ -377,7 +401,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<p><img src="img/fig_styles.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="img/fig_styles.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="img/fig_styles.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 <blockquote class="blockquote">
 <p>Four data processing methods, all based on filtering points and adding noise, and named after weather conditions (clear, mist, snow, storm).</p>
 </blockquote>
@@ -399,7 +426,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<p><img src="index_files/figure-html/code_clear-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/code_clear-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="index_files/figure-html/code_clear-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div></div></div>
 </section><section id="mist" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="mist">mist</h4>
 <p>Same base as the previous method. In addition, when below an elevation threshold, lines are smoothed and points are randomly removed.</p>
@@ -449,7 +479,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<p><img src="index_files/figure-html/code_mist-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/code_mist-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="index_files/figure-html/code_mist-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div></div></div>
 </section><section id="snow" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="snow">snow</h4>
 <p>Same base as the previous method, but the data removal is also a function of a slope threshold.</p>
@@ -495,7 +528,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<p><img src="index_files/figure-html/code_snow-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/code_snow-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="index_files/figure-html/code_snow-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div></div></div>
 </section><section id="storm" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="storm">storm</h4>
 <p>Whole strips of lines are removed when the elevation variation is below a threshold. Additionally, an important jitter is added as a function of local slope value.</p>
@@ -560,7 +596,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="va">index_strip</span> <span class="op">&lt;-</span> <span class="va">df_sample</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">y_rank</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">summarise</span><span class="op">(</span>y_raw <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">z</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu">get_extremum</span><span class="op">(</span>n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">z_remove</span> <span class="op">*</span> <span class="fl">5</span><span class="op">)</span>, w <span class="op">=</span> <span class="fl">30</span>, delta <span class="op">=</span> <span class="fl">3</span>, method <span class="op">=</span> <span class="st">"min"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">get_extremum</span><span class="op">(</span>n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/integer.html">as.integer</a></span><span class="op">(</span><span class="va">z_remove</span> <span class="op">*</span> <span class="fl">5</span><span class="op">)</span>, w <span class="op">=</span> <span class="fl">30</span>, delta <span class="op">=</span> <span class="fl">3</span>, method <span class="op">=</span> <span class="st">"min"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="fu">between</span><span class="op">(</span><span class="va">y_rank</span>, <span class="op">(</span><span class="va">y_range</span> <span class="op">+</span> <span class="fl">5</span><span class="op">)</span>, <span class="op">(</span><span class="va">n_ridge_max</span> <span class="op">-</span> <span class="va">y_range</span> <span class="op">-</span> <span class="fl">5</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># remove strips of ridges based on previous index</span></span>
@@ -581,7 +617,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<p><img src="index_files/figure-html/code_storm-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/code_storm-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="index_files/figure-html/code_storm-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div></div></div>
 </section></section></section><section id="rendering" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="rendering">Rendering</h2>
 <p>This step is essentially playing on opacity (either constant or variable along a line) and on the doubling of the line strokes to emulate pencil lines. Thanks to the R graphical devices, the same object can be exported to bitmap or vector files.</p>
@@ -603,7 +642,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="va">p_alpha</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<p><img src="index_files/figure-html/code_plain-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/code_plain-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="index_files/figure-html/code_plain-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div></div></div>
 </section><section id="variable-opacity" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="variable-opacity">variable opacity</h4>
 <div class="cell page-columns page-full">
@@ -618,7 +660,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">scale_alpha_identity</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<p><img src="index_files/figure-html/code_pencil-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/code_pencil-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="index_files/figure-html/code_pencil-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div></div></div>
 </section><section id="variable-opacity-and-double-strokes" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="variable-opacity-and-double-strokes">variable opacity and double strokes</h4>
 <div class="cell page-columns page-full">
@@ -659,114 +704,112 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">scale_alpha_identity</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<p><img src="index_files/figure-html/code_stroke-1.png" class="img-fluid" width="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/code_stroke-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="index_files/figure-html/code_stroke-1.png" class="img-fluid figure-img" width="600"></a></p>
+</figure>
+</div>
 </div></div></div>
 </section></section><section id="iterations" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="iterations">Iterations</h2>
+<p>These outputs were generated with the algorithm described previously, but based on a random location in the whole Pyrenees range (with a larger geographical area - 15x20 km, and a random cardinal orientation), and a random aesthetic style among the four presented ones. The algorithm can handle about 1000 iterations before repeating information (about 70 distinct 300 km2 regions with limited overlapping, 4 orientations, and 4 styles).</p>
 <blockquote class="blockquote">
 <p>An example of 32 random iterations from this algorithm.</p>
 </blockquote>
-<div class="cell column-screen-inset-right">
-<div class="gal">
-<div class="container-fluid">
-<div class="grid">
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_09.jpg"><img width="100%" src="img/preview/dispyr_09.jpg"></a>
+<div class="column-screen-inset-right gallery">
+<div>
+<a href="img/gallery/dispyr_09.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_09.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_100.jpg"><img width="100%" src="img/preview/dispyr_100.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_100.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_100.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_102.jpg"><img width="100%" src="img/preview/dispyr_102.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_102.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_102.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_104.jpg"><img width="100%" src="img/preview/dispyr_104.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_104.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_104.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_125.jpg"><img width="100%" src="img/preview/dispyr_125.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_125.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_125.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_127.jpg"><img width="100%" src="img/preview/dispyr_127.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_127.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_127.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_145.jpg"><img width="100%" src="img/preview/dispyr_145.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_145.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_145.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_173.jpg"><img width="100%" src="img/preview/dispyr_173.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_173.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_173.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_197.jpg"><img width="100%" src="img/preview/dispyr_197.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_197.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_197.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_199.jpg"><img width="100%" src="img/preview/dispyr_199.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_199.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_199.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_228.jpg"><img width="100%" src="img/preview/dispyr_228.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_228.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_228.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_241.jpg"><img width="100%" src="img/preview/dispyr_241.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_241.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_241.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_266.jpg"><img width="100%" src="img/preview/dispyr_266.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_266.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_266.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_312.jpg"><img width="100%" src="img/preview/dispyr_312.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_312.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_312.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_316.jpg"><img width="100%" src="img/preview/dispyr_316.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_316.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_316.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_320.jpg"><img width="100%" src="img/preview/dispyr_320.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_320.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_320.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_354.jpg"><img width="100%" src="img/preview/dispyr_354.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_354.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_354.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_359.jpg"><img width="100%" src="img/preview/dispyr_359.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_359.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_359.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_377.jpg"><img width="100%" src="img/preview/dispyr_377.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_377.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_377.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_398.jpg"><img width="100%" src="img/preview/dispyr_398.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_398.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_398.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_402.jpg"><img width="100%" src="img/preview/dispyr_402.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_402.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_402.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_434.jpg"><img width="100%" src="img/preview/dispyr_434.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_434.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_434.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_436.jpg"><img width="100%" src="img/preview/dispyr_436.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_436.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_436.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_438.jpg"><img width="100%" src="img/preview/dispyr_438.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_438.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_438.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_456.jpg"><img width="100%" src="img/preview/dispyr_456.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_456.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_456.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_47.jpg"><img width="100%" src="img/preview/dispyr_47.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_47.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_47.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_475.jpg"><img width="100%" src="img/preview/dispyr_475.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_475.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_475.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_480.jpg"><img width="100%" src="img/preview/dispyr_480.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_480.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_480.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_488.jpg"><img width="100%" src="img/preview/dispyr_488.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_488.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_488.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_56.jpg"><img width="100%" src="img/preview/dispyr_56.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_56.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_56.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_62.jpg"><img width="100%" src="img/preview/dispyr_62.jpg"></a>
+<div>
+<a href="img/gallery/dispyr_62.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_62.jpg" class="img-fluid"></a>
 </div>
-<div class="g-col-6 g-col-md-3">
-<a href="img/gallery/dispyr_69.jpg"><img width="100%" src="img/preview/dispyr_69.jpg"></a>
-</div>
-</div>
-</div>
+<div>
+<a href="img/gallery/dispyr_69.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_69.jpg" class="img-fluid"></a>
 </div>
 </div>
 
@@ -1020,7 +1063,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","loop":true,"closeEffect":"zoom"});</script>
 
 
 </body></html>

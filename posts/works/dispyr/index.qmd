@@ -17,6 +17,10 @@ format:
 execute: 
   warning: false
   message: false
+  
+filters:
+   - lightbox
+lightbox: auto
 ---
 
 ```{r setup, include=FALSE}
@@ -33,6 +37,7 @@ library(generate)
 # functions
 source(here::here("R/0_rendering.r"))
 source(here::here("R/0_functions_ridge.r"))
+source(here::here("R/0_functions_dispyr.r"))
 source(here::here("R/0_functions_web.r"))
 
 # parameters
@@ -623,14 +628,12 @@ These outputs were generated with the algorithm described previously, but based 
 
 > An example of 32 random iterations from this algorithm.
 
+::: {.column-screen-inset-right .gallery}
 ```{r iterations}
 #| echo: false
 #| results: asis
-#| column: screen-inset-right
 
-make_gallery()
+make_gallery(output = "md")
 
 ```
-
-
-
+::: 
