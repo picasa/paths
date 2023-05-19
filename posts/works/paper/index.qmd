@@ -1,9 +1,9 @@
 ---
-title: "Papers"
+title: "Paper"
 author: "Pierre Casadebaig"
-date: "2022-01-01"
+date: "2023-02-01"
 categories: [plotter]
-image: "img/preview.png"
+image: "img/preview.jpg"
 format:  html
 filters:
    - lightbox
@@ -23,7 +23,7 @@ As if exploring the space defined by various parameters in the coding part was n
 
 <br>
 
-::: {.column-body-outset .gallery}
+::: {.column-body-outset .gallery-flow}
 ```{r}
 #| echo: false
 #| results: asis

@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/works/dispyr/index.html",
       "/posts/works/paper/index.html",
+      "/posts/works/published/index.html",
+      "/posts/works/dispyr/index.html",
       "/posts/research/cells/index.html",
       "/posts/research/collatz/index.html",
       "/posts/research/ridges/index.html",

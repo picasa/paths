@@ -25,7 +25,7 @@ While this method is a very good generator for diverse 2D shapes, it is not comp
 
 <br>
 
-::: {.column-body-outset .gallery}
+::: {.column-body-outset .gallery-grid}
 ```{r}
 #| echo: false
 #| results: asis

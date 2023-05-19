@@ -23,7 +23,7 @@ Adding noise or removing information from the original DEM data seems to create 
 
 <br>
 
-::: {.column-body-outset .gallery}
+::: {.column-body-outset .gallery-flow}
 ```{r}
 #| echo: false
 #| results: asis

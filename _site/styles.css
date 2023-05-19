@@ -12,7 +12,8 @@
   align-items: center;
 }
 
-.gallery {
+
+.gallery-grid {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -20,8 +21,28 @@
   grid-auto-flow: dense;
 }
 
-.gallery > div > img {
+.gallery-grid > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+
+.gallery-flow {
+  column-count: 3;
+  column-gap: 5px;
+}
+
+.gallery-flow > div {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.gallery-flow > div > a > img {
+  width: 100%;
+  height: auto;
+}
+
+
+

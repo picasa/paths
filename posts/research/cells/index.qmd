@@ -23,7 +23,7 @@ The aim was to search for a balance between the algorithm capacity to generate v
 
 <br>
 
-::: {.column-body-outset .gallery}
+::: {.column-body-outset .gallery-grid}
 ```{r}
 #| echo: false
 #| results: asis

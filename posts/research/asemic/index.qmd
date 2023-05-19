@@ -25,7 +25,7 @@ Variation can be obtained by acting on the glyph aggregation method. If the glyp
 
 <br>
 
-::: {.column-body-outset .gallery}
+::: {.column-body-outset .gallery-grid}
 ```{r}
 #| echo: false
 #| results: asis

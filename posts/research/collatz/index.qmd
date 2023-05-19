@@ -27,7 +27,7 @@ On this series, rather than properly computing hidden line or polygons, I used a
 
 <br>
 
-::: {.column-body-outset .gallery}
+::: {.column-body-outset .gallery-flow}
 ```{r}
 #| echo: false
 #| results: asis

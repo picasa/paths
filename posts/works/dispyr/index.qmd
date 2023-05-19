@@ -628,7 +628,7 @@ These outputs were generated with the algorithm described previously, but based 
 
 > An example of 32 random iterations from this algorithm.
 
-::: {.column-screen-inset-right .gallery}
+::: {.column-screen-inset-right .gallery-grid}
 ```{r iterations}
 #| echo: false
 #| results: asis
