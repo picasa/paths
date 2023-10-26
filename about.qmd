@@ -12,7 +12,7 @@ about:
       href: https://github.com/picasa
 ---
 
-## Hi, I'm Pierre 👋
+## Hi, I'm Pierre
 
 #### Work
 

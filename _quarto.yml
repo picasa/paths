@@ -18,13 +18,12 @@ execute:
   
 format:
   html:
+    mainfont: Noto Sans Display
+    css: styles.css
+    theme: 
+      dark: [darkly, styles.scss]
+      light: [flatly, styles.scss]
+    highlight-style: github
     fontsize: 100%
     linkcolor: "#859599"
-    theme: 
-      dark: darkly
-      light: flatly
-    highlight-style: github
-    css: styles.css
-
-
-
+  

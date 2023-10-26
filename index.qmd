@@ -10,6 +10,14 @@ listing:
     categories: false
     sort-ui: false
     filter-ui: false
+  - id: list-process
+    contents: "posts/process/dispyr/index.qmd"
+    sort: "date desc"
+    type: grid
+    fields: [image, title]
+    categories: false
+    sort-ui: false
+    filter-ui: false
   - id: list-research
     contents: "posts/research/*/*.qmd"
     sort: "date desc"
@@ -47,16 +55,22 @@ I am using the [R](https://www.r-project.org/) programming language to write alg
 This site documents the ideas underlying the functioning of the algorithms, along with some digital outputs. Most of the code to study and reproduce these works is released on [github {{< fa brands github >}}](https://github.com/picasa/generative_examples). While making visual art is very new to me, I'm also learning and experimenting in my day job as a [scientist {{< fa brands orcid >}}](https://orcid.org/0000-0001-7225-936X) in crop ecology.  
 Unless stated otherwise, the art on this site is released under a [{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://creativecommons.org/licenses/by-sa/4.0/) open license: you are free to reuse the work as long as you attribute the original to me, and derivative works must use the same license.  
 
-<br>
 
-### Digital and traced works
-
----
+<p style="text-align: center;">𐫱</p>
 
 ::: {#list-works}
 :::
 
-### Research directions on various systems 
+<br> 
+
+### Processes
+
+---
+
+::: {#list-process}
+:::
+
+### Explorations
 
 ---
 

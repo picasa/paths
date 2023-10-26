@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 id="distinct-and-shifted-lines-visualized-from-digital-elevation-model-datasets." class="anchored">Distinct and shifted lines visualized from digital elevation model datasets.</h3>
 </blockquote>
 <p>The central idea is to convert 3D point sets to 2D lines. Digital Elevation Model (DEM) represents elevation as a function of latitude and longitude. In France, the national geographic institute makes this DEM available in Open-Data (<a href="https://geoservices.ign.fr/rgealti">RGE</a>, up to a 1m resolution). These illustrations are made of multiple lines of elevation as a function of longitude, for discrete latitude values. Overplotting is avoided (hidden lines) by checking for a minimal distance between two lines. Variation comes from the scale and location of the geographical region and from the parameterization of the line clipping method.<br>
-Adding noise or removing information from the original DEM data seems to create a more natural rendering. This option was explored in the <a href="../../../posts/works/dispyr"><em>dispyr</em></a> series</p>
+Adding noise or removing information from the original DEM data seems to create a more natural rendering. This option was explored in the <a href="../../../posts/process/dispyr"><em>dispyr</em></a> series</p>
 <p><br></p>
 <div class="column-body-outset gallery-flow">
 <div>
@@ -430,7 +430,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":true,"openEffect":"zoom","descPosition":"bottom"});</script>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":true,"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox"});</script>
 
 
 

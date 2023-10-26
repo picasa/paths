@@ -2,46 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>art.casadebaig.net/LICENSE.html</loc>
-    <lastmod>2023-05-19T21:42:41.165Z</lastmod>
+    <lastmod>2023-10-26T16:27:38.280Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/research/asemic/index.html</loc>
-    <lastmod>2023-05-19T21:42:41.556Z</lastmod>
+    <lastmod>2023-10-26T16:27:38.681Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/research/cells/index.html</loc>
-    <lastmod>2023-05-19T21:42:41.907Z</lastmod>
+    <lastmod>2023-10-26T16:27:39.066Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/research/ridges/index.html</loc>
-    <lastmod>2023-05-19T21:42:42.260Z</lastmod>
+    <lastmod>2023-10-26T16:27:39.413Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/research/collatz/index.html</loc>
-    <lastmod>2023-05-19T21:42:42.623Z</lastmod>
+    <lastmod>2023-10-26T16:27:39.795Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/research/attractors/index.html</loc>
-    <lastmod>2023-05-19T21:42:42.982Z</lastmod>
+    <lastmod>2023-10-26T16:27:40.171Z</lastmod>
   </url>
   <url>
-    <loc>art.casadebaig.net/posts/works/paper/index.html</loc>
-    <lastmod>2023-05-19T21:42:43.324Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/works/dispyr/index.html</loc>
-    <lastmod>2023-05-19T21:42:50.976Z</lastmod>
+    <loc>art.casadebaig.net/posts/works/portfolio/index.html</loc>
+    <lastmod>2023-10-26T16:27:40.546Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/works/published/index.html</loc>
-    <lastmod>2023-05-19T21:42:51.374Z</lastmod>
+    <lastmod>2023-10-26T16:27:40.979Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/process/ridge/index.html</loc>
+    <lastmod>2023-10-26T16:27:41.732Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/process/dispyr/index.html</loc>
+    <lastmod>2023-10-26T16:27:47.428Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/index.html</loc>
-    <lastmod>2023-05-19T21:42:51.770Z</lastmod>
+    <lastmod>2023-10-26T16:27:47.847Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/about.html</loc>
-    <lastmod>2023-05-19T21:42:52.095Z</lastmod>
+    <lastmod>2023-10-26T16:27:48.168Z</lastmod>
   </url>
 </urlset>
