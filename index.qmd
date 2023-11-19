@@ -42,7 +42,7 @@ title-block-banner: true
 
 ::: {.g-col-6 .center-container-v}
 
-> **A visual blog about algorithmic art, mainly designed for pen plotters.**
+> **A visual journal about algorithmic art, mainly designed for pen plotters.**
 
 :::
 

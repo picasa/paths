@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Paths"
-  description: "A visual blog about algorithmic art, mainly designed for pen plotters."
+  description: "A visual journal about algorithmic art, mainly designed for pen plotters."
   site-url: art.casadebaig.net	
   navbar:
     background: "dark"
