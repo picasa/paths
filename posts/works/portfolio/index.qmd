@@ -5,9 +5,7 @@ date: "2023-02-01"
 categories: [plotter]
 image: "img/preview.jpg"
 format:  html
-filters:
-   - lightbox
-lightbox: auto
+lightbox: true
 ---
 
 ```{r, include=FALSE}

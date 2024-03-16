@@ -18,9 +18,7 @@ execute:
   warning: false
   message: false
   
-filters:
-   - lightbox
-lightbox: auto
+lightbox: true
 ---
 
 ```{r setup, include=FALSE}
@@ -35,9 +33,9 @@ library(stars)
 library(generate)
 
 # functions
-source(here::here("R/0_rendering.r"))
-source(here::here("R/0_functions_ridge.r"))
-source(here::here("R/0_functions_dispyr.r"))
+source(here::here("R/generative/0_rendering.r"))
+source(here::here("R/generative/0_functions_ridge.r"))
+source(here::here("R/generative/0_functions_dispyr.r"))
 source(here::here("R/0_functions_web.r"))
 
 # parameters
@@ -47,14 +45,18 @@ set.seed(2)
 
 ```
 
-
-## Aims and inspiration
+> ### Processing topographical data into monochromatic ink sketches.
 
 This work is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a natural rendering of random fragments of the Pyrénées. 
 
-I was searching for an hybrid between the simplicity and efficiency of a famous data visualization in [astronomy](https://blogs.scientificamerican.com/sa-visual/pop-culture-pulsar-origin-story-of-joy-division-s-unknown-pleasures-album-cover-video/) and the impressive Meridian [serie](https://opensea.io/collection/meridian-by-matt-deslauriers) by Matt Deslauriers. Moreover, to be able to use a pen-plotter to trace the images on paper, the algorithm should produce relatively long lines rather than the myriad of short segments that make Meridian appealing. 
+<p style="text-align: center;">𐫱</p>
 
-![](./img/pulses.jpg){width=300px} ![](./img/meridian_638.webp){width=300px}
+
+## Inspiration and aims
+
+I was searching for an hybrid between the simplicity and efficiency of a famous data visualization in [astronomy](https://blogs.scientificamerican.com/sa-visual/pop-culture-pulsar-origin-story-of-joy-division-s-unknown-pleasures-album-cover-video/) and the Meridian [series](https://opensea.io/collection/meridian-by-matt-deslauriers) by Matt Deslauriers. Moreover, to be able to use a pen-plotter to trace the images on paper, the algorithm should produce relatively long lines rather than the myriad of short segments that make Meridian appealing. 
+
+![](./img/pulses.jpg){.lightbox width=300px} ![](./img/meridian_638.webp){.lightbox width=300px}
 
 > **left** : "Successive pulses from the first pulsar discovered, CP 1919, are here superimposed vertically. The pulses occur every 1.337 seconds. They are caused by rapidly spinning neutron star." From The Cambridge Encyclopaedia of Astronomy.  
 > **right** : Meridian #638
@@ -78,12 +80,13 @@ get_features_ridge(seed = 15) |> gen_dispyr(n_ridges = 800) |> plot_ridge()
 2. `gen_dispyr()` uses this set of features to download and process data from a digital elevation model (3D) into a set of lines (2D).
 3. `plot_ridge()` renders the processed data into a vector image.
 
+## Methods 
 
-## Features generation
+### Features generation
 
 The outputs have only two broad features: a random location in the Pyrénées mountain range and a rendering style, randomly chosen among four methods with a set of probabilities. Most of the visual variability in the outputs is driven by the choice of geographical location, it gives the series a strong link with the subject, but somehow limits the maximum number of obtainable iterations. 
 
-### Location
+#### Location
 
 To get a random location in the Pyrénées mountain range, we first define a sampling region (a 20 km wide buffer around the French-Spain border), and use `sf::st_sample` to sample a location in this polygon. The code is simplified to sample a mysterious location in a polygon defined by the Andorra borders.
 
@@ -109,7 +112,7 @@ ggplot() + geom_sf(data = polygon) + geom_sf(data = coord) + labs(x = "lon", y =
 ```
 ::: 
 
-### Rendering style
+#### Rendering style
 
 The overall rendering style is impacted by a dozen parameters in the code (e.g. line density, position of lines in the y-axis, amount and position of removed data). Rather than a free exploration of this parameter space, which could lead to heterogeneous outputs, I defined a limited number of fixed sets of parameters. I created four styles, and named them as weather conditions (clear, mist, snow, storm). 
 
@@ -117,11 +120,11 @@ Technically nothing complicated, the `get_features_ridge()` function returns a l
 
 
 
-## Data processing
+### Data processing
 
 This stage uses the previous set of features to download and process data from a digital elevation model (3D) into a set of lines (2D), with distinct processing steps.
 
-### Getting a realistic description of the landscape
+#### Getting a realistic description of the landscape
 
 
 This step start by actually retrieving the elevation data around the sampled location (a 2x2 km square for the illustration, 20x15 km normally). The [{{elevatr}}](https://github.com/jhollist/elevatr) R package makes this step a breeze, but the process is the same when using local high-resolution data.
@@ -152,7 +155,7 @@ plot
 
 
 
-### Slicing the landscape into lines
+#### Slicing the landscape into lines
 
 The aim is to process a 3D point set into 2D lines, by computing multiple lines of elevation as a function of longitude, for discrete latitude values. 
 This step is perfectly illustrated by the stacked plot of radio signals presented previously. In our case, each line corresponds to one row in the elevation data (74x74 matrix in the example). Without further modifications, the output is unclear, with a lot of intersecting lines (figure A).
@@ -300,7 +303,7 @@ ggsave(
 
 > Effect of *shift* (in rows) and *threshold* (in columns) parameter combination on the landscape rendering (16 km^2^).
 
-### Altering the lines with noise and deletion
+#### Altering the lines with noise and deletion
 
 Finally, the overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). The governing idea was to test how our perception of the landscape changes when most of the initial topographical data is perturbed or removed. Here are four methods, but much is left to explore. The illustration code here is functioning without external call, but highly redundant and surely not optimal, you can conveniently hide it if you feel horrified.
 
@@ -325,7 +328,7 @@ ggsave(
 
 > Four data processing methods, all based on filtering points and adding noise, and named after weather conditions (clear, mist, snow, storm).
 
-#### clear
+##### *clear*
 For each ridgeline, the method samples 50 % of the points and adds moderate jitter on elevation values.
 
 ```{r code_clear}
@@ -347,7 +350,7 @@ df_plot |> ggplot(aes(x, zn, group = y)) +
 
 ```
 
-#### mist
+##### *mist*
 Same base as the previous method. In addition, when below an elevation threshold, lines are smoothed and points are randomly removed.
 
 ```{r code_mist}
@@ -399,7 +402,7 @@ df_plot |> ggplot(aes(x, zn, group = y)) +
 
 ```
 
-#### snow
+##### *snow*
 Same base as the previous method, but the data removal is also a function of a slope threshold.
 
 ```{r code_snow}
@@ -446,7 +449,7 @@ df_plot |> ggplot(aes(x, zn, group = y)) +
   geom_line(alpha = 0.5) + coord_fixed() + theme_void() 
 ```
 
-#### storm
+##### *storm*
 Whole strips of lines are removed when the elevation variation is below a threshold. Additionally, an important jitter is added as a function of local slope value.
 
 ```{r code_storm}
@@ -536,11 +539,11 @@ df_plot |> ggplot(aes(x, zn, group = y)) +
 ```
 
 
-## Rendering
+### Rendering
 
 This step is essentially playing on opacity (either constant or variable along a line) and on the doubling of the line strokes to emulate pencil lines. Thanks to the R graphical devices, the same object can be exported to bitmap or vector files.
 
-#### default
+#### *default*
 
 ```{r code_plain}
 #| column: margin
@@ -562,7 +565,7 @@ df_plot |> ggplot(aes(x, zn, group = y)) +
 
 ```
 
-#### variable opacity
+#### *variable opacity*
 
 ```{r code_pencil}
 #| column: margin
@@ -579,7 +582,7 @@ df_plot |>
 
 ```
 
-#### variable opacity and double strokes
+#### *variable opacity and double strokes*
 
 ```{r code_stroke}
 #| column: margin

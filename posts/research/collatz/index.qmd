@@ -5,9 +5,7 @@ date: "2021-06-01"
 categories: [generative]
 image: "img/preview.png"
 format:  html
-filters:
-   - lightbox
-lightbox: auto
+lightbox: true
 ---
 
 ```{r, include=FALSE}

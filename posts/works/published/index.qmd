@@ -10,9 +10,7 @@ format:
     toc-depth: 4
     toc-location: body
     toc-title: Releases and exhibitions
-filters:
-   - lightbox
-lightbox: auto
+lightbox: true
 ---
 
 ```{r, include=FALSE}
@@ -46,7 +44,7 @@ One work playing on the data-to-ink ratio idea from data visualisation, a quick 
 
 * digital, 2338 x 3307 lossless bitmap, computed and rendered with R. Published as NFTs on verse.com ([link](https://verse.works/artworks/9d4ddfbf-5cb3-4b41-a0e5-229277d76bf6)).
 
-![](img/gallery/verse_2022/conflated_conflent.png){width=33%}
+![](img/gallery/verse_2022/conflated_conflent.png){.lightbox width=33%}
 ---
 
 #### 2022-09, Dispyr studies, digital works

@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.4.551">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Pierre Casadebaig">
 <meta name="dcterms.date" content="2022-11-25">
-<title>Paths - Dispyr</title>
+<title>Paths | Pierre Casadebaig - Dispyr</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -16,11 +16,12 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -45,43 +46,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -110,7 +81,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -119,45 +96,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script><link rel="stylesheet" href="../../../styles.css">
 </head>
 <body class="floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Paths</span>
+    <span class="navbar-title">Paths | Pierre Casadebaig</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item">
-    <a class="nav-link" href="../../../about.html">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/picasa"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/picasa"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/pircasa"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/pircasa"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-<div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
@@ -188,34 +167,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#aims-and-inspiration" id="toc-aims-and-inspiration" class="nav-link active" data-scroll-target="#aims-and-inspiration">Aims and inspiration</a></li>
+<li><a href="#inspiration-and-aims" id="toc-inspiration-and-aims" class="nav-link active" data-scroll-target="#inspiration-and-aims">Inspiration and aims</a></li>
   <li>
-<a href="#features-generation" id="toc-features-generation" class="nav-link" data-scroll-target="#features-generation">Features generation</a>
+<a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
   <ul class="collapse">
-<li><a href="#location" id="toc-location" class="nav-link" data-scroll-target="#location">Location</a></li>
-  <li><a href="#rendering-style" id="toc-rendering-style" class="nav-link" data-scroll-target="#rendering-style">Rendering style</a></li>
-  </ul>
-</li>
-  <li>
-<a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data processing</a>
-  <ul class="collapse">
-<li><a href="#getting-a-realistic-description-of-the-landscape" id="toc-getting-a-realistic-description-of-the-landscape" class="nav-link" data-scroll-target="#getting-a-realistic-description-of-the-landscape">Getting a realistic description of the landscape</a></li>
-  <li><a href="#slicing-the-landscape-into-lines" id="toc-slicing-the-landscape-into-lines" class="nav-link" data-scroll-target="#slicing-the-landscape-into-lines">Slicing the landscape into lines</a></li>
-  <li><a href="#altering-the-lines-with-noise-and-deletion" id="toc-altering-the-lines-with-noise-and-deletion" class="nav-link" data-scroll-target="#altering-the-lines-with-noise-and-deletion">Altering the lines with noise and deletion</a></li>
-  </ul>
-</li>
+<li><a href="#features-generation" id="toc-features-generation" class="nav-link" data-scroll-target="#features-generation">Features generation</a></li>
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data processing</a></li>
   <li><a href="#rendering" id="toc-rendering" class="nav-link" data-scroll-target="#rendering">Rendering</a></li>
+  </ul>
+</li>
   <li><a href="#iterations" id="toc-iterations" class="nav-link" data-scroll-target="#iterations">Iterations</a></li>
   </ul></nav>
-</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content"><section id="aims-and-inspiration" class="level2"><h2 class="anchored" data-anchor-id="aims-and-inspiration">Aims and inspiration</h2>
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content"><blockquote class="blockquote">
+<h3 id="processing-topographical-data-into-monochromatic-ink-sketches." class="anchored">Processing topographical data into monochromatic ink sketches.</h3>
+</blockquote>
 <p>This work is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a natural rendering of random fragments of the Pyrénées.</p>
-<p>I was searching for an hybrid between the simplicity and efficiency of a famous data visualization in <a href="https://blogs.scientificamerican.com/sa-visual/pop-culture-pulsar-origin-story-of-joy-division-s-unknown-pleasures-album-cover-video/">astronomy</a> and the impressive Meridian <a href="https://opensea.io/collection/meridian-by-matt-deslauriers">serie</a> by Matt Deslauriers. Moreover, to be able to use a pen-plotter to trace the images on paper, the algorithm should produce relatively long lines rather than the myriad of short segments that make Meridian appealing.</p>
+<p style="text-align: center;">
+𐫱
+</p>
+<section id="inspiration-and-aims" class="level2"><h2 class="anchored" data-anchor-id="inspiration-and-aims">Inspiration and aims</h2>
+<p>I was searching for an hybrid between the simplicity and efficiency of a famous data visualization in <a href="https://blogs.scientificamerican.com/sa-visual/pop-culture-pulsar-origin-story-of-joy-division-s-unknown-pleasures-album-cover-video/">astronomy</a> and the Meridian <a href="https://opensea.io/collection/meridian-by-matt-deslauriers">series</a> by Matt Deslauriers. Moreover, to be able to use a pen-plotter to trace the images on paper, the algorithm should produce relatively long lines rather than the myriad of short segments that make Meridian appealing.</p>
 <p><a href="./img/pulses.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./img/pulses.jpg" class="img-fluid" width="300"></a> <a href="./img/meridian_638.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./img/meridian_638.webp" class="img-fluid" width="300"></a></p>
 <blockquote class="blockquote">
 <p><strong>left</strong> : “Successive pulses from the first pulsar discovered, CP 1919, are here superimposed vertically. The pulses occur every 1.337 seconds. They are caused by rapidly spinning neutron star.” From The Cambridge Encyclopaedia of Astronomy.<br><strong>right</strong> : Meridian #638</p>
@@ -224,7 +203,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>I won’t comment much on the choice of the R language and the code itself. It’s just that I knew this language for work, and I was curious to see if i could reuse it for other projects. For me, the <a href="https://adv-r.hadley.nz/fp.html">functional</a> programming paradigm makes sense to interact with code, moreover when working in interrupted streaks. The broad data <a href="https://r4ds.had.co.nz/explore-intro.html">exploration</a> workflow resonate with my somewhat reductionist creative approach, especially how the tools for data visualization enable to focus on visual experiments rather code for graphics. I also went for the easy way, thanks to the creators of incredible libraries for (spatial) data processing and graphics. For this project I used {{<a href="https://r-spatial.github.io/stars/">stars</a>}}, {{<a href="https://dplyr.tidyverse.org/">dplyr</a>}}, and {{<a href="https://ggplot2.tidyverse.org/">ggplot2</a>}}.</p>
 <p>The algorithm is composed by three main functions, created to be used successively (with the R pipe function, <a href="https://r4ds.hadley.nz/workflow-pipes.html"><code>|&gt;</code></a>). This article broadly illustrates the content of these functions.</p>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">get_features_ridge</span><span class="op">(</span>seed <span class="op">=</span> <span class="fl">15</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">gen_dispyr</span><span class="op">(</span>n_ridges <span class="op">=</span> <span class="fl">800</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">plot_ridge</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">get_features_ridge</span><span class="op">(</span>seed <span class="op">=</span> <span class="fl">15</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">gen_dispyr</span><span class="op">(</span>n_ridges <span class="op">=</span> <span class="fl">800</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">plot_ridge</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <ol type="1">
@@ -234,12 +213,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <code>gen_dispyr()</code> uses this set of features to download and process data from a digital elevation model (3D) into a set of lines (2D).</li>
 <li>
 <code>plot_ridge()</code> renders the processed data into a vector image.</li>
-</ol></section><section id="features-generation" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="features-generation">Features generation</h2>
+</ol></section><section id="methods" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<section id="features-generation" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="features-generation">Features generation</h3>
 <p>The outputs have only two broad features: a random location in the Pyrénées mountain range and a rendering style, randomly chosen among four methods with a set of probabilities. Most of the visual variability in the outputs is driven by the choice of geographical location, it gives the series a strong link with the subject, but somehow limits the maximum number of obtainable iterations.</p>
-<section id="location" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="location">Location</h3>
+<section id="location" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="location">Location</h4>
 <p>To get a random location in the Pyrénées mountain range, we first define a sampling region (a 20 km wide buffer around the French-Spain border), and use <code><a href="https://r-spatial.github.io/sf/reference/st_sample.html">sf::st_sample</a></code> to sample a location in this polygon. The code is simplified to sample a mysterious location in a polygon defined by the Andorra borders.</p>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># load a polygon of the Andorra borders</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># load a polygon of the Andorra borders</span></span>
 <span><span class="va">polygon</span> <span class="op">&lt;-</span> <span class="fu">rnaturalearth</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/rnaturalearth/reference/ne_countries.html">ne_countries</a></span><span class="op">(</span></span>
 <span>  country <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"andorra"</span><span class="op">)</span>, scale <span class="op">=</span> <span class="st">"medium"</span>, returnclass <span class="op">=</span> <span class="st">"sf"</span></span>
 <span>  <span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">st_transform</span><span class="op">(</span><span class="fl">2154</span><span class="op">)</span></span>
@@ -252,21 +232,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/plot_features-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/plot_features-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
 </div>
-</div></div></section><section id="rendering-style" class="level3"><h3 class="anchored" data-anchor-id="rendering-style">Rendering style</h3>
+</div></div></section><section id="rendering-style" class="level4"><h4 class="anchored" data-anchor-id="rendering-style">Rendering style</h4>
 <p>The overall rendering style is impacted by a dozen parameters in the code (e.g.&nbsp;line density, position of lines in the y-axis, amount and position of removed data). Rather than a free exploration of this parameter space, which could lead to heterogeneous outputs, I defined a limited number of fixed sets of parameters. I created four styles, and named them as weather conditions (clear, mist, snow, storm).</p>
 <p>Technically nothing complicated, the <code>get_features_ridge()</code> function returns a list of features and associated parameters, later used for the data processing step. The parameters are presented at the moment they are used in the code.</p>
-</section></section><section id="data-processing" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="data-processing">Data processing</h2>
+</section></section><section id="data-processing" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="data-processing">Data processing</h3>
 <p>This stage uses the previous set of features to download and process data from a digital elevation model (3D) into a set of lines (2D), with distinct processing steps.</p>
-<section id="getting-a-realistic-description-of-the-landscape" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="getting-a-realistic-description-of-the-landscape">Getting a realistic description of the landscape</h3>
+<section id="getting-a-realistic-description-of-the-landscape" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="getting-a-realistic-description-of-the-landscape">Getting a realistic description of the landscape</h4>
 <p>This step start by actually retrieving the elevation data around the sampled location (a 2x2 km square for the illustration, 20x15 km normally). The <a href="https://github.com/jhollist/elevatr">{{elevatr}}</a> R package makes this step a breeze, but the process is the same when using local high-resolution data.</p>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># get DEM data in a 2x2 km region around the sampled point</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># get DEM data in a 2x2 km region around the sampled point</span></span>
 <span><span class="va">dem</span> <span class="op">&lt;-</span> <span class="fu">elevatr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/elevatr/man/get_elev_raster.html">get_elev_raster</a></span><span class="op">(</span></span>
 <span>  <span class="va">coord</span>, z <span class="op">=</span> <span class="fl">11</span>, expand <span class="op">=</span> <span class="fl">1E3</span>, clip <span class="op">=</span> <span class="st">"bbox"</span><span class="op">)</span> </span>
 <span></span>
@@ -282,13 +262,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/plot_sampling-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="index_files/figure-html/plot_sampling-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
 </div>
-</div></div></section><section id="slicing-the-landscape-into-lines" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="slicing-the-landscape-into-lines">Slicing the landscape into lines</h3>
+</div></div></section><section id="slicing-the-landscape-into-lines" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="slicing-the-landscape-into-lines">Slicing the landscape into lines</h4>
 <p>The aim is to process a 3D point set into 2D lines, by computing multiple lines of elevation as a function of longitude, for discrete latitude values. This step is perfectly illustrated by the stacked plot of radio signals presented previously. In our case, each line corresponds to one row in the elevation data (74x74 matrix in the example). Without further modifications, the output is unclear, with a lot of intersecting lines (figure A).</p>
 <p>To improve the output readability, but also introduce potential for variations, we process this raw elevation matrix with two actions:</p>
 <ul>
@@ -296,7 +276,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>delete the line segments that should be hidden by foreground lines with a higher elevation.</li>
 </ul>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
 <span><span class="va">z_shift</span> <span class="op">=</span> <span class="fl">5</span></span>
 <span></span>
 <span><span class="co"># convert DEM from spatial to dataframe format</span></span>
@@ -323,19 +303,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/plot_shift-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="index_files/figure-html/plot_shift-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/plot_shift-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="index_files/figure-html/plot_shift-2.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/plot_shift-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="index_files/figure-html/plot_shift-3.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
@@ -344,7 +324,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div></div><p>The shifting step calculates the difference from the reference elevation as a linear function of its rank from the foreground (figure B). Increasing the slope of this function impacts the perspective, towards a more aerial view of the landscape, eventually reducing the number of intersecting lines (figure C). Using non-linear functions creates unrealistic but interesting perspectives.</p>
 <p>At this step, a fast solution to achieve line intersection is by drawing lines with a filled area underneath, starting from the background and thus progressively masking previous polygons (as in painter’s algorithm). This solution is implemented directly in the <a href="https://github.com/wilkelab/ggridges">ggridges</a> R package. But this option is not ideal for creative coding : the hidden lines still exist, which makes vector outputs unusable with a pen-plotter, and it lacks flexibility on the overlaying method.</p>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
 <span><span class="va">n_lag</span> <span class="op">=</span> <span class="fl">100</span></span>
 <span><span class="va">z_threshold</span> <span class="op">=</span> <span class="fl">0</span></span>
 <span></span>
@@ -367,51 +347,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 </div>
 <p>In the code above, the intersections between lines are avoided by checking for a minimum distance between a point at a given <em>x</em> position and its neighbourhood along <em>y</em>, and removing the point if any points in the neighbourhood falls below this distance (<em>z_threshold</em> parameter). To avoid computing the distance matrix for all points (74<sup>4</sup>, in this small area), we only check for intersections along a limited range (<em>n_lag</em> parameter, between 0 and 300 y ranks). Increasing the threshold parameter creates clearer distinction between the sides of mountains.</p>
-<div class="cell column-body quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
-<figure class="figure"><p><a href="index_files/figure-html/plot_intersect-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="index_files/figure-html/plot_intersect-1.png" class="img-fluid figure-img" width="450"></a></p>
-</figure>
+<div>
+
 </div>
-<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
-<figure class="figure"><p><a href="index_files/figure-html/plot_intersect-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="index_files/figure-html/plot_intersect-2.png" class="img-fluid figure-img" width="450"></a></p>
-</figure>
+<div class="cell column-body quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><a href="index_files/figure-html/plot_intersect-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="index_files/figure-html/plot_intersect-1.png" class="img-fluid" width="450"></a></p>
 </div>
-<div class="quarto-figure quarto-figure-center" style="flex-basis: 33.3%;justify-content: center;">
-<figure class="figure"><p><a href="index_files/figure-html/plot_intersect-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="index_files/figure-html/plot_intersect-3.png" class="img-fluid figure-img" width="450"></a></p>
-</figure>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><a href="index_files/figure-html/plot_intersect-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="index_files/figure-html/plot_intersect-2.png" class="img-fluid" width="450"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><a href="index_files/figure-html/plot_intersect-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="index_files/figure-html/plot_intersect-3.png" class="img-fluid" width="450"></a></p>
 </div>
 </div>
 </div>
 <blockquote class="blockquote">
 <p>Line segments are hidden by foreground lines by using polygon masking (left) or distance-based point removal with a null (center) or positive threshold (right).</p>
 </blockquote>
-<div class="cell">
-
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="img/fig_intersection.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="img/fig_intersection.png" class="img-fluid figure-img"></a></p>
-</figure>
-</div>
+<p><a href="img/fig_intersection.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="img/fig_intersection.png" class="img-fluid"></a></p>
 <blockquote class="blockquote">
 <p>Effect of <em>shift</em> (in rows) and <em>threshold</em> (in columns) parameter combination on the landscape rendering (16 km<sup>2</sup>).</p>
 </blockquote>
-</section><section id="altering-the-lines-with-noise-and-deletion" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="altering-the-lines-with-noise-and-deletion">Altering the lines with noise and deletion</h3>
+</section><section id="altering-the-lines-with-noise-and-deletion" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="altering-the-lines-with-noise-and-deletion">Altering the lines with noise and deletion</h4>
 <p>Finally, the overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). The governing idea was to test how our perception of the landscape changes when most of the initial topographical data is perturbed or removed. Here are four methods, but much is left to explore. The illustration code here is functioning without external call, but highly redundant and surely not optimal, you can conveniently hide it if you feel horrified.</p>
-<div class="cell">
-
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="img/fig_styles.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="img/fig_styles.png" class="img-fluid figure-img"></a></p>
-</figure>
-</div>
+<p><a href="img/fig_styles.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="img/fig_styles.png" class="img-fluid"></a></p>
 <blockquote class="blockquote">
 <p>Four data processing methods, all based on filtering points and adding noise, and named after weather conditions (clear, mist, snow, storm).</p>
 </blockquote>
-<section id="clear" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="clear">clear</h4>
+<section id="clear" class="level5 page-columns page-full"><h5 class="anchored" data-anchor-id="clear"><em>clear</em></h5>
 <p>For each ridgeline, the method samples 50 % of the points and adds moderate jitter on elevation values.</p>
 <div class="cell page-columns page-full">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
 <span><span class="va">z_remove</span> <span class="op">=</span> <span class="fl">0.5</span>      <span class="co"># proportion of points to remove</span></span>
 <span><span class="va">z_jitter</span> <span class="op">=</span> <span class="fl">4</span>        <span class="co"># amount of jitter in elevation values</span></span>
 <span></span>
@@ -426,15 +394,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/code_clear-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="index_files/figure-html/code_clear-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
-</section><section id="mist" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="mist">mist</h4>
+</section><section id="mist" class="level5 page-columns page-full"><h5 class="anchored" data-anchor-id="mist"><em>mist</em></h5>
 <p>Same base as the previous method. In addition, when below an elevation threshold, lines are smoothed and points are randomly removed.</p>
 <div class="cell page-columns page-full">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># functions</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># functions</span></span>
 <span></span>
 <span><span class="co"># add a proportion of missing values in a vector</span></span>
 <span><span class="va">sample_missing</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span>, <span class="va">p</span><span class="op">)</span> <span class="op">{</span></span>
@@ -479,15 +447,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/code_mist-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="index_files/figure-html/code_mist-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
-</section><section id="snow" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="snow">snow</h4>
+</section><section id="snow" class="level5 page-columns page-full"><h5 class="anchored" data-anchor-id="snow"><em>snow</em></h5>
 <p>Same base as the previous method, but the data removal is also a function of a slope threshold.</p>
 <div class="cell page-columns page-full">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
 <span><span class="va">x_size</span> <span class="op">=</span> <span class="fl">5</span>          <span class="co"># window of the rolling average </span></span>
 <span><span class="va">z_limit</span> <span class="op">=</span> <span class="fl">0.7</span>       <span class="co"># quantile value determining the elevation threshold</span></span>
 <span><span class="va">z_remove</span> <span class="op">=</span> <span class="fl">0.5</span>      <span class="co"># proportion of points to remove in lines</span></span>
@@ -528,15 +496,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/code_snow-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="index_files/figure-html/code_snow-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
-</section><section id="storm" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="storm">storm</h4>
+</section><section id="storm" class="level5 page-columns page-full"><h5 class="anchored" data-anchor-id="storm"><em>storm</em></h5>
 <p>Whole strips of lines are removed when the elevation variation is below a threshold. Additionally, an important jitter is added as a function of local slope value.</p>
 <div class="cell page-columns page-full">
-<details><summary>Code</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># functions</span></span>
+<details class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># functions</span></span>
 <span></span>
 <span><span class="co"># scale the input vector with an exponential function</span></span>
 <span><span class="va">f_exp</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span>, <span class="va">k</span> <span class="op">=</span> <span class="fl">1</span>, <span class="va">a</span> <span class="op">=</span> <span class="fl">1</span>, <span class="va">b</span> <span class="op">=</span> <span class="fl">0</span>, <span class="va">scale</span> <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
@@ -617,16 +585,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/code_storm-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="index_files/figure-html/code_storm-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
-</section></section></section><section id="rendering" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="rendering">Rendering</h2>
+</section></section></section><section id="rendering" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="rendering">Rendering</h3>
 <p>This step is essentially playing on opacity (either constant or variable along a line) and on the doubling of the line strokes to emulate pencil lines. Thanks to the R graphical devices, the same object can be exported to bitmap or vector files.</p>
-<section id="default" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="default">default</h4>
+<section id="default" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="default"><em>default</em></h4>
 <div class="cell page-columns page-full">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
 <span><span class="va">z_remove</span> <span class="op">=</span> <span class="fl">0.5</span>      <span class="co"># proportion of points to remove</span></span>
 <span><span class="va">z_jitter</span> <span class="op">=</span> <span class="fl">4</span>        <span class="co"># amount of jitter in elevation values</span></span>
 <span><span class="va">p_alpha</span> <span class="op">=</span> <span class="fl">0.5</span>       <span class="co"># mean opacity value</span></span>
@@ -642,14 +610,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">geom_line</span><span class="op">(</span>alpha <span class="op">=</span> <span class="va">p_alpha</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/code_plain-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="index_files/figure-html/code_plain-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
-</section><section id="variable-opacity" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="variable-opacity">variable opacity</h4>
+</section><section id="variable-opacity" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="variable-opacity"><em>variable opacity</em></h4>
 <div class="cell page-columns page-full">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># parameters</span></span>
 <span><span class="va">p_alpha_sd</span> <span class="op">=</span> <span class="fl">0.10</span>   <span class="co"># dispersion of opacity value </span></span>
 <span></span>
 <span><span class="co"># render line with an alpha value sampled from a Gaussian distribution</span></span>
@@ -660,14 +628,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">scale_alpha_identity</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/code_pencil-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="index_files/figure-html/code_pencil-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
-</section><section id="variable-opacity-and-double-strokes" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="variable-opacity-and-double-strokes">variable opacity and double strokes</h4>
+</section><section id="variable-opacity-and-double-strokes" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="variable-opacity-and-double-strokes"><em>variable opacity and double strokes</em></h4>
 <div class="cell page-columns page-full">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># functions</span></span>
+<details open="" class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># functions</span></span>
 <span><span class="co"># fit a polynomial determined by one or more numerical predictors</span></span>
 <span><span class="va">f_loess</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">data</span>, <span class="va">span</span>, <span class="va">n</span> <span class="op">=</span> <span class="fl">10</span><span class="op">)</span> <span class="op">{</span></span>
 <span></span>
@@ -704,12 +672,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">scale_alpha_identity</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">coord_fixed</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure"><p><a href="index_files/figure-html/code_stroke-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="index_files/figure-html/code_stroke-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
-</section></section><section id="iterations" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="iterations">Iterations</h2>
+</section></section></section><section id="iterations" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="iterations">Iterations</h2>
 <p>These outputs were generated with the algorithm described previously, but based on a random location in the whole Pyrenees range (with a larger geographical area - 15x20 km, and a random cardinal orientation), and a random aesthetic style among the four presented ones. The algorithm can handle about 1000 iterations before repeating information (about 70 distinct 300 km2 regions with limited overlapping, 4 orientations, and 4 styles).</p>
 <blockquote class="blockquote">
 <p>An example of 32 random iterations from this algorithm.</p>
@@ -857,6 +825,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -923,13 +918,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -956,9 +953,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -994,10 +1005,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("art\.casadebaig\.net");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1007,8 +1035,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1020,9 +1057,245 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1063,7 +1336,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":true,"openEffect":"zoom","selector":".lightbox"});</script>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 </body></html>

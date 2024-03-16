@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>art.casadebaig.net/LICENSE.html</loc>
-    <lastmod>2023-11-19T20:03:39.760Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/research/asemic/index.html</loc>
-    <lastmod>2023-11-19T20:03:40.153Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/research/cells/index.html</loc>
-    <lastmod>2023-11-19T20:03:40.513Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/research/ridges/index.html</loc>
-    <lastmod>2023-11-19T20:03:40.853Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/research/collatz/index.html</loc>
-    <lastmod>2023-11-19T20:03:41.206Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/research/attractors/index.html</loc>
-    <lastmod>2023-11-19T20:03:41.561Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/works/portfolio/index.html</loc>
-    <lastmod>2023-11-19T20:03:41.934Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/works/published/index.html</loc>
-    <lastmod>2023-11-19T20:03:42.329Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/posts/process/ridge/index.html</loc>
-    <lastmod>2023-11-19T20:03:43.110Z</lastmod>
+    <loc>art.casadebaig.net/about.html</loc>
+    <lastmod>2023-11-10T11:02:06.292Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/posts/process/dispyr/index.html</loc>
-    <lastmod>2023-11-19T20:03:50.099Z</lastmod>
+    <lastmod>2024-03-16T08:15:21.649Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/works/published/index.html</loc>
+    <lastmod>2024-03-16T08:25:20.358Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/attractors/index.html</loc>
+    <lastmod>2024-03-16T08:20:34.766Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/ridges/index.html</loc>
+    <lastmod>2024-03-16T08:22:13.344Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/asemic/index.html</loc>
+    <lastmod>2024-03-16T08:19:50.008Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/LICENSE.html</loc>
+    <lastmod>2021-09-19T20:23:59.000Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/cells/index.html</loc>
+    <lastmod>2024-03-16T08:21:02.782Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/research/collatz/index.html</loc>
+    <lastmod>2024-03-16T08:21:42.826Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/works/portfolio/index.html</loc>
+    <lastmod>2024-03-16T08:24:10.867Z</lastmod>
+  </url>
+  <url>
+    <loc>art.casadebaig.net/posts/process/ridge/index.html</loc>
+    <lastmod>2024-03-16T08:27:31.601Z</lastmod>
   </url>
   <url>
     <loc>art.casadebaig.net/index.html</loc>
-    <lastmod>2023-11-19T20:03:50.510Z</lastmod>
-  </url>
-  <url>
-    <loc>art.casadebaig.net/about.html</loc>
-    <lastmod>2023-11-19T20:03:50.805Z</lastmod>
+    <lastmod>2024-01-21T20:13:10.156Z</lastmod>
   </url>
 </urlset>

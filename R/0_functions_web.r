@@ -19,7 +19,7 @@ make_gallery <- function(
       files <- if (reverse) rev(file_full) else file_full
       
       # create links
-      links <- glue::glue("<div> ![]({files}){{group=\"{group}\"}} </div>")
+      links <- glue::glue("<div> ![]({files}){{.lightbox group=\"{group}\"}} </div>")
       
       return(links)
     },
