@@ -2,7 +2,7 @@
 
 # generate a list of links to images
 make_gallery <- function(
-    scale = 0.24, output = "html",
+    n = NULL, scale = 0.24, output = "html",
     preview = "img/preview", full = "img/gallery",
     group = "default", reverse = FALSE) {
   

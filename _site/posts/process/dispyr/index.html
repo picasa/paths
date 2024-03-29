@@ -172,7 +172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
 <li><a href="#inspiration-and-aims" id="toc-inspiration-and-aims" class="nav-link active" data-scroll-target="#inspiration-and-aims">Inspiration and aims</a></li>
   <li>
-<a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+<a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a>
   <ul class="collapse">
 <li><a href="#features-generation" id="toc-features-generation" class="nav-link" data-scroll-target="#features-generation">Features generation</a></li>
   <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data processing</a></li>
@@ -213,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <code>gen_dispyr()</code> uses this set of features to download and process data from a digital elevation model (3D) into a set of lines (2D).</li>
 <li>
 <code>plot_ridge()</code> renders the processed data into a vector image.</li>
-</ol></section><section id="methods" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="methods">Methods</h2>
+</ol></section><section id="process" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="process">Process</h2>
 <section id="features-generation" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="features-generation">Features generation</h3>
 <p>The outputs have only two broad features: a random location in the Pyrénées mountain range and a rendering style, randomly chosen among four methods with a set of probabilities. Most of the visual variability in the outputs is driven by the choice of geographical location, it gives the series a strong link with the subject, but somehow limits the maximum number of obtainable iterations.</p>
 <section id="location" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="location">Location</h4>
@@ -1336,7 +1336,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

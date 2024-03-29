@@ -11,7 +11,7 @@ listing:
     sort-ui: false
     filter-ui: false
   - id: list-process
-    contents: "posts/process/dispyr/index.qmd"
+    contents: "posts/process/*/*.qmd"
     sort: "date desc"
     type: grid
     fields: [image, title]
@@ -50,9 +50,10 @@ title-block-banner: true
 
 I'm curious how creative coding, by reducing the time between implementing changes and observing their effects, can develop intuition for making visual art.
 
-I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. While this process enhances repetition and precision, it limits the range of techniques available (fills or hatching have to be programmed, pen pressure is constant). Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
+My work is based on data science and visualization techniques to explore the gap between representation and abstraction, and strive to describe the essence of natural objects.  
+I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. While this process enhances repetition and precision, it limits the range of techniques available. Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
 
-This site documents the ideas underlying the functioning of the algorithms, along with some digital outputs. Most of the code to study and reproduce these works is released on [github {{< fa brands github >}}](https://github.com/picasa/generative_examples). While making visual art is very new to me, I'm also learning and experimenting in my day job as a [scientist {{< fa brands orcid >}}](https://orcid.org/0000-0001-7225-936X) in crop ecology.  
+This site documents the ideas underlying the functioning of the algorithms, along with some digital outputs. Most of the code to study and reproduce these works is released on [github {{< fa brands github >}}](https://github.com/picasa/generative_examples). I'm also learning and experimenting in my day job as a [scientist {{< fa brands orcid >}}](https://orcid.org/0000-0001-7225-936X) in crop ecology.  
 Unless stated otherwise, the art on this site is released under a [{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://creativecommons.org/licenses/by-sa/4.0/) open license: you are free to reuse the work as long as you attribute the original to me, and derivative works must use the same license.  
 
 

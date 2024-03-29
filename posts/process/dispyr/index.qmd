@@ -80,7 +80,7 @@ get_features_ridge(seed = 15) |> gen_dispyr(n_ridges = 800) |> plot_ridge()
 2. `gen_dispyr()` uses this set of features to download and process data from a digital elevation model (3D) into a set of lines (2D).
 3. `plot_ridge()` renders the processed data into a vector image.
 
-## Methods 
+## Process 
 
 ### Features generation
 

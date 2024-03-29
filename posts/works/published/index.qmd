@@ -17,59 +17,83 @@ lightbox: true
 source(here::here("R/0_functions_web.r"))
 ```
 
+---
+
+#### 2024-02, *Ridge Regression*, Online exhibition, 128 digital and physical works
+
+This was my first attempt at a relatively long series of code generated works (*long-form*), built on my previous works on data-based landscape. By focusing on an evolutionary process applied to geology, it generates a variety of landscape elements that are then selected and recombined to create new landforms. This work is documented in a more in-depth [article](/posts/process/ridge), along with the full 128 iterations.
+
+These series was developed and curated in collaboration with the [Tender](https://tender.art/shows/tender-collaborations-2024) art gallery and released as NFT on the [verse](https://verse.works) platform.
+
+* digital, computed and rendered with R, bitmap, scanned from the paper works. Published as NFTs on the verse platform ([link](https://verse.works/series/ridge-regression-by-pierre-casadebaig)).
+* ink on paper, plotted with Axidraw V3/A3 on 220 g/m2 paper (148x210 mm, A5) with various pens.
+
+::: {.column-body-inset .gallery-grid .small}
+```{r}
+#| echo: false
+#| results: asis
+
+make_gallery(full = "img/gallery/2024_02_verse", output = "md")
+
+```
+::: 
+
 
 ---
 
-#### 2023-01, Collective exhibition, digital and physical works
+#### 2023-01, *Dispyr*, Collective exhibition, 8 digital and physical works
 
-In this collection of landscape representations, I used real elevation data produced by various public institutes to create digital representations of the Pyrénées mountain range. I selected pieces moving from realism to abstraction while staying in the landscape figurative style, a way to acknowledge mountains as scientific and mystic places.
+In this collection of eight landscape representations, i used real elevation data produced by various public institutes to create digital representations of the Pyrénées mountain range. I selected pieces moving from realism to abstraction while staying in the landscape figurative style, a way to acknowledge mountains as scientific and mystic places.
 
-Theses works were selected and presented during a collective exhibition ([*Odysseys*](https://verse.works/exhibitions/odysseys-pierre-casadebaig)) in January 2023, at [Cromwell Place](https://www.cromwellplace.com/), London.
+Theses works were selected and presented during a collective exhibition  ([*Odysseys*](https://verse.works/exhibitions/odysseys-pierre-casadebaig)), curated by the [verse](https://verse.works) platform, in January 2023, at [Cromwell Place](https://www.cromwellplace.com), London.
+
+* digital, lossless bitmap, computed and rendered with R. Published as NFTs on the verse platform ([link](https://verse.works/series/dispyr-by-pierre-casadebaig-1).
+* ink on paper, plotted with Axidraw V3/A3 on 220 g/m2 paper (various format) with Rotring Isograph pens, Pentel FL2B brush pen, Pilot Parallel pen.
 
 ::: {.column-body-inset .gallery-flow}
 ```{r}
 #| echo: false
 #| results: asis
 
-make_gallery(full = "img/gallery/verse_2023", output = "md")
+make_gallery(full = "img/gallery/2023_01_verse", output = "md")
 
 ```
 ::: 
 
 ---
 
-#### 2022-09, Collective exhibition, digital work
+#### 2022-09, *Conflated Conflent*, Collective exhibition, 1 digital work
 
-One work playing on the data-to-ink ratio idea from data visualisation, a quick way to say that you should avoid using too much ink if it does not represent information. In this case, a bit less than 2 percent of the initial topographical information is represented in this landscape. This work (Conflated Conflent) was selected for an online collective exhibition ([*Arithmetic Phenomena*](https://verse.works/exhibitions/arithmetic-phenomena), verse.com).
+One work playing on the data-to-ink ratio idea from data visualisation, a quick way to say that you should avoid using too much ink if it does not represent information. In this case, a bit less than 2 percent of the initial topographical information is represented in this landscape. This work (Conflated Conflent) was selected for an online collective exhibition ([*Arithmetic Phenomena*](https://verse.works/exhibitions/arithmetic-phenomena)).
 
-* digital, 2338 x 3307 lossless bitmap, computed and rendered with R. Published as NFTs on verse.com ([link](https://verse.works/artworks/9d4ddfbf-5cb3-4b41-a0e5-229277d76bf6)).
+* digital, 2338 x 3307 lossless bitmap, computed and rendered with R. Published as NFTs on the verse platform ([link](https://verse.works/artworks/9d4ddfbf-5cb3-4b41-a0e5-229277d76bf6)).
 
-![](img/gallery/verse_2022/conflated_conflent.png){.lightbox width=33%}
+![](img/gallery/2022_09_verse/conflated_conflent.png){.lightbox width=33%}
 ---
 
-#### 2022-09, Dispyr studies, digital works
+#### 2022-09, *Dispyr studies*, 4 digital works
 
 An attempt to emulate etching aesthetics with code, methodically removing more and more information. 
 
-* digital, lossless bitmap, computed and rendered with R. Published as NFTs on objkt.com ([link](https://objkt.com/explore/tokens/1?faContracts=KT1QntQaBm2dhB9V2eH74i142FjS1KXK2kAw&sort=timestamp:desc)).
+* digital, lossless bitmap, computed and rendered with R. Published as NFTs on the objkt platform ([link](https://objkt.com/explore/tokens/1?faContracts=KT1QntQaBm2dhB9V2eH74i142FjS1KXK2kAw&sort=timestamp:desc)).
 
 ::: {.column-body-inset .gallery-grid}
 ```{r}
 #| echo: false
 #| results: asis
 
-make_gallery(full = "img/gallery/dispyr_studies", output = "md")
+make_gallery(full = "img/gallery/2022_09_objtk", output = "md")
 
 ```
 ::: 
 
 ---
 
-#### 2022-07, Ridge planting, digital and physical works
+#### 2022-07, *Ridge planting*, 4 digital and physical works
 
 Collaboration with Anthony Siracusa. This short series is an attempt to gradually move from code-generated to hand-drawn works. In a first step we generated about a hundred simple landscapes, using geographical data from the Alps mountain range. We then selected a dozen outputs, traced them using a pen-plotter, made a final selection and finally drawn plant shapes between the ridges.
 
-* digital, 4960 x 3507 lossless bitmap, computed and rendered with R. Published as NFTs on teia.art ([link](https://teia.art/pierre_casadebaig/collabs)).
+* digital, 4960 x 3507 lossless bitmap, computed and rendered with R. Published as NFTs on the teia platform ([link](https://teia.art/pierre_casadebaig/collabs)).
 * ink on paper (210 x 297 mm, A4), hand and machine-drawn, landscape digitally rendered.
 
 ::: {.column-body-inset .gallery-grid}
@@ -77,46 +101,46 @@ Collaboration with Anthony Siracusa. This short series is an attempt to graduall
 #| echo: false
 #| results: asis
 
-make_gallery(full = "img/gallery/ridge_planting", output = "md")
+make_gallery(full = "img/gallery/2022_07_teia", output = "md")
 
 ```
 ::: 
 
 ---
 
-#### 2022-07, Dispyr 8 Views, digital and physical works
+#### 2022-07, *Dispyr Views*, 8 digital and physical works
 
 Selected fragments of the Pyrénées mountain range, based on real-world data from a digital elevation model (15x10 km region). The overall aesthetic is obtained by adding noise and discarding data as a function of a distance matrix.
 
-* digital, 4960 x 3507 lossless bitmap, computed and rendered with R. Published as NFTs on objkt.com ([link](https://objkt.com/explore/tokens/1?faContracts=KT1Aeoc32hMWkrLuej1WBwKNvwAWCqHPuFnr&sort=timestamp:desc)).
-* ink and paper, plotted with Axidraw V3/A3 on 300 g/m2 paper (298x420 mm, A3) with Rotring Isograph 0.3mm pen.
+* digital, 4960 x 3507 lossless bitmap, computed and rendered with R. Published as NFTs on the objkt platform ([link](https://objkt.com/explore/tokens/1?faContracts=KT1Aeoc32hMWkrLuej1WBwKNvwAWCqHPuFnr&sort=timestamp:desc)).
+* ink on paper, plotted with Axidraw V3/A3 on 300 g/m2 paper (298x420 mm, A3) with Rotring Isograph 0.3mm pen.
 
 ::: {.column-body-inset .gallery-grid}
 ```{r}
 #| echo: false
 #| results: asis
 
-make_gallery(full = "img/gallery/dispyr_views", output = "md")
+make_gallery(full = "img/gallery/2022_07_objkt", output = "md")
 
 ```
 ::: 
 
 ---
 
-#### 2022-01, Dispyr, digital and physical works
+#### 2022-01, *Dispyr*, 16 digital and physical works
 
 A series of 16 curated iterations representing random fragments of the Pyrénées mountain range, based on real-world data from a digital elevation model.
-The overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). About 90 % of the information present in the initial dataset is discarded, using four methods.
+The overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). About 90 % of the information present in the initial dataset is discarded, using four methods. This work is documented in a more in depth [article](/posts/process/dispyr). 
 
-* digital, 2330 x 3307 lossless bitmap, computed and rendered with R. Published as NFTs on objkt.com ([link](https://objkt.com/explore/tokens/1?faContracts=KT1Hnpe1bidkpSdnC1TFjke6AC65oSAuyPxK&sort=timestamp:desc)).
-* ink and paper, plotted with Axidraw V3/A3 on 300 g/m2 paper (148x210 mm, A5) with Rotring Isograph 0.3mm pen.
+* digital, 2330 x 3307 lossless bitmap, computed and rendered with R. Published as NFTs on the objkt platform ([link](https://objkt.com/explore/tokens/1?faContracts=KT1Hnpe1bidkpSdnC1TFjke6AC65oSAuyPxK&sort=timestamp:desc)).
+* ink on paper, plotted with Axidraw V3/A3 on 220 g/m2 paper (148x210 mm, A5) with Rotring Isograph 0.3mm pen.
 
-::: {.column-body-inset .gallery-grid}
+::: {.column-body-inset .gallery-grid .small}
 ```{r}
 #| echo: false
 #| results: asis
 
-make_gallery(full = "img/gallery/dispyr_objkt", output = "md")
+make_gallery(full = "img/gallery/2022_01_objkt", output = "md")
 
 ```
 ::: 

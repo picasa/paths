@@ -1,0 +1,168 @@
+---
+title: "Ridge Regression"
+author: "Pierre Casadebaig"
+date: "2024-02-06"
+categories: [plotter]
+image: "img/preview.jpg"
+format:
+  html:
+    toc: true
+    toc-location: left
+    code-link: true
+    css: styles.css
+lightbox: true
+---
+
+```{r, include=FALSE}
+source(here::here("R/0_functions_web.r"))
+```
+
+
+> ### Imaginative landscapes made by merging random fragments of mountain ranges.
+
+Ridge Regression is a series of imagined landscapes inspired by data visualization. It draws upon real elevation data to reveal the topography of France's diverse mountain ranges. Mimicking an evolutionary process applied to geology, it generates a variety of landscape elements that are selected and recombined to create new landforms.
+
+<p style="text-align: center;">𐫱</p>
+
+## Inspiration and aims
+
+My interest in methods and works that stray from mere imitation of nature led me to explore new data-based landscape representation. While the style of Alexander Cozens landscapes was aligned with his era, his method shared similar properties as algorithmic art, for example when he qualified his starting point (a blot) as *a production of chance with a small degree of design*.
+
+![](img/reference/cozens1785.jpeg)
+
+> [Alexander Cozens](https://en.wikipedia.org/wiki/Alexander_Cozens). Plate 2, "Blot" Landscapes from *A New Method of Assisting the Invention in Drawing Original Compositions of Landscape*, 1785
+
+> Composing landscapes by invention, is not the art of imitating individual nature; it is more; it is forming artificial representations of landscape on the general principles of nature, founded in unity of character, which is true simplicity; concentring in each individual composition the beauties, which judicious imitation would select from those which are dispersed in nature.
+
+
+::: {.column-body-inset .gallery-grid}
+<div> ![](img/reference/segers1638.jpg){.lightbox group="default"} </div>
+<div> ![](img/reference/hiroshige1820.jpeg){.lightbox group="default"} </div>
+:::
+
+> (left) *The Enclosed Valley*, [Hercules Segers](https://en.wikipedia.org/wiki/Hercules_Seghers), c. 1625 - c. 1630. Line etching and drypoint, printed in brown on paper prepared with a light brown ground. ([source](https://www.rijksmuseum.nl/en/collection/RP-P-H-OB-813/catalogue-entry?pdfView=False)).  
+> (right) *Eight Views of Ōmi - Hira Mountains*, [Hiroshige](https://en.wikipedia.org/wiki/Hiroshige), 1820. Woodblock print ([source](https://en.wikipedia.org/wiki/File:Hiroshige_Omi_Hirai.jpg))
+
+
+Building on a previous algorithm ([*dispyr*](/posts/process/dispyr)), where each landscape was unequivocally linked to a piece of topographical data, this project explores the creation of imaginative drawings of landscapes.
+
+On the digital side, this work stems from data visualization, drawing from real elevation data to reveal topography. Instead of striving for realistic renderings, the algorithm is fine-tuned to evoke hand-drawn landscapes. While certain outputs were notably distinct, most lacked a sense of place. To address this, i established rules for combining these modest outputs into cohesive, synthetic landscapes. This project also integrated various algorithmic systems—such as ridges, writings, and clouds—into a generative grid layout, accommodating the form of generated components.
+
+On the physical side, the project explored alternatives to precise and technical pen-plotter renderings. This was achieved through coding techniques like line overlays and noise but also by using drawing tools such as brushes, calligraphic pens, and technical pens. 
+
+
+
+## Process
+
+### Generate a library of landscape elements
+
+The initial step is to generate a collection of simplified landscape forms by repeatedly sampling a vast region through small "windows". We base the landscape topography on observed data, rather than data generated from mathematical functions. Specifically, we focus on the variations in land height in South-West France, encoded in a digital elevation model (DEM, here IGN [RGE Alti 5m](https://geoservices.ign.fr/rgealti#telechargement5m), 5x5 m cells).
+The 3D data surrounding a given location (within a 3x3 km square) is transformed into a series of 2D lines, referred to as a landscape element. Adjustments to the [*dispyr*](/posts/process/dispyr) algorithm, allowed for a transition from a realistic depiction of topography to more simplified forms.
+
+![](img/fig_profile.jpg)
+
+> **Navigating the parameter space to extract contours and forms.**
+> The top image exhibits a high level of detail, keeping the complexity and features of the real terrain. 
+> The middle image represents a shift towards abstraction while retaining recognizable elements of mountain landscapes. It simplifies details and textures, and alters the projection to create more empty space.
+> The bottom image further abstracts the concept of mountain landscapes. This style uses minimal lines and shading to convey the idea of mountains, focusing on the silhouette and basic structure rather than detailed textures.
+
+In each iteration, these landscape elements can depict anything from a single horizon to a series of layered ridges, depending on the data's sampling location and orientation—two variables introduced at random. I have chosen to work with a simulation set of approximately 3000 elements.
+
+![](img/fig_population.jpg)
+
+> **A random sample of the diversity in the population of generated landscape elements**
+> The randomness in the sampling process is the only driver of the diversity observed in these generated landscape elements.
+
+### Select contrasted building elements 
+
+Although the library of simulated landscape elements contained a significant variety, some were bland, such as flat lines exhibiting minimal texture. Each element was characterized by a concise set of physical attributes, including its location, orientation, and elevation metrics (mean, deviation, range).
+
+Initially, the plan was to leverage these features for automatic classification into various groups through unsupervised cluster analysis. However, the resultant groups proved to be too visually heterogeneous. A manual review of the library allowed to classify each element into either a *tall* or *flat* category, based on their resemblance to mountains or plains, respectively.
+
+### Combine elements into new landscapes 
+
+To craft an imaginary piece of landscape, we select a random mixture of $k$ elements from the two predefined sets: 1 from the tall set ($n_1 = 470$) and $k-1$ from the flat set ($n_2 = 480$). To enable landscapes with different aspect ratio, $k$ was varying between 3 and 12. The combinatorics are surprising, in this case the potential number of unique combinations is incredibly large ($n_1\times \binom{n_2}{k-1} \approx 1.6 \times 10^{21}$), albeit lower when ensuring than an element could only be used once (probably above billions, not sure how to estimate this number properly).  
+
+Integrating multiple landscapes on a page introduced additional complexity as the construction could not be done independently. Also, to avoid too much regularity in the construction, each element was assigned a given probability to appear in the final landscape.
+Technically, the construction algorithm starts by dividing each element set in equal-sized groups corresponding to the number of distinct landscapes to be assembled. Then, each element is assigned a probability to be featured or not in the assembly. The sampling step operates by groups, ensuring that each assembly features different elements.
+
+Once the proper building elements are selected, they are simply layered one on top of the other, starting from elements with the smaller range in the y-axis. The distance between elements also decreases as a function of their rank. While this system gives pleasing results, we can imagine much more refinement in the building process (more element types, different assembly rules).
+
+
+![](img/fig_sampling.jpg)
+
+> **Sampling a set of independent locations to build an imaginary landscape.**
+> We begin by selecting a random combination of landscape elements from a library. Although the selection is random, it adheres to a basic rule: a total of 3-12 elements, comprising one *tall* element and the remainder as *flat* elements. The composition of the landscape is determined by layering these elements according to their elevation range. The map on the left illustrates the geographical locations of the sampled terrain. The figure on the right depicts the resultant imaginary landscape, constructed using locations labeled in ascending order from top to bottom.
+
+
+### Design distinct page layouts
+
+While the created imaginative landscapes have nice aesthetics and conceptual properties, their diversity of shape is not sufficient to justify a hundred outputs. Because of their hand-drawn style, i think they were suited to be organized into a grid. With another algorithm able to generate writings and titles, it was tempting to aim for a series with graphic novel characteristics.
+
+Each page of the series is divided into different sections, or "cells", by a generative grid system. This grid system partitions the page into up to three parts, with each part being a one-sixth multiple (e.g. 1/6, 2/6, 3/6, for the top left page in the figure). This method is first applied on the y-axis and yields 11 partitions: 1 full page, 3 2-partitions, and 7 3-partitions. The same system is applied to individual cells in a page, enabling x-axis splits. The sampling probabilities in the partitions list were adjusted to favor a moderately fragmented layouts.  
+
+![](img/fig_grid.jpg)
+
+> **Twelve random illustrations from the modular grid system.**
+> The page is randomly divided into up to three parts, with each part being a one-sixth multiple (e.g. 1/6, 2/6, 3/6, top left page). This partition is first applied on the y-axis of the page, and then on one or two  applied on the x-axis
+
+We designed four page styles using both fixed layouts and this modular grid system: two full-page landscapes (*brush*, *cloud* styles), and two grid layouts with (*figure*) or without legend (*partition*).
+The composition is minimal, and based on three additional elements:
+
+  * clouds with different density of strokes (*cloud*)
+  * glyphs that encode either the location of the geographical region (*brush*, one region) or the value of the random seeds (*figure*, n regions)
+  * asemic text, used as legend in the *figure* style.
+
+::: {.column-body-inset .gallery-grid .small}
+<div> ![](img/fig_digital_028.svg){.lightbox group="default"} </div>
+<div> ![](img/fig_digital_098.svg){.lightbox group="default"} </div>
+<div> ![](img/fig_digital_008.svg){.lightbox group="default"} </div>
+<div> ![](img/fig_digital_004.svg){.lightbox group="default"} </div>
+:::
+
+> **A selection of the four defined page styles.**
+> From left to right, two full-page landscapes (*brush*, *cloud* styles), and two grid layouts with (*figure*) or without legend (*partition*). These images are  vector files (they only represent paths), which is all the information needed to drive a drawing machine.
+
+
+### Draw the digital works on paper
+
+In the previous images, the shapes and composition are final, yet they lack an organic feel, such as the look of ink on paper. 
+At this point, emulating this aesthetic with the digital images would require coding how the lines are drawn irregularly due to the pen interaction with the paper texture (feasible), or even how the ink is diffused as a function of the quantity deposited by a brush (much harder).   
+
+This is why i find that using a drawing machine as the final step for this project was particularly interesting. 
+On one hand, i get to avoid thinking about the necessary level of emulation of real world materials in a digital context (skeuomorphism). 
+On the other, the interactions with this machine caused some interesting feedback at the code level. For example, in the *brush* style i used functions to smooth the ridge lines because the terrain irregularities present on the raw data were not really adapted for a minimalist aesthetic. However, when the machine traced those lines, i noticed that the brush was lagging behind the machine movement, acting exactly as an analog smoother function. In response, the code was updated to a much lower level of processing for this data.
+
+::: {.column-body-inset .gallery-grid .margin}
+<div> ![](img/fig_draw_vector.png){.lightbox group="default"} </div>
+<div> ![](img/preview.jpg){.lightbox group="default"} </div>
+:::
+
+> **From brush movement instructions to ink on paper.**
+> The left image is the vector file, it represents the trajectory of the brush on the paper, with the exact same pressure along the paths. The right image is a picture of the traced result on paper. Both are a cropped version from the iteration #35.
+
+All the vector outputs from this series were traced on paper (Canson mixed media, natural white, fine grain, 200 gsm) with a different set of pens : 
+
+* **brush pen** (Pentel FL2B, black ink): ridges in the *brush* design.
+* **calligraphy fountain pen** (Lamy Joy 1.5 mm): glyphs in the *brush* design (Sailor Shikiori Yodaki red ink) and in the *cloud* design (Pilot Iroshizuku take-sumi neutral black ink). 
+* **calligraphy pens** (Pilot Parallel): hatched cloud in the *cloud* design (3.8 mm, Pilot Iroshizuku fuyu-syogun medium gray ink), bold writings in the *figure* design (1.5 mm, Pilot black ink).
+* **technical pens** (Rotring Isograph): ridges in the *cloud*, *figure*, and *grids* designs (0.3 mm), frames in the  *figure* and *grids* style (0.8 mm), and writings in the *figure* style (0.3 mm), all were drawn with the Pilot Iroshizuku take-sumi ink.
+ 
+
+## Iterations
+
+In the end, we generated 256 iterations per page style and manually selected the 128 ones presented here among the series of 1024. So, none of these landscapes ever existed, and most of those which were generated were lost. At least, the ones traced on paper should have a longer existence than their digital twins.
+
+<br>
+
+::: {.column-body-outset .gallery-grid .small}
+```{r}
+#| echo: false
+#| results: asis
+
+make_gallery(output = "md")
+
+```
+::: 
+
+

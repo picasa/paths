@@ -15,10 +15,11 @@
 
 .gallery-grid {
   display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: var(--grid-gap, 10px);
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-size, 200px), 1fr));
   grid-template-rows: repeat(auto-fit, 1fr);
   grid-auto-flow: dense;
+  margin-bottom: 10px;
 }
 
 .gallery-grid > div > img {
@@ -27,16 +28,29 @@
   object-fit: cover;
 }
 
+.gallery-grid.margin {
+  --grid-size: 100px;
+  --grid-gap: 50px; 
+}
+
+.gallery-grid.small {
+  --grid-size: 100px; 
+}
+
+.gallery-grid.large {
+  --grid-size: 300px; 
+}
+
 
 .gallery-flow {
   column-count: 3;
-  column-gap: 5px;
+  column-gap: 10px;
 }
 
 .gallery-flow > div {
   display: inline-block;
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .gallery-flow > div > a > img {
