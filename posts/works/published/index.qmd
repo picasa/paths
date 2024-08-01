@@ -1,5 +1,5 @@
 ---
-title: "Published"
+title: "Publications"
 author: "Pierre Casadebaig"
 date: "2023-01-01"
 categories: [digital, plotter]

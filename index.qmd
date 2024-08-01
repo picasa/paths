@@ -3,7 +3,9 @@ title: ""
 format: html 
 listing:
   - id: list-works
-    contents: "posts/works/*/*.qmd"
+    contents: 
+      - "posts/works/portfolio/index.qmd"
+      - "posts/works/published/index.qmd"
     sort: "date desc"
     type: grid
     fields: [image, title]
@@ -53,11 +55,11 @@ title-block-banner: true
 
 ::: {.g-col-6}
 
+I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital images. It's very much like swaying a tool originally made for statistical analysis and quantitative display of information for artistic endeavors.  
 I'm curious how creative coding, by reducing the time between implementing changes and observing their effects, can develop intuition for making visual art.
 
-My work is based on data science and visualization techniques to explore the gap between representation and abstraction, and strive to describe the essence of natural objects.  
-
-I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital outputs. Rather than printing, I am interested in using a pen-plotter to draw them on paper. Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
+My work involves altering existing datasets, treating them as malleable materials to craft diverse visual representations, from figurative to abstract interpretations of natural subjects.  
+Rather than digital printing, I am interested in using a pen-plotter to draw my work on paper. Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
 
 :::
   

@@ -1,5 +1,5 @@
 ---
-title: "Drawings"
+title: "Portfolio"
 author: "Pierre Casadebaig"
 date: "2023-02-01"
 categories: [plotter]
@@ -21,7 +21,7 @@ As if exploring the space defined by various parameters in the coding part was n
 
 <br>
 
-::: {.column-body-outset .gallery-flow}
+::: {.column-screen-inset .gallery-flow}
 ```{r}
 #| echo: false
 #| results: asis

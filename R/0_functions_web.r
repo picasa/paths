@@ -2,13 +2,13 @@
 
 # generate a list of links to images
 make_gallery <- function(
-    n = NULL, scale = 0.24, output = "html",
+    scale = 0.24, output = "md",
     preview = "img/preview", full = "img/gallery",
-    group = "default", reverse = FALSE) {
+    group = "default", reverse = FALSE, pattern = NULL) {
   
   # list files
-  file_preview <- list.files(preview, full.names = TRUE)
-  file_full <- list.files(full, full.names = TRUE)
+  file_preview <- list.files(preview, full.names = TRUE, pattern = pattern)
+  file_full <- list.files(full, full.names = TRUE, pattern = pattern)
   
   switch(
     output,
