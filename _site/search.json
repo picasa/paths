@@ -93,7 +93,7 @@
   {
     "objectID": "posts/works/portfolio/index.html",
     "href": "posts/works/portfolio/index.html",
-    "title": "Drawings",
+    "title": "Portfolio",
     "section": "",
     "text": "A selection digital works traced on paper using a pen-plotter.\n\nA pen plotter works much like a human hand holding a pen or pencil. It is a two dimensional robotic arm with pen-holder, and this arm moves across the paper to draw lines - I’m using an AxiDraw model (A3/V3). The plotter receives instructions from a computer that drives the precise movements of the arm. These instructions (vector files) are the results produced by running a hopefully creative code.\nAs if exploring the space defined by various parameters in the coding part was not enough, much is left to explore in the plotting process. In these few work, I merely tested different paper textures and colors, different pens (technical, felt, brush) and paint mediums (ink, acrylic)."
   },

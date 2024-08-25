@@ -1,10 +1,17 @@
 # render ####
 
-# generate a list of links to images
+#' Generate a list of links to images
+#' @param output format of the output table.
+#' @param ncol number of columns, when fixed in the CSS flow or grid.
+#' @param max maximum number of listed files.
+#' @param reverse sort files by name (date), default to older first.
+#' @param pattern regular expression used to filter files list. 
+#' @param group grouping variable for the lightbox viewer. 
+#'  
 make_gallery <- function(
     scale = 0.24, output = "md",
     preview = "img/preview", full = "img/gallery",
-    group = "default", reverse = FALSE, pattern = NULL) {
+    ncol = 1, max = n(), reverse = FALSE, pattern = NULL, group = "default") {
   
   # list files
   file_preview <- list.files(preview, full.names = TRUE, pattern = pattern)
@@ -15,11 +22,18 @@ make_gallery <- function(
     
     md = {
       
-      # order links
-      files <- if (reverse) rev(file_full) else file_full
-      
+      # reorder files as a function of date or column structure.
+      list_files <- dplyr::tibble(file = file_full) |>
+        dplyr::arrange(if (reverse) dplyr::desc(file) else file) |>
+        dplyr::slice(1:max) |> 
+        dplyr::mutate(
+          row = (dplyr::row_number() - 1) %/% ncol,
+          col = (dplyr::row_number() - 1) %% ncol) |>
+        dplyr::arrange(col, row) |>
+        dplyr::pull(file)
+
       # create links
-      links <- glue::glue("<div> ![]({files}){{.lightbox group=\"{group}\"}} </div>")
+      links <- glue::glue("<div> ![]({list_files}){{.lightbox group=\"{group}\"}} </div>")
       
       return(links)
     },

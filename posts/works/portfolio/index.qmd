@@ -26,7 +26,7 @@ As if exploring the space defined by various parameters in the coding part was n
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md", reverse = TRUE)
+make_gallery(output = "md", reverse = TRUE, ncol = 4, max = 44)
 
 ```
 ::: 
