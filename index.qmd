@@ -1,5 +1,4 @@
 ---
-title: ""
 format: html 
 listing:
   - id: list-works
@@ -28,7 +27,7 @@ listing:
     contents: "posts/research/*/*.qmd"
     sort: "date desc"
     type: grid
-    grid-columns: 1
+    grid-columns: 3
     fields: [image, title]
     image-height: 150px
     categories: false
@@ -88,18 +87,22 @@ This site documents the ideas and processes underlying the functioning of the al
 &#8258;
 :::
 
-<br> 
 
-### Processes
+# Processes
 
----
 
 ::: {#list-process}
 :::
 
-### Explorations
+<br> 
 
----
+::: {.asterism}
+&#8258;
+:::
+
+
+# Explorations
+
 
 ::: {#list-research}
 :::

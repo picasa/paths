@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: "Works"
 author: "Pierre Casadebaig"
 date: "2024-02-01"
 categories: [digital, plotter]
@@ -10,7 +10,7 @@ format:
     toc-depth: 4
     toc-expand: true
     toc-location: left
-    toc-title: Past works
+    toc-title: Works
 lightbox: true
 ---
 

@@ -1,6 +1,6 @@
 project:
   type: website
-
+  
 website:
   title: "Paths | Pierre Casadebaig"
   description: "A visual journal about algorithmic art, mainly designed for pen plotters."
@@ -8,13 +8,23 @@ website:
   navbar:
     background: "dark"
     right:
+      - href: "index.qmd"
+        text: "Home"
+      - href: "posts/works/portfolio/index.qmd"
+        text: "Portfolio"
+      - href: "posts/works/published/index.qmd"
+        text: "Works"
       - about.qmd
-      - icon: github
-        href: https://github.com/picasa
-      - icon: twitter
-        href: https://twitter.com/pircasa
+      - text: " "
+      - href: https://github.com/picasa
+        icon: github
+      - href: https://twitter.com/pircasa
+        icon: twitter
+      - text: " "
+        
   page-footer: 
     center: "Copyright 2020-2024, Pierre Casadebaig. <br> The art is released under a Creative Commons license [{{< fa brands creative-commons >}}](https://creativecommons.org/licenses/by-sa/4.0/)." 
+
 execute:
   freeze: auto
   
