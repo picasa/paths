@@ -13,6 +13,8 @@ website:
         href: https://github.com/picasa
       - icon: twitter
         href: https://twitter.com/pircasa
+  page-footer: 
+    center: "Copyright 2020-2024, Pierre Casadebaig. <br> The art is released under a Creative Commons license [{{< fa brands creative-commons >}}](https://creativecommons.org/licenses/by-sa/4.0/)." 
 execute:
   freeze: auto
   

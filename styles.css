@@ -1,5 +1,7 @@
 /* css classes */
 
+/* alignment */
+
 .center-image {
   display: block;
   margin-left: auto;
@@ -12,6 +14,34 @@
   align-items: center;
 }
 
+.asterism {
+  text-align: center;
+  font-size: 1em;
+  margin: 1em 0;
+  line-height: 1;
+}
+
+/* layout */
+
+.text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.text-col {
+  grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+  .text-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .text-col {
+    grid-column: span 1;
+  }
+}
 
 .gallery-grid {
   display: grid;

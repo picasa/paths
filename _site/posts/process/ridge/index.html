@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.551">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Pierre Casadebaig">
 <meta name="dcterms.date" content="2024-02-06">
@@ -39,6 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
@@ -187,9 +189,9 @@ window.Quarto = {
 <h3 id="imaginative-landscapes-made-by-merging-random-fragments-of-mountain-ranges." class="anchored">Imaginative landscapes made by merging random fragments of mountain ranges.</h3>
 </blockquote>
 <p>Ridge Regression is a series of imagined landscapes inspired by data visualization. It draws upon real elevation data to reveal the topography of France’s diverse mountain ranges. Mimicking an evolutionary process applied to geology, it generates a variety of landscape elements that are selected and recombined to create new landforms.</p>
-<p style="text-align: center;">
-𐫱
-</p>
+<div class="asterism">
+<p>⁂</p>
+</div>
 <section id="inspiration-and-aims" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="inspiration-and-aims">Inspiration and aims</h2>
 <p>My interest in methods and works that stray from mere imitation of nature led me to explore new data-based landscape representation. While the style of Alexander Cozens landscapes was aligned with his era, his method shared similar properties as algorithmic art, for example when he qualified his starting point (a blot) as <em>a production of chance with a small degree of design</em>.</p>
 <p><a href="img/reference/cozens1785.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/reference/cozens1785.jpeg" class="img-fluid"></a></p>
@@ -197,7 +199,7 @@ window.Quarto = {
 <p><a href="https://en.wikipedia.org/wiki/Alexander_Cozens">Alexander Cozens</a>. Plate 2, “Blot” Landscapes from <em>A New Method of Assisting the Invention in Drawing Original Compositions of Landscape</em>, 1785</p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Composing landscapes by invention, is not the art of imitating individual nature; it is more; it is forming artificial representations of landscape on the general principles of nature, founded in unity of character, which is true simplicity; concentring in each individual composition the beauties, which judicious imitation would select from those which are dispersed in nature.</p>
+<p>Composing landscapes by invention, is not the art of imitating individual nature; it is more; it is forming artificial representations of landscape on the general principles of nature, founded in unity of character, which is true simplicity; concentring in each individual composition the beauties, which judicious imitation would select from those which are dispersed in nature. <em>Alexander Cozens</em> in <em>A New Method of Assisting the Invention in Drawing Original Compositions of Landscape</em>, 1785</p>
 </blockquote>
 <div class="column-body-inset gallery-grid">
 <div>
@@ -294,7 +296,7 @@ window.Quarto = {
 </ul></section></section><section id="iterations" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="iterations">Iterations</h2>
 <p>In the end, we generated 256 iterations per page style and manually selected the 128 ones presented here among the series of 1024. So, none of these landscapes ever existed, and most of those which were generated were lost. At least, the ones traced on paper should have a longer existence than their digital twins.</p>
 <p><br></p>
-<div class="column-body-outset gallery-grid small">
+<div class="column-screen-inset gallery-grid small">
 <div>
 <a href="img/gallery/ridge_001.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/ridge_001.jpg" class="img-fluid"></a>
 </div>
@@ -905,6 +907,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("art\.casadebaig\.net");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -939,7 +959,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -1214,7 +1238,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2020-2024, Pierre Casadebaig. <br> The art is released under a Creative Commons license <a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i></a>.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

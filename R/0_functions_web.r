@@ -11,7 +11,7 @@
 make_gallery <- function(
     scale = 0.24, output = "md",
     preview = "img/preview", full = "img/gallery",
-    ncol = 1, max = n(), reverse = FALSE, pattern = NULL, group = "default") {
+    ncol = 1, max = dplyr::n(), reverse = FALSE, pattern = NULL, group = "default") {
   
   # list files
   file_preview <- list.files(preview, full.names = TRUE, pattern = pattern)

@@ -8,7 +8,9 @@ listing:
       - "posts/works/published/index.qmd"
     sort: "date desc"
     type: grid
+    grid-columns: 2
     fields: [image, title]
+    image-height: 100px
     categories: false
     sort-ui: false
     filter-ui: false
@@ -16,7 +18,9 @@ listing:
     contents: "posts/process/*/*.qmd"
     sort: "date desc"
     type: grid
+    grid-columns: 1
     fields: [image, title]
+    image-height: 150px
     categories: false
     sort-ui: false
     filter-ui: false
@@ -24,7 +28,9 @@ listing:
     contents: "posts/research/*/*.qmd"
     sort: "date desc"
     type: grid
+    grid-columns: 1
     fields: [image, title]
+    image-height: 150px
     categories: false
     sort-ui: false
     filter-ui: false
@@ -33,7 +39,6 @@ title-block-banner: true
 ---
 
 :::{.column-body-outset style="font-size: 100%; margin-bottom: 2cm;"}
-
 
 ::: {.grid}
 
@@ -51,33 +56,36 @@ title-block-banner: true
 :::
 
 
-::: {.grid}
+::: {.text-grid}
 
-::: {.g-col-6}
+::: {.text-col}
 
 I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital images. It's very much like swaying a tool originally made for statistical analysis and quantitative display of information for artistic endeavors.  
+The idea is to code a sequence of operations, balancing designed rules and randomness, that generates a new output each time it is executed by a computer.  
 I'm curious how creative coding, by reducing the time between implementing changes and observing their effects, can develop intuition for making visual art.
-
-My work involves altering existing datasets, treating them as malleable materials to craft diverse visual representations, from figurative to abstract interpretations of natural subjects.  
-Rather than digital printing, I am interested in using a pen-plotter to draw my work on paper. Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
 
 :::
   
-::: {.g-col-6}
+::: {.text-col}
 
-This site documents the ideas underlying the functioning of the algorithms, along with some digital outputs. Most of the code to study and reproduce these works is released on [github {{< fa brands github >}}](https://github.com/picasa/generative_examples). 
+My work involves altering existing datasets, treating them as malleable materials to craft diverse visual representations, from figurative to abstract interpretations of natural subjects.  
+Rather than digital printing, I use a pen-plotter to draw my work on paper. Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
 
-Unless stated otherwise, the art on this site is released under a [{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://creativecommons.org/licenses/by-sa/4.0/) open license: you are free to reuse the work as long as you attribute the original to me, and derivative works must use the same license.  
-
-I'm also learning and experimenting in my day job as a [scientist {{< fa brands orcid >}}](https://orcid.org/0000-0001-7225-936X) in crop ecology.  
+This site documents the ideas and processes underlying the functioning of the algorithms. Most of the code to study and reproduce these works is published [{{< fa brands github >}}](https://github.com/picasa/generative_examples). 
 
 :::
   
 :::  
 
-<p style="text-align: center;">𐫱</p>
+<br> 
 
 ::: {#list-works}
+:::
+
+<br> 
+
+::: {.asterism}
+&#8258;
 :::
 
 <br> 
@@ -97,7 +105,6 @@ I'm also learning and experimenting in my day job as a [scientist {{< fa brands 
 :::
 
 :::
-
 
 
 

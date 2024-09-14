@@ -49,7 +49,9 @@ set.seed(2)
 
 This work is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a natural rendering of random fragments of the Pyrénées. 
 
-<p style="text-align: center;">𐫱</p>
+::: {.asterism}
+&#8258;
+:::
 
 
 ## Inspiration and aims
@@ -631,7 +633,7 @@ These outputs were generated with the algorithm described previously, but based 
 
 > An example of 32 random iterations from this algorithm.
 
-::: {.column-screen-inset-right .gallery-grid}
+::: {.column-screen-inset .gallery-grid}
 ```{r iterations}
 #| echo: false
 #| results: asis

@@ -22,7 +22,9 @@ source(here::here("R/0_functions_web.r"))
 
 Ridge Regression is a series of imagined landscapes inspired by data visualization. It draws upon real elevation data to reveal the topography of France's diverse mountain ranges. Mimicking an evolutionary process applied to geology, it generates a variety of landscape elements that are selected and recombined to create new landforms.
 
-<p style="text-align: center;">𐫱</p>
+::: {.asterism}
+&#8258;
+:::
 
 ## Inspiration and aims
 
@@ -32,7 +34,7 @@ My interest in methods and works that stray from mere imitation of nature led me
 
 > [Alexander Cozens](https://en.wikipedia.org/wiki/Alexander_Cozens). Plate 2, "Blot" Landscapes from *A New Method of Assisting the Invention in Drawing Original Compositions of Landscape*, 1785
 
-> Composing landscapes by invention, is not the art of imitating individual nature; it is more; it is forming artificial representations of landscape on the general principles of nature, founded in unity of character, which is true simplicity; concentring in each individual composition the beauties, which judicious imitation would select from those which are dispersed in nature.
+> Composing landscapes by invention, is not the art of imitating individual nature; it is more; it is forming artificial representations of landscape on the general principles of nature, founded in unity of character, which is true simplicity; concentring in each individual composition the beauties, which judicious imitation would select from those which are dispersed in nature. *Alexander Cozens* in *A New Method of Assisting the Invention in Drawing Original Compositions of Landscape*, 1785
 
 
 ::: {.column-body-inset .gallery-grid}
@@ -155,7 +157,7 @@ In the end, we generated 256 iterations per page style and manually selected the
 
 <br>
 
-::: {.column-body-outset .gallery-grid .small}
+::: {.column-screen-inset .gallery-grid .small}
 ```{r}
 #| echo: false
 #| results: asis
