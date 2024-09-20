@@ -1,5 +1,6 @@
 ---
 title: "Dispyr"
+subtitle: "Processing topographical data into monochromatic ink sketches."
 author: "Pierre Casadebaig"
 date: "2022-11-25"
 image: "img/preview.jpg"

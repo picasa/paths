@@ -1,15 +1,9 @@
 ---
-title: "About"
+image: img/pierre.jpg
 about:
-  template: trestles
-  image: img/pierre.jpg
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/pircasa
-    - icon: github
-      text: Github
-      href: https://github.com/picasa
+  template: solana
+  image-width: 18em
+  image-shape: rounded
 ---
 
 ## Hi, I'm Pierre

@@ -1,5 +1,6 @@
 ---
 title: "Ridge Regression"
+subtitle: "Imaginative landscapes made by merging random fragments of mountain ranges."
 author: "Pierre Casadebaig"
 date: "2024-02-06"
 categories: [plotter]

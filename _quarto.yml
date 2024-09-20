@@ -2,7 +2,7 @@ project:
   type: website
   
 website:
-  title: "Paths | Pierre Casadebaig"
+  title: "Pierre Casadebaig"
   description: "A visual journal about algorithmic art, mainly designed for pen plotters."
   site-url: art.casadebaig.net	
   navbar:
@@ -14,7 +14,8 @@ website:
         text: "Portfolio"
       - href: "posts/works/published/index.qmd"
         text: "Works"
-      - about.qmd
+      - href: about.qmd
+        text: "About"
       - text: " "
       - href: https://github.com/picasa
         icon: github

@@ -18,7 +18,7 @@ listing:
     sort: "date desc"
     type: grid
     grid-columns: 1
-    fields: [image, title]
+    fields: [image, title, subtitle]
     image-height: 150px
     categories: false
     sort-ui: false
