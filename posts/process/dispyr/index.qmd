@@ -52,6 +52,17 @@ set.seed(2)
 
 This work is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a natural rendering of random fragments of the Pyrénées. 
 
+::: {.gallery-grid .small}
+```{r}
+#| label: preview
+#| echo: false
+#| results: asis
+
+make_gallery(output = "md", max = 12)
+
+```
+::: 
+
 ::: {.asterism}
 &#8258;
 :::
@@ -122,7 +133,8 @@ coord <- st_sample(polygon, size = 1) |> st_as_sf()
 #| echo: false
 
 # visualize the sampled point in the region
-ggplot() + geom_sf(data = polygon) + geom_sf(data = coord) + labs(x = "lon", y = "lat")
+ggplot() + geom_sf(data = polygon) + 
+  geom_sf(data = coord) + labs(x = "lon", y = "lat")
 ```
 ::: 
 
@@ -663,7 +675,7 @@ These outputs were generated with the algorithm described previously, but based 
 
 > An example of 32 random iterations from this algorithm.
 
-::: {.column-screen-inset .gallery-grid}
+::: {.column-screen-inset .gallery-grid .small}
 ```{r}
 #| label: iterations
 #| echo: false

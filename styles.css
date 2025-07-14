@@ -2,6 +2,14 @@
 
 /* styles */
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .hero-heading {
   font-size: 1.3em; 
   margin: 3rem 0 2rem 0; 

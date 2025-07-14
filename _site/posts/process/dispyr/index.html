@@ -74,9 +74,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-c291a0bbc220db4e9eed29c94bdfc831.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-6ff9e4470f307ddb64184a9c67f7700a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-c291a0bbc220db4e9eed29c94bdfc831.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-bc750101d865fa148a387fa8d5130864.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-a63f92109cafb76886a8774e48b013da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-bc750101d865fa148a387fa8d5130864.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -407,14 +407,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 id="processing-topographical-data-into-monochromatic-ink-sketches." class="anchored">Processing topographical data into monochromatic ink sketches.</h3>
 </blockquote>
 <p>This work is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a natural rendering of random fragments of the Pyrénées.</p>
+<div class="gallery-grid small">
+<div>
+<a href="img/gallery/dispyr_09.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_09.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_100.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_100.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_102.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_102.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_104.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_104.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_125.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_125.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_127.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_127.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_145.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_145.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_173.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_173.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_197.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_197.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_199.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_199.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_228.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_228.jpg" class="img-fluid"></a>
+</div>
+<div>
+<a href="img/gallery/dispyr_241.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_241.jpg" class="img-fluid"></a>
+</div>
+</div>
 <div class="asterism">
 <p>⁂</p>
 </div>
 <section id="inspiration-and-aims" class="level2"><h2 class="anchored" data-anchor-id="inspiration-and-aims">Inspiration and aims</h2>
 <p>I was searching for an hybrid between the simplicity and efficiency of a famous data visualization in <a href="https://blogs.scientificamerican.com/sa-visual/pop-culture-pulsar-origin-story-of-joy-division-s-unknown-pleasures-album-cover-video/">astronomy</a> and the Meridian <a href="https://opensea.io/collection/meridian-by-matt-deslauriers">series</a> by Matt Deslauriers. Moreover, to be able to use a pen-plotter to trace the images on paper, the algorithm should produce relatively long lines rather than the myriad of short segments that make Meridian appealing.</p>
 <div class="gallery-flow two">
-<p><a href="./img/pulses.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./img/pulses.jpg" class="img-fluid"></a></p>
-<p><a href="./img/meridian_638.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./img/meridian_638.webp" class="img-fluid"></a></p>
+<p><a href="./img/pulses.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="./img/pulses.jpg" class="img-fluid"></a></p>
+<p><a href="./img/meridian_638.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="./img/meridian_638.webp" class="img-fluid"></a></p>
 </div>
 <blockquote class="blockquote">
 <p><strong>left</strong> : “Successive pulses from the first pulsar discovered, CP 1919, are here superimposed vertically. The pulses occur every 1.337 seconds. They are caused by rapidly spinning neutron star.” From The Cambridge Encyclopaedia of Astronomy.<br><strong>right</strong> : Meridian #638</p>
@@ -453,7 +491,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/plot_features-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/plot_features-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/plot_features-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="index_files/figure-html/plot_features-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
@@ -483,7 +521,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/plot_sampling-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="index_files/figure-html/plot_sampling-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/plot_sampling-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="index_files/figure-html/plot_sampling-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
@@ -524,19 +562,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/plot_shift-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="index_files/figure-html/plot_shift-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/plot_shift-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="index_files/figure-html/plot_shift-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/plot_shift-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="index_files/figure-html/plot_shift-2.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/plot_shift-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="index_files/figure-html/plot_shift-2.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/plot_shift-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="index_files/figure-html/plot_shift-3.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/plot_shift-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="index_files/figure-html/plot_shift-3.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div>
@@ -570,26 +608,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell column-body quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="index_files/figure-html/plot_intersect-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="index_files/figure-html/plot_intersect-1.png" class="img-fluid" width="450"></a></p>
+<p><a href="index_files/figure-html/plot_intersect-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="index_files/figure-html/plot_intersect-1.png" class="img-fluid" width="450"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="index_files/figure-html/plot_intersect-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="index_files/figure-html/plot_intersect-2.png" class="img-fluid" width="450"></a></p>
+<p><a href="index_files/figure-html/plot_intersect-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="index_files/figure-html/plot_intersect-2.png" class="img-fluid" width="450"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="index_files/figure-html/plot_intersect-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="index_files/figure-html/plot_intersect-3.png" class="img-fluid" width="450"></a></p>
+<p><a href="index_files/figure-html/plot_intersect-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="index_files/figure-html/plot_intersect-3.png" class="img-fluid" width="450"></a></p>
 </div>
 </div>
 </div>
 <blockquote class="blockquote">
 <p>Line segments are hidden by foreground lines by using polygon masking (left) or distance-based point removal with a null (center) or positive threshold (right).</p>
 </blockquote>
-<p><a href="img/fig_intersection.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="img/fig_intersection.png" class="img-fluid"></a></p>
+<p><a href="img/fig_intersection.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="img/fig_intersection.png" class="img-fluid"></a></p>
 <blockquote class="blockquote">
 <p>Effect of <em>shift</em> (in rows) and <em>threshold</em> (in columns) parameter combination on the landscape rendering (16 km<sup>2</sup>).</p>
 </blockquote>
 </section><section id="altering-the-lines-with-noise-and-deletion" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="altering-the-lines-with-noise-and-deletion">Altering the lines with noise and deletion</h4>
 <p>Finally, the overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). The governing idea was to test how our perception of the landscape changes when most of the initial topographical data is perturbed or removed. Here are four methods, but much is left to explore. The illustration code here is functioning without external call, but highly redundant and surely not optimal, you can conveniently hide it if you feel horrified.</p>
-<p><a href="img/fig_styles.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="img/fig_styles.png" class="img-fluid"></a></p>
+<p><a href="img/fig_styles.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="img/fig_styles.png" class="img-fluid"></a></p>
 <blockquote class="blockquote">
 <p>Four data processing methods, all based on filtering points and adding noise, and named after weather conditions (clear, mist, snow, storm).</p>
 </blockquote>
@@ -612,7 +650,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/code_clear-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="index_files/figure-html/code_clear-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/code_clear-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="index_files/figure-html/code_clear-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
@@ -665,7 +703,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/code_mist-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="index_files/figure-html/code_mist-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/code_mist-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="index_files/figure-html/code_mist-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
@@ -714,7 +752,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/code_snow-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="index_files/figure-html/code_snow-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/code_snow-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="index_files/figure-html/code_snow-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
@@ -803,7 +841,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/code_storm-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="index_files/figure-html/code_storm-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/code_storm-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img src="index_files/figure-html/code_storm-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
@@ -828,7 +866,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/code_plain-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="index_files/figure-html/code_plain-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/code_plain-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img src="index_files/figure-html/code_plain-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
@@ -846,7 +884,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/code_pencil-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="index_files/figure-html/code_pencil-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/code_pencil-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img src="index_files/figure-html/code_pencil-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
@@ -890,7 +928,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/code_stroke-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="index_files/figure-html/code_stroke-1.png" class="img-fluid figure-img" width="600"></a></p>
+<figure class="figure"><p><a href="index_files/figure-html/code_stroke-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="index_files/figure-html/code_stroke-1.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
 </div></div></div>
@@ -899,7 +937,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>An example of 32 random iterations from this algorithm.</p>
 </blockquote>
-<div class="column-screen-inset gallery-grid">
+<div class="column-screen-inset gallery-grid small">
 <div>
 <a href="img/gallery/dispyr_09.jpg" class="lightbox" data-gallery="default"><img src="img/gallery/dispyr_09.jpg" class="img-fluid"></a>
 </div>

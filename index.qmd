@@ -69,7 +69,7 @@ make_gallery(
 
 <br> 
 
-Using the [R](https://www.r-project.org/) programming language, i write algorithms that guide a machine to create drawings from data. Each execution produces a different result. By transforming data into ink on paper, i strive to [explore](posts/works/statement/index.qmd) the creative possibilities at the intersection of data visualisation and technology.
+Using the [R](https://www.r-project.org/) programming language, i write algorithms that guide a machine to create [drawings](posts/works/portfolio/index.qmd) from data. Each execution produces a different result. By transforming data into ink on paper, i strive to [explore](posts/works/statement/index.qmd) the creative possibilities at the intersection of data visualisation and technology.
 
 <br> 
 

@@ -48,5 +48,5 @@ format:
       dark: [darkly, styles.scss]
     highlight-style: github
     fontsize: 100%
-    linkcolor: "#859599"
+    linkcolor: "#45947E"
   

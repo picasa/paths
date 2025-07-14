@@ -23,6 +23,19 @@ source(here::here("R/0_functions_web.r"))
 
 Ridge Regression is a series of imagined landscapes inspired by data visualization. It draws upon real elevation data to reveal the topography of France's diverse mountain ranges. Mimicking an evolutionary process applied to geology, it generates a variety of landscape elements that are selected and recombined to create new landforms.
 
+
+::: {.gallery-grid .small}
+```{r}
+#| label: preview
+#| echo: false
+#| results: asis
+
+make_gallery(output = "md", max = 12)
+
+```
+::: 
+
+
 ::: {.asterism}
 &#8258;
 :::
