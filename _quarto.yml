@@ -8,23 +8,33 @@ website:
   navbar:
     background: "dark"
     right:
-      - href: "index.qmd"
-        text: "Home"
-      - href: "posts/works/portfolio/index.qmd"
-        text: "Portfolio"
-      - href: "posts/works/published/index.qmd"
-        text: "Works"
+      - text: "Home"
+        href: "index.qmd"
+      - text: "Works"
+        menu:
+        - text: "Portfolio"
+          href: "posts/works/portfolio/index.qmd"
+        - text: "Published"          
+          href: "posts/works/published/index.qmd"
+      - text: "Process"
+        menu:
+        - text: "Series"
+          href: "index.qmd#section-process"
+        - text: "Systems"
+          href: "index.qmd#section-systems"
+      - href: "posts/works/statement/index.qmd"
+        text: "Research"
       - href: about.qmd
         text: "About"
       - text: " "
       - href: https://github.com/picasa
         icon: github
-      - href: https://twitter.com/pircasa
+      - href: https://bsky.app/profile/pcasadebaig.bsky.social
         icon: twitter
       - text: " "
         
   page-footer: 
-    center: "Copyright 2020-2024, Pierre Casadebaig. <br> The art is released under a Creative Commons license [{{< fa brands creative-commons >}}](https://creativecommons.org/licenses/by-sa/4.0/)." 
+    center: "Copyright 2020-2025, Pierre Casadebaig. [{{< fa brands creative-commons >}}](https://creativecommons.org/licenses/by-sa/4.0/)." 
 
 execute:
   freeze: auto
@@ -34,8 +44,8 @@ format:
     mainfont: Noto Sans Display
     css: styles.css
     theme: 
-      dark: [darkly, styles.scss]
       light: [flatly, styles.scss]
+      dark: [darkly, styles.scss]
     highlight-style: github
     fontsize: 100%
     linkcolor: "#859599"

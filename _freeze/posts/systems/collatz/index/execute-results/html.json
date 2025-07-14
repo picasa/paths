@@ -1,0 +1,15 @@
+{
+  "hash": "fe1275216b1e0e79940ee0db9d8c4faa",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Collatz\"\nauthor: \"Pierre Casadebaig\"\ndate: \"2021-06-01\"\ncategories: [generative]\nimage: \"img/preview.png\"\nformat:  html\nlightbox: true\n---\n\n\n\n\n> ### Curves parameterized from integer sequences and positioned according to basic botanical rules.\n\nThis system focuses on a very simple generator, here a sequence of numbers generated from a set of rules. In this case, I used the [Collatz](https://en.wikipedia.org/wiki/Collatz_conjecture) sequence because it has a decreasing, random-looking pattern, which is a nice feature for plant structures (e.g. the internode distribution on a stem).  \nThis sequence is used to define a curve, by mapping sequence elements to segment length, with a random angle between segments. Multiple curves are computed to constitute a node, and multiple nodes to constitute a stem / individual. Further recursion can be used to create populations of multiple individuals, with random or community-dependent features.  \nThe main random elements are the initial value of the sequence, and the angle distribution between curve segments. \n\nI explained this approach a bit more in details during a talk at an art show, slides are available [here](https://github.com/picasa/slides_code_to_ink).\n\nOn this series, rather than properly computing hidden line or polygons, I used an external algorithm (bitmap tracing) which had the nice side-effect of reshaping and merging some paths.\n\n<br>\n\n::: {.column-body-outset .gallery-flow}\n<div> ![](img/gallery/collatz_field_00.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_field_01.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_field_02.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_individuals_01.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_individuals_02.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_mixture_00.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_mixture_03.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_stem_00.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_stem_01.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_stem_03.png){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/collatz_stem_04.png){.lightbox group=\"default\"} </div>\n::: \n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

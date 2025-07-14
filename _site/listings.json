@@ -2,15 +2,13 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/works/portfolio/index.html",
-      "/posts/works/published/index.html",
       "/posts/process/ridge/index.html",
       "/posts/process/dispyr/index.html",
-      "/posts/research/cells/index.html",
-      "/posts/research/collatz/index.html",
-      "/posts/research/ridges/index.html",
-      "/posts/research/asemic/index.html",
-      "/posts/research/attractors/index.html"
+      "/posts/systems/cells/index.html",
+      "/posts/systems/collatz/index.html",
+      "/posts/systems/ridges/index.html",
+      "/posts/systems/asemic/index.html",
+      "/posts/systems/attractors/index.html"
     ]
   }
 ]

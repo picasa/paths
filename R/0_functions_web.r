@@ -11,26 +11,27 @@
 make_gallery <- function(
     scale = 0.24, output = "md",
     preview = "img/preview", full = "img/gallery",
-    ncol = 1, max = dplyr::n(), reverse = FALSE, pattern = NULL, group = "default") {
+    ncol = 1, max = dplyr::n(), pattern = ".*", reverse = FALSE, 
+    group = "default") {
   
   # list files
-  file_preview <- list.files(preview, full.names = TRUE, pattern = pattern)
-  file_full <- list.files(full, full.names = TRUE, pattern = pattern)
+  file_preview <- list.files(preview, full.names = TRUE)
+  file_full <- list.files(full, full.names = TRUE)
   
   switch(
     output,
     
     md = {
-      
       # reorder files as a function of date or column structure.
-      list_files <- dplyr::tibble(file = file_full) |>
-        dplyr::arrange(if (reverse) dplyr::desc(file) else file) |>
+      list_files <- dplyr::tibble(files = file_full) |>
+        dplyr::filter(stringr::str_detect(files, paste(pattern, collapse = "|"))) |> 
+        dplyr::arrange(if (reverse) dplyr::desc(files) else files) |>
         dplyr::slice(1:max) |> 
         dplyr::mutate(
           row = (dplyr::row_number() - 1) %/% ncol,
           col = (dplyr::row_number() - 1) %% ncol) |>
         dplyr::arrange(col, row) |>
-        dplyr::pull(file)
+        dplyr::pull(files)
 
       # create links
       links <- glue::glue("<div> ![]({list_files}){{.lightbox group=\"{group}\"}} </div>")

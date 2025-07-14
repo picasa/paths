@@ -1,5 +1,41 @@
 /* css classes */
 
+/* styles */
+
+.hero-heading {
+  font-size: 1.3em; 
+  margin: 3rem 0 2rem 0; 
+  color: var(--bs-secondary-color);
+}
+
+.img-rounded img {
+  border-radius: 5px;
+}
+
+.quarto-listing .card {
+  border: none !important;
+}
+
+.quarto-listing .card:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.navbar .dropdown-header {
+  font-weight: bold !important;
+  font-size: 0.85rem !important;
+  text-transform: capitalize !important;
+  letter-spacing: 0.5px !important;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.asterism {
+  text-align: center;
+  font-size: 1em;
+  margin: 1em 0;
+  line-height: 1;
+}
+
 /* alignment */
 
 .center-image {
@@ -14,14 +50,7 @@
   align-items: center;
 }
 
-.asterism {
-  text-align: center;
-  font-size: 1em;
-  margin: 1em 0;
-  line-height: 1;
-}
-
-/* layout */
+/* text grids */
 
 .text-grid {
   display: grid;
@@ -43,6 +72,8 @@
   }
 }
 
+/* image grid : fixed width, variable col number */
+
 .gallery-grid {
   display: grid;
   grid-gap: var(--grid-gap, 10px);
@@ -63,19 +94,12 @@
   --grid-gap: 50px; 
 }
 
-.gallery-grid.small {
-  --grid-size: 100px; 
-}
+.gallery-grid.small { --grid-size: 100px; }
+.gallery-grid.large { --grid-size: 300px; }
 
-.gallery-grid.large {
-  --grid-size: 300px; 
-}
+/* image grid : fixed col number, irregular layout, column sorting */
 
-
-.gallery-flow {
-  column-count: 4;
-  column-gap: 10px;
-}
+.gallery-flow { column-gap: 10px; }
 
 .gallery-flow > div {
   display: inline-block;
@@ -88,5 +112,8 @@
   height: auto;
 }
 
+.gallery-flow.two { column-count: 2; }
+.gallery-flow.three { column-count: 3; }
+.gallery-flow.four { column-count: 4; }
 
 

@@ -3,18 +3,18 @@ title: "Ridge Regression"
 subtitle: "Imaginative landscapes made by merging random fragments of mountain ranges."
 author: "Pierre Casadebaig"
 date: "2024-02-06"
-categories: [plotter]
 image: "img/preview.jpg"
 format:
   html:
     toc: true
     toc-location: left
     code-link: true
-    css: styles.css
 lightbox: true
 ---
 
-```{r, include=FALSE}
+```{r}
+#| label: setup
+#| include: false
 source(here::here("R/0_functions_web.r"))
 ```
 
@@ -160,6 +160,7 @@ In the end, we generated 256 iterations per page style and manually selected the
 
 ::: {.column-screen-inset .gallery-grid .small}
 ```{r}
+#| label: gallery
 #| echo: false
 #| results: asis
 

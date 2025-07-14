@@ -1,8 +1,4 @@
 ---
-title: "Works"
-author: "Pierre Casadebaig"
-date: "2024-02-01"
-categories: [digital, plotter]
 image: "img/preview.jpg"
 format:
   html:
@@ -24,7 +20,7 @@ source(here::here("R/0_functions_web.r"))
 
 This was my first attempt at a relatively long series of code generated works (*long-form*), built on my previous works on data-based landscape. By focusing on an evolutionary process applied to geology, it generates a variety of landscape elements that are then selected and recombined to create new landforms. This work is documented in a more in-depth [article](/posts/process/ridge), along with the full 128 iterations.
 
-These series was developed and curated in collaboration with the [Tender](https://tender.art/shows/tender-collaborations-2024) art gallery and released as NFT on the [verse](https://verse.works) platform.
+These series was developed and curated in collaboration with the [Heft](https://heftgallery.com/exhibition/ridge-regressions) gallery and released as NFT on the [verse](https://verse.works) platform.
 
 * 128 digital and physical works
   * digital, computed and rendered with R, bitmap, scanned from the paper works. Published as NFTs on the verse platform ([link](https://verse.works/series/ridge-regression-by-pierre-casadebaig)).
@@ -62,7 +58,7 @@ Theses works were selected and presented during a collective exhibition  ([*Odys
   * ink on paper, plotted with Axidraw V3/A3 on 220 g/m2 paper (various format) with Rotring Isograph pens, Pentel FL2B brush pen, Pilot Parallel pen.
 
 
-::: {.column-body-inset .gallery-flow}
+::: {.column-body-inset .gallery-flow .four}
 ```{r}
 #| echo: false
 #| results: asis

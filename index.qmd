@@ -1,18 +1,6 @@
 ---
 format: html 
 listing:
-  - id: list-works
-    contents: 
-      - "posts/works/portfolio/index.qmd"
-      - "posts/works/published/index.qmd"
-    sort: "date desc"
-    type: grid
-    grid-columns: 2
-    fields: [image, title]
-    image-height: 100px
-    categories: false
-    sort-ui: false
-    filter-ui: false
   - id: list-process
     contents: "posts/process/*/*.qmd"
     sort: "date desc"
@@ -23,8 +11,8 @@ listing:
     categories: false
     sort-ui: false
     filter-ui: false
-  - id: list-research
-    contents: "posts/research/*/*.qmd"
+  - id: list-systems
+    contents: "posts/systems/*/*.qmd"
     sort: "date desc"
     type: grid
     grid-columns: 3
@@ -37,49 +25,51 @@ page-layout: full
 title-block-banner: true
 ---
 
+```{r, include=FALSE}
+source(here::here("R/0_functions_web.r"))
+```
+
 :::{.column-body-outset style="font-size: 100%; margin-bottom: 2cm;"}
 
 ::: {.grid}
 
-::: {.g-col-6 .center-container-v}
-
-![](img/profile.svg)
+::: {.g-col-9 .center-container-v style="font-size: 1.5em;"}
+> **Algorithmic art, mainly designed for pen plotters.**
 :::
 
-::: {.g-col-6 .center-container-v}
-
-> **A visual journal about algorithmic art, mainly designed for pen plotters.**
-
+::: {.g-col-3 .center-container-v}
+![](img/profile.svg){.center-image}
 :::
 
 :::
-
-
-::: {.text-grid}
-
-::: {.text-col}
-
-I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital images. It's very much like swaying a tool originally made for statistical analysis and quantitative display of information for artistic endeavors.  
-The idea is to code a sequence of operations, balancing designed rules and randomness, that generates a new output each time it is executed by a computer.  
-I'm curious how creative coding, by reducing the time between implementing changes and observing their effects, can develop intuition for making visual art.
-
-:::
-  
-::: {.text-col}
-
-My work involves altering existing datasets, treating them as malleable materials to craft diverse visual representations, from figurative to abstract interpretations of natural subjects.  
-Rather than digital printing, I use a pen-plotter to draw my work on paper. Somehow, I assume that the constraints imposed by this machine are a nice frame to the flexibility of code.
-
-This site documents the ideas and processes underlying the functioning of the algorithms. Most of the code to study and reproduce these works is published [{{< fa brands github >}}](https://github.com/picasa/generative_examples). 
-
-:::
-  
-:::  
 
 <br> 
 
-::: {#list-works}
+::: {.grid}
+
+::: {.g-col-6 .gallery-flow .img-rounded} 
+ ![](posts/works/portfolio/img/gallery/20231105_ridges.jpg){.lightbox group="default"}
 :::
+
+::: {.g-col-6 .gallery-flow .two .img-rounded}
+```{r}
+#| echo: false
+#| results: asis
+
+make_gallery(
+  output = "md", full = "posts/works/portfolio/img/gallery", max = 4,
+  pattern = c(
+    "20220426_ridges","20230108_brush","20231026_ridges","20230527_ridges")
+)
+
+```
+:::
+
+:::
+
+<br> 
+
+Using the [R](https://www.r-project.org/) programming language, i write algorithms that guide a machine to create drawings from data. Each execution produces a different result. By transforming data into ink on paper, i strive to [explore](posts/works/statement/index.qmd) the creative possibilities at the intersection of data visualisation and technology.
 
 <br> 
 
@@ -87,24 +77,20 @@ This site documents the ideas and processes underlying the functioning of the al
 &#8258;
 :::
 
-
-# Processes
-
+### Series {#section-process .hero-heading}
 
 ::: {#list-process}
 :::
 
+### Systems {#section-systems .hero-heading}
+
+::: {#list-systems}
+:::
+
 <br> 
 
 ::: {.asterism}
 &#8258;
-:::
-
-
-# Explorations
-
-
-::: {#list-research}
 :::
 
 :::

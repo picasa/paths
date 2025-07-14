@@ -1,8 +1,4 @@
 ---
-title: "Portfolio"
-author: "Pierre Casadebaig"
-date: "2024-08-01"
-categories: [plotter]
 image: "img/preview.jpg"
 format:  html
 lightbox: true
@@ -21,12 +17,12 @@ As if exploring the space defined by various parameters in the coding part was n
 
 <br>
 
-::: {.column-screen-inset .gallery-flow}
+::: {.column-screen-inset .gallery-flow .four}
 ```{r}
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md", reverse = TRUE, ncol = 4, max = 44)
+make_gallery(output = "md", reverse = TRUE)
 
 ```
 ::: 
