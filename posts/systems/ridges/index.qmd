@@ -3,7 +3,7 @@ title: "Ridges"
 author: "Pierre Casadebaig"
 date: "2021-05-01"
 categories: [systems]
-image: "img/preview.png"
+image: "img/preview.webp"
 format:  html
 lightbox: true
 ---
@@ -21,7 +21,7 @@ Adding noise or removing information from the original DEM data seems to create 
 
 <br>
 
-::: {.column-body-outset .gallery-flow}
+::: {.column-body-outset .gallery-flow .two}
 ```{r}
 #| echo: false
 #| results: asis

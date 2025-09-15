@@ -3,7 +3,7 @@ title: "Asemic"
 author: "Pierre Casadebaig"
 date: "2021-04-01"
 categories: [systems]
-image: "img/preview.png"
+image: "img/preview.webp"
 format:  html
 lightbox: true
 ---

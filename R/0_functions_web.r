@@ -4,14 +4,17 @@
 #' @param output format of the output table.
 #' @param ncol number of columns, when fixed in the CSS flow or grid.
 #' @param max maximum number of listed files.
-#' @param reverse sort files by name (date), default to older first.
+#' @param sort sort files by date or pattern.
+#'   * now, older files last
+#'   * past, older files first
+#'   * none, listed order
 #' @param pattern regular expression used to filter files list. 
 #' @param group grouping variable for the lightbox viewer. 
 #'  
 make_gallery <- function(
     scale = 0.24, output = "md",
     preview = "img/preview", full = "img/gallery",
-    ncol = 1, max = dplyr::n(), pattern = ".*", reverse = FALSE, 
+    ncol = 1, max = dplyr::n(), pattern = ".*", sort = "past", 
     group = "default") {
   
   # list files
@@ -22,10 +25,19 @@ make_gallery <- function(
     output,
     
     md = {
+      
+      sort_img <- switch(
+        sort,
+        "past" = function(d) dplyr::arrange(d, files),
+        "now" = function(d) dplyr::arrange(d, dplyr::desc(files)),
+        "none" = function(d) purrr::map_dfr(
+          pattern, ~ dplyr::filter(d, stringr::str_detect(files, .x)))  
+      )
+
       # reorder files as a function of date or column structure.
       list_files <- dplyr::tibble(files = file_full) |>
         dplyr::filter(stringr::str_detect(files, paste(pattern, collapse = "|"))) |> 
-        dplyr::arrange(if (reverse) dplyr::desc(files) else files) |>
+        sort_img() |>
         dplyr::slice(1:max) |> 
         dplyr::mutate(
           row = (dplyr::row_number() - 1) %/% ncol,

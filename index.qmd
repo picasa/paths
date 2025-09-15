@@ -7,7 +7,7 @@ listing:
     type: grid
     grid-columns: 1
     fields: [image, title, subtitle]
-    image-height: 150px
+    image-height: 300px
     categories: false
     sort-ui: false
     filter-ui: false
@@ -33,7 +33,7 @@ source(here::here("R/0_functions_web.r"))
 
 ::: {.grid}
 
-::: {.g-col-9 .center-container-v style="font-size: 1.5em;"}
+::: {.g-col-9 .center-container-v style="font-size: 150%;"}
 > **Algorithmic art, mainly designed for pen plotters.**
 :::
 
@@ -48,7 +48,7 @@ source(here::here("R/0_functions_web.r"))
 ::: {.grid}
 
 ::: {.g-col-6 .gallery-flow .img-rounded} 
- ![](posts/works/portfolio/img/gallery/20231105_ridges.jpg){.lightbox group="default"}
+ ![](posts/works/portfolio/img/gallery/20231105_ridges.webp){.lightbox group="default"}
 :::
 
 ::: {.g-col-6 .gallery-flow .two .img-rounded}
@@ -56,10 +56,12 @@ source(here::here("R/0_functions_web.r"))
 #| echo: false
 #| results: asis
 
+list_images <- c(
+  "20230527_ridges","20230108_brush","20231026_ridges","20220426_ridges")
+
 make_gallery(
-  output = "md", full = "posts/works/portfolio/img/gallery", max = 4,
-  pattern = c(
-    "20220426_ridges","20230108_brush","20231026_ridges","20230527_ridges")
+  output = "md", full = "posts/works/portfolio/img/gallery", sort = "none",
+  pattern = list_images
 )
 
 ```
@@ -69,7 +71,9 @@ make_gallery(
 
 <br> 
 
-Using the [R](https://www.r-project.org/) programming language, i write algorithms that guide a machine to create [drawings](posts/works/portfolio/index.qmd) from data. Each execution produces a different result. By transforming data into ink on paper, i strive to [explore](posts/works/statement/index.qmd) the creative possibilities at the intersection of data visualisation and technology.
+::: {style="font-size: 120%"}
+Using the [R](https://www.r-project.org/) programming language, i write algorithms that guide a machine to create [drawings](posts/works/portfolio/index.qmd) from data. Each execution produces a different result. By transforming data into ink on paper, i strive to [explore](posts/works/statement/index.qmd) the creative possibilities of coding at the intersection of data visualisation and technology.
+:::
 
 <br> 
 

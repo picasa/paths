@@ -1,5 +1,5 @@
 ---
-image: "img/preview.jpg"
+image: "img/preview.webp"
 format:  html
 lightbox: true
 ---
@@ -22,7 +22,7 @@ As if exploring the space defined by various parameters in the coding part was n
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md", reverse = TRUE)
+make_gallery(output = "md", sort = "now")
 
 ```
 ::: 

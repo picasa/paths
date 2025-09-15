@@ -3,7 +3,7 @@ title: "Dispyr"
 subtitle: "Processing topographical data into monochromatic ink sketches."
 author: "Pierre Casadebaig"
 date: "2022-11-25"
-image: "img/preview.jpg"
+image: "img/preview.webp"
 
 format:
   html:
@@ -73,7 +73,7 @@ make_gallery(output = "md", max = 12)
 I was searching for an hybrid between the simplicity and efficiency of a famous data visualization in [astronomy](https://blogs.scientificamerican.com/sa-visual/pop-culture-pulsar-origin-story-of-joy-division-s-unknown-pleasures-album-cover-video/) and the Meridian [series](https://opensea.io/collection/meridian-by-matt-deslauriers) by Matt Deslauriers. Moreover, to be able to use a pen-plotter to trace the images on paper, the algorithm should produce relatively long lines rather than the myriad of short segments that make Meridian appealing. 
 
 ::: {.gallery-flow .two} 
-![](./img/pulses.jpg)
+![](./img/pulses.webp)
 
 ![](./img/meridian_638.webp)
 :::
@@ -334,7 +334,7 @@ ggsave(
 
 ```
 
-![](img/fig_intersection.png)
+![](img/fig_intersection.webp)
 
 > Effect of *shift* (in rows) and *threshold* (in columns) parameter combination on the landscape rendering (16 km^2^).
 
@@ -361,7 +361,7 @@ ggsave(
 
 ```
 
-![](img/fig_styles.png)
+![](img/fig_styles.webp)
 
 > Four data processing methods, all based on filtering points and adding noise, and named after weather conditions (clear, mist, snow, storm).
 

@@ -4,7 +4,7 @@ lightbox: true
 
 ## Research
 
-![](img/20240725_ridges_w.jpg){.lightbox group="default"}
+![](img/20240725_ridges_w.webp){.lightbox group="default"}
 
 > I am using the [R](https://www.r-project.org/) programming language to write algorithms that generate digital images. The idea is to code a sequence of operations, balancing designed rules and randomness, that generates a new output each time it is executed by a computer. These outputs (vector images) are instructions to drive a pen plotter, like an artisanal method to draw those images on paper.
 I often start from existing datasets, treating them as malleable materials to craft diverse visual representations. The whole process is very much like repurposing a tool originally made for statistical analysis and quantitative display of information for artistic endeavors.  
@@ -21,9 +21,9 @@ My current focus involves single algorithmic systems, though I'm beginning to in
 :::
 
 ::: {.text-col}
-![](img/20240120_brush.jpg){.lightbox group="default"}
+![](img/20240120_brush.webp){.lightbox group="default"}
 
-![](img/20240120_brush_w.jpg){.lightbox group="default"}
+![](img/20240120_brush_w.webp){.lightbox group="default"}
 
 :::
 

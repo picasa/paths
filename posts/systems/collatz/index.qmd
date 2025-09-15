@@ -3,7 +3,7 @@ title: "Collatz"
 author: "Pierre Casadebaig"
 date: "2021-06-01"
 categories: [systems]
-image: "img/preview.png"
+image: "img/preview.webp"
 format:  html
 lightbox: true
 ---
@@ -25,7 +25,7 @@ On this series, rather than properly computing hidden line or polygons, I used a
 
 <br>
 
-::: {.column-body-outset .gallery-flow}
+::: {.column-body-outset .gallery-flow .four}
 ```{r}
 #| echo: false
 #| results: asis

@@ -3,7 +3,7 @@ title: "Cells"
 author: "Pierre Casadebaig"
 date: "2021-09-09"
 categories: [systems]
-image: "img/preview.png"
+image: "img/preview.webp"
 format:  html
 lightbox: true
 ---

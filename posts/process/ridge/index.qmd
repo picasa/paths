@@ -3,7 +3,7 @@ title: "Ridge Regression"
 subtitle: "Imaginative landscapes made by merging random fragments of mountain ranges."
 author: "Pierre Casadebaig"
 date: "2024-02-06"
-image: "img/preview.jpg"
+image: "img/preview.webp"
 format:
   html:
     toc: true
@@ -44,7 +44,7 @@ make_gallery(output = "md", max = 12)
 
 My interest in methods and works that stray from mere imitation of nature led me to explore new data-based landscape representation. While the style of Alexander Cozens landscapes was aligned with his era, his method shared similar properties as algorithmic art, for example when he qualified his starting point (a blot) as *a production of chance with a small degree of design*.
 
-![](img/reference/cozens1785.jpeg)
+![](img/reference/cozens1785.webp)
 
 > [Alexander Cozens](https://en.wikipedia.org/wiki/Alexander_Cozens). Plate 2, "Blot" Landscapes from *A New Method of Assisting the Invention in Drawing Original Compositions of Landscape*, 1785
 
@@ -52,8 +52,8 @@ My interest in methods and works that stray from mere imitation of nature led me
 
 
 ::: {.column-body-inset .gallery-grid}
-<div> ![](img/reference/segers1638.jpg){.lightbox group="default"} </div>
-<div> ![](img/reference/hiroshige1820.jpeg){.lightbox group="default"} </div>
+<div> ![](img/reference/segers1638.webp){.lightbox group="default"} </div>
+<div> ![](img/reference/hiroshige1820.webp){.lightbox group="default"} </div>
 :::
 
 > (left) *The Enclosed Valley*, [Hercules Segers](https://en.wikipedia.org/wiki/Hercules_Seghers), c. 1625 - c. 1630. Line etching and drypoint, printed in brown on paper prepared with a light brown ground. ([source](https://www.rijksmuseum.nl/en/collection/RP-P-H-OB-813/catalogue-entry?pdfView=False)).  
@@ -75,7 +75,7 @@ On the physical side, the project explored alternatives to precise and technical
 The initial step is to generate a collection of simplified landscape forms by repeatedly sampling a vast region through small "windows". We base the landscape topography on observed data, rather than data generated from mathematical functions. Specifically, we focus on the variations in land height in South-West France, encoded in a digital elevation model (DEM, here IGN [RGE Alti 5m](https://geoservices.ign.fr/rgealti#telechargement5m), 5x5 m cells).
 The 3D data surrounding a given location (within a 3x3 km square) is transformed into a series of 2D lines, referred to as a landscape element. Adjustments to the [*dispyr*](/posts/process/dispyr) algorithm, allowed for a transition from a realistic depiction of topography to more simplified forms.
 
-![](img/fig_profile.jpg)
+![](img/fig_profile.webp)
 
 > **Navigating the parameter space to extract contours and forms.**
 > The top image exhibits a high level of detail, keeping the complexity and features of the real terrain. 
@@ -84,7 +84,7 @@ The 3D data surrounding a given location (within a 3x3 km square) is transformed
 
 In each iteration, these landscape elements can depict anything from a single horizon to a series of layered ridges, depending on the data's sampling location and orientation—two variables introduced at random. I have chosen to work with a simulation set of approximately 3000 elements.
 
-![](img/fig_population.jpg)
+![](img/fig_population.webp)
 
 > **A random sample of the diversity in the population of generated landscape elements**
 > The randomness in the sampling process is the only driver of the diversity observed in these generated landscape elements.
@@ -105,7 +105,7 @@ Technically, the construction algorithm starts by dividing each element set in e
 Once the proper building elements are selected, they are simply layered one on top of the other, starting from elements with the smaller range in the y-axis. The distance between elements also decreases as a function of their rank. While this system gives pleasing results, we can imagine much more refinement in the building process (more element types, different assembly rules).
 
 
-![](img/fig_sampling.jpg)
+![](img/fig_sampling.webp)
 
 > **Sampling a set of independent locations to build an imaginary landscape.**
 > We begin by selecting a random combination of landscape elements from a library. Although the selection is random, it adheres to a basic rule: a total of 3-12 elements, comprising one *tall* element and the remainder as *flat* elements. The composition of the landscape is determined by layering these elements according to their elevation range. The map on the left illustrates the geographical locations of the sampled terrain. The figure on the right depicts the resultant imaginary landscape, constructed using locations labeled in ascending order from top to bottom.
@@ -117,7 +117,7 @@ While the created imaginative landscapes have nice aesthetics and conceptual pro
 
 Each page of the series is divided into different sections, or "cells", by a generative grid system. This grid system partitions the page into up to three parts, with each part being a one-sixth multiple (e.g. 1/6, 2/6, 3/6, for the top left page in the figure). This method is first applied on the y-axis and yields 11 partitions: 1 full page, 3 2-partitions, and 7 3-partitions. The same system is applied to individual cells in a page, enabling x-axis splits. The sampling probabilities in the partitions list were adjusted to favor a moderately fragmented layouts.  
 
-![](img/fig_grid.jpg)
+![](img/fig_grid.webp)
 
 > **Twelve random illustrations from the modular grid system.**
 > The page is randomly divided into up to three parts, with each part being a one-sixth multiple (e.g. 1/6, 2/6, 3/6, top left page). This partition is first applied on the y-axis of the page, and then on one or two  applied on the x-axis
@@ -150,8 +150,8 @@ On one hand, i get to avoid thinking about the necessary level of emulation of r
 On the other, the interactions with this machine caused some interesting feedback at the code level. For example, in the *brush* style i used functions to smooth the ridge lines because the terrain irregularities present on the raw data were not really adapted for a minimalist aesthetic. However, when the machine traced those lines, i noticed that the brush was lagging behind the machine movement, acting exactly as an analog smoother function. In response, the code was updated to a much lower level of processing for this data.
 
 ::: {.column-body-inset .gallery-grid .margin}
-<div> ![](img/fig_draw_vector.png){.lightbox group="default"} </div>
-<div> ![](img/preview.jpg){.lightbox group="default"} </div>
+<div> ![](img/fig_draw_vector.webp){.lightbox group="default"} </div>
+<div> ![](img/preview.webp){.lightbox group="default"} </div>
 :::
 
 > **From brush movement instructions to ink on paper.**

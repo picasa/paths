@@ -1,5 +1,5 @@
 ---
-image: "img/preview.jpg"
+image: "img/preview.webp"
 format:
   html:
     toc: true
@@ -48,7 +48,7 @@ make_gallery(full = "img/gallery/2024_02_verse", output = "md")
 In this collection of eight landscape representations, i used real elevation data produced by various public institutes to create digital representations of the Pyrénées mountain range. I selected pieces moving from realism to abstraction while staying in the landscape figurative style, a way to acknowledge mountains as scientific and mystic places.
 
 ::: {.column-body-inset}
-![](img/preview.jpg)
+![](img/preview.webp)
 :::
 
 Theses works were selected and presented during a collective exhibition  ([*Odysseys*](https://verse.works/exhibitions/odysseys-pierre-casadebaig)), curated by the [verse](https://verse.works) platform, in January 2023, at [Cromwell Place](https://www.cromwellplace.com), London.
@@ -80,7 +80,7 @@ One work playing on the data-to-ink ratio idea from data visualisation, a quick 
 
 * digital, 2338 x 3307 lossless bitmap, computed and rendered with R. Published as NFTs on the verse platform ([link](https://verse.works/artworks/9d4ddfbf-5cb3-4b41-a0e5-229277d76bf6)).
 
-![](img/gallery/2022_09_verse/conflated_conflent.png){.lightbox width=33%}
+![](img/gallery/2022_09_verse/conflated_conflent.webp){.lightbox width=33%}
 
 ## Releases
 
