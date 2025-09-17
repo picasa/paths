@@ -17,7 +17,7 @@ Using a drawing machine fundamentally shapes my practice, as the plotter's const
 
 By generating hundreds or thousands of variations from the same algorithm, i explore what makes a form recognizable. Among a thousand generated mountains, why do some immediately read as mountains while others remain abstract marks? This multiplicity reveals something about essential qualities, not through averaging or reduction, but through experiencing the full range of possibility.
 
-My current focus involves single algorithmic systems, though I'm beginning to investigate how multiple systems might interact to create richer compositions. The rapid feedback between coding and seeing develops a particular kind of intuition, one that emerges from watching patterns unfold across many iterations. I expect this open-ended process to lead to unexpected connections between systems and representations: between topographical data and calligraphic gestures, between drawn marks and language.
+The rapid feedback loop between coding and visual outputs develops a particular kind of intuition, one that emerges from watching patterns unfold across many iterations. I expect this open-ended process to lead to unexpected connections between systems and representations. What mechanisms are at work when transforming topographical into calligraphic gestures ? How do we navigate between writing and drawing, between what we decode through reading versus what we apprehend through pure visual perception?
 :::
 
 ::: {.text-col}
