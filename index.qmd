@@ -72,7 +72,8 @@ make_gallery(
 <br> 
 
 ::: {style="font-size: 120%"}
-Using the [R](https://www.r-project.org/) programming language, i write algorithms that guide a machine to create [drawings](posts/works/portfolio/index.qmd) from data. Each execution produces a different result. By transforming data into ink on paper, i strive to [explore](posts/works/statement/index.qmd) the creative possibilities of coding at the intersection of data visualisation and technology.
+Using a programming language, i write algorithms that guide a machine to create [drawings](posts/works/portfolio/index.qmd) from data. Each execution produces a different result.  
+By transforming data into ink on paper, i'm considering technology as a tool to [investigate](posts/works/statement/index.qmd), not to embrace. Sometimes the algorithm produces exactly what was expected; disappointingly predictable. Other times it generates something surprising, which can become the most interesting starting point for the next iteration.
 :::
 
 <br> 
