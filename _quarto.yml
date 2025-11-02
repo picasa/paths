@@ -25,7 +25,7 @@ website:
       - href: "posts/works/statement/index.qmd"
         text: "Research"
       - href: about.qmd
-        text: "About"
+        text: "Bio"
       - text: " "
       - href: https://github.com/picasa
         icon: github
@@ -34,7 +34,7 @@ website:
       - text: " "
         
   page-footer: 
-    center: "Copyright 2020-2025, Pierre Casadebaig. [{{< fa brands creative-commons >}}](https://creativecommons.org/licenses/by-sa/4.0/)." 
+    center: "Copyright 2020-2025, Pierre Casadebaig. [{{< fa brands creative-commons >}}](https://creativecommons.org/licenses/by-sa/4.0/) Images." 
 
 execute:
   freeze: auto
@@ -44,9 +44,10 @@ format:
     mainfont: Noto Sans Display
     css: styles.css
     theme: 
-      light: [flatly, styles.scss]
-      dark: [darkly, styles.scss]
+      light: flatly
+      dark: darkly
     highlight-style: github
     fontsize: 100%
     linkcolor: "#45947E"
+
   

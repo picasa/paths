@@ -3,6 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/process/ridge/index.html",
+      "/posts/process/brush/index.html",
       "/posts/process/dispyr/index.html",
       "/posts/systems/cells/index.html",
       "/posts/systems/collatz/index.html",

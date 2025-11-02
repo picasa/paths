@@ -37,21 +37,17 @@ source(here::here("R/0_functions_web.r"))
 > **Algorithmic art, mainly designed for pen plotters.**
 :::
 
-::: {.g-col-3 .center-container-v}
-![](img/profile.svg){.center-image}
-:::
-
 :::
 
 <br> 
 
 ::: {.grid}
 
-::: {.g-col-6 .gallery-flow .img-rounded} 
+::: {.g-col-6 .gallery-flow .img-square .img-rounded} 
  ![](posts/works/portfolio/img/gallery/20231105_ridges.webp){.lightbox group="default"}
 :::
 
-::: {.g-col-6 .gallery-flow .two .img-rounded}
+::: {.g-col-6 .gallery-flow .two .img-square .img-rounded}
 ```{r}
 #| echo: false
 #| results: asis
@@ -73,7 +69,7 @@ make_gallery(
 
 ::: {style="font-size: 120%"}
 Using a programming language, i write algorithms that guide a machine to create [drawings](posts/works/portfolio/index.qmd) from data. Each execution produces a different result.  
-By transforming data into ink on paper, i'm considering technology as a tool to [investigate](posts/works/statement/index.qmd), not to embrace. Sometimes the algorithm produces exactly what was expected; disappointingly predictable. Other times it generates something surprising, which can become the most interesting starting point for the next iteration.
+By transforming data into ink on paper, i'm considering technology as a tool to [investigate](posts/works/statement/index.qmd), to probe questions rather than solve them. Sometimes the algorithm produces exactly what was expected; disappointingly predictable. Other times it generates something surprising, which can become the most interesting starting point for the next iteration. This process is a way to work with circumstances and surprises, whether they come from randomness or coding errors!
 :::
 
 <br> 

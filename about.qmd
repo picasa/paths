@@ -1,17 +1,26 @@
 ---
+title: Hi, I'm Pierre
 image: img/pierre.jpg
 about:
-  template: solana
-  image-width: 18em
+  id: about
+  template: broadside
+  image-width: 400px
   image-shape: rounded
+
 ---
 
-## Hi, I'm Pierre
+:::{#about}
 
-#### research-research
+I have a scientific background in biology and a self-taught artistic practice since 2021. I live and work in Toulouse.
+Currently, my scientific and artistic research coexist in a complementary manner, primarily sharing technical tools. I hope that the progressive convergence of these practices opens pathways toward original approaches to communicate the interdependencies of living systems.
 
-I'm a scientist working for the French National Institute of Agricultural Research (INRAE). I use computational and modelling approaches to understand how crops interact with their environments. I am exploring how community ecology principles and crop modeling can help to understand less controlled and more species-varied cropping systems. You can find additional information on my work and publications on my [ORCID](https://orcid.org/0000-0001-7225-936X) and [scholar](https://scholar.google.fr/citations?user=pUJ5yisAAAAJ&hl=fr) pages.
+I attempt to document this ongoing [research](posts/works/statement/index.qmd) in a detailed process book ([{{< fa file-pdf >}}](/img/book_fr.pdf), in French).
 
-#### research-creation
+**[research - research.]** I am a biologist. I study how plants function, how they interact with each other and with their environment. I explore how community ecology and data science can help to design and grow more sustainable cropping systems. You can find additional information on my work and publications on my [ORCID](https://orcid.org/0000-0001-7225-936X) and [scholar](https://scholar.google.fr/citations?user=pUJ5yisAAAAJ&hl=fr) pages.
 
-I try to use my data science skills to create algorithmic art. It makes me happy. Some works are published here, along with some [examples](https://github.com/picasa/generative_examples) and [tools](https://github.com/picasa/generate) i used for creative coding.
+**[research - creation.]** I am interested in algorithmic art, using computer code as a creative medium^[Levin, G. (2021). Code As Creative Medium: A Handbook for Computational Art and Design. MIT Press.].  
+I use data visualization techniques, seeking the boundary between explanation and suggestion. I readily adopt a systematic research approach to create images^[Molnar, V. (1984). Eloge de l’ordinateur (dans les arts visuels).]. 
+
+:::
+
+

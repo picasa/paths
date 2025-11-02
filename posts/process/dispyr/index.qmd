@@ -1,6 +1,6 @@
 ---
 title: "Dispyr"
-subtitle: "Processing topographical data into monochromatic ink sketches."
+subtitle: "Process topographical data into monochromatic ink sketches."
 author: "Pierre Casadebaig"
 date: "2022-11-25"
 image: "img/preview.webp"
@@ -47,8 +47,6 @@ theme_set(theme_bw())
 set.seed(2)
 
 ```
-
-> ### Processing topographical data into monochromatic ink sketches.
 
 This work is an attempt to emulate etching drawings with code, by playing with noise and data removal to create a natural rendering of random fragments of the Pyrénées. 
 

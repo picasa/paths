@@ -1,5 +1,8 @@
 /* css classes */
 
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;600&display=swap');
+
 /* styles */
 
 a {
@@ -18,6 +21,20 @@ a:hover {
 
 .img-rounded img {
   border-radius: 5px;
+}
+
+.img-square img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.img-ax img {
+  aspect-ratio: 0.707;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .quarto-listing .card {
@@ -124,4 +141,22 @@ a:hover {
 .gallery-flow.three { column-count: 3; }
 .gallery-flow.four { column-count: 4; }
 
+/* responsive rules */
+@media (max-width: 768px) {
+  .grid > .img-square {
+    grid-column: span 12 !important;
+  }
+  
+  .img-square.two {
+    column-count: 2; 
+  }
+}
 
+/* hide footnote section */
+section#footnotes {
+  display: none !important;
+}
+
+#quarto-appendix.default {
+    border-top: none !important;
+}
