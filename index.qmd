@@ -67,7 +67,7 @@ make_gallery(
 
 <br> 
 
-::: {style="font-size: 120%"}
+::: {style="font-size: 1.1em"}
 Using a programming language, i write algorithms that guide a machine to create [drawings](posts/works/portfolio/index.qmd) from data. Each execution produces a different result.  
 By transforming data into ink on paper, i'm considering technology as a tool to [investigate](posts/works/statement/index.qmd), to probe questions rather than solve them. Sometimes the algorithm produces exactly what was expected; disappointingly predictable. Other times it generates something surprising, which can become the most interesting starting point for the next iteration. This process is a way to work with circumstances and surprises, whether they come from randomness or coding errors!
 :::

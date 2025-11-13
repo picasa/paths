@@ -30,7 +30,9 @@ website:
       - href: https://github.com/picasa
         icon: github
       - href: https://bsky.app/profile/pcasadebaig.bsky.social
-        icon: twitter
+        icon: bluesky
+      - href: https://www.instagram.com/pcasadebaig/
+        icon: instagram
       - text: " "
         
   page-footer: 

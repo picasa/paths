@@ -45,6 +45,14 @@ a:hover {
   background: rgba(0,0,0,0.03);
 }
 
+.quarto-listing .listing-subtitle {
+  font-size: 0.9em;
+}
+
+.quarto-listing .listing-title {
+  font-size: 1em;
+}
+
 .navbar .dropdown-header {
   font-weight: bold !important;
   font-size: 0.85rem !important;
