@@ -14,7 +14,7 @@ about:
 I have a scientific background in biology and a self-taught artistic practice since 2021. I live and work in Toulouse.
 Currently, my scientific and artistic research coexist in a complementary manner, primarily sharing technical tools. I hope that the progressive convergence of these practices opens pathways toward original approaches to communicate the interdependencies of living systems.
 
-I attempt to document this ongoing [research](posts/works/statement/index.qmd) in a detailed process book ([{{< fa file-pdf >}}](/img/book_fr.pdf), in French).
+I attempt to document this ongoing [research](posts/works/statement/index.qmd) in a  process book ([{{< fa file-pdf >}}](/img/book_fr.pdf), fr).
 
 **[research - research.]** I am a biologist. I study how plants function, how they interact with each other and with their environment. I explore how community ecology and data science can help to design and grow more sustainable cropping systems. You can find additional information on my work and publications on my [ORCID](https://orcid.org/0000-0001-7225-936X) and [scholar](https://scholar.google.fr/citations?user=pUJ5yisAAAAJ&hl=fr) pages.
 
