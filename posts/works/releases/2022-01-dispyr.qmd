@@ -1,0 +1,30 @@
+---
+title: "Dispyr"
+subtitle: "16 digital and physical works, Objkt platform, Online"
+date: "2022-01-06"
+image: "img/gallery/2022_01_objkt/dispyr_141.webp"
+lightbox: true
+---
+
+```{r}
+#| include: false
+source(here::here("R/0_functions_web.r"))
+```
+
+A series of 16 curated iterations representing random fragments of the Pyrénées mountain range, based on real-world data from a digital elevation model. The overall aesthetic is obtained by adding noise and discarding data as a function of various attributes (elevation, slope, elevation dispersion). About 90% of the information present in the initial dataset is discarded, using four methods. This work is documented in a more in-depth [article](/posts/works/series/dispyr).
+
+* 16 digital and physical works
+  * digital, 2330 x 3307 lossless bitmap, computed and rendered with R. Published as NFTs on the objkt platform ([link](https://objkt.com/explore/tokens/1?faContracts=KT1Hnpe1bidkpSdnC1TFjke6AC65oSAuyPxK&sort=timestamp:desc)).
+  * ink on paper, plotted with Axidraw V3/A3 on 220 g/m2 paper (148x210 mm, A5) with Rotring Isograph 0.3mm pen.
+
+::: {.asterism}
+&#8258;
+:::
+
+::: {.column-body-inset .gallery-grid}
+```{r}
+#| echo: false
+#| results: asis
+make_gallery(full = "img/gallery/2022_01_objkt", output = "md")
+```
+:::

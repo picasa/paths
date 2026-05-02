@@ -1,0 +1,77 @@
+---
+format: html
+listing:
+  - id: list-systems
+    contents: "systems/*/*.qmd"
+    sort: "date desc"
+    type: grid
+    grid-columns: 5
+    fields: [image, title, subtitle]
+    image-height: 250px
+    categories: false
+    sort-ui: false
+    filter-ui: false
+---
+
+::: {.strip .header}
+### Research
+
+*Ideas and open questions between data visualization and drawing.*
+:::
+
+
+::: {.text-grid}
+
+::: {.text-col}
+
+### Statement
+
+I use the R programming language to write algorithms that generate digital images. The idea is to code a sequence of operations, balancing designed rules and randomness, that generates a new output each time it is executed. These outputs, vector images, are instructions to drive a pen plotter, a mechanical method to draw those images on paper.
+
+I often start from existing datasets, treating them as malleable materials to craft diverse visual representations. The whole process is very much like repurposing a tool originally made for statistical analysis and quantitative display of information for artistic endeavors.
+
+By transforming data into ink on paper, i'm considering technology as a tool to investigate, to probe questions rather than solve them. Sometimes the algorithm produces exactly what was expected — disappointingly predictable. Other times it generates something surprising, which can become the most interesting starting point for the next iteration.
+
+### Open questions
+
+::: {.questions}
+*How does a tool designed for statistical analysis can become an artistic medium?*
+
+*Can the rapid feedback loop between coding and visual outputs develop a particular kind of intuition?*
+
+*What can ink painting and calligraphy teach about expressivity in a digital and mechanical process?*
+:::
+
+:::
+
+::: {.text-col}
+
+### More information
+
+::: {.links}
+process book [{{< fa file-pdf >}}](../../img/book_fr.pdf)
+
+code examples [github →](https://github.com/picasa/generative_examples)
+:::
+
+
+### Tools
+
+[R]{.tag} [ggplot2]{.tag} [dem]{.tag} [pen plotter]{.tag} [axidraw]{.tag} [svg]{.tag}
+
+### Themes
+
+[landscape]{.tag} [topography]{.tag} [calligraphy]{.tag} [asemic writing]{.tag}
+
+:::
+
+:::  
+
+<br>
+
+## Systems
+
+::: {#list-systems}
+:::
+
+

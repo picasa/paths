@@ -2,14 +2,42 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/process/ridge/index.html",
-      "/posts/process/brush/index.html",
-      "/posts/process/dispyr/index.html",
-      "/posts/systems/cells/index.html",
-      "/posts/systems/collatz/index.html",
-      "/posts/systems/ridges/index.html",
-      "/posts/systems/asemic/index.html",
-      "/posts/systems/attractors/index.html"
+      "/posts/works/series/ridge/index.html",
+      "/posts/works/series/brush/index.html",
+      "/posts/works/series/dispyr/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/about/index.html",
+    "items": [
+      "/posts/works/exhibitions/2024-02-ridge-regression.html",
+      "/posts/works/exhibitions/2023-01-odysseys.html",
+      "/posts/works/exhibitions/2022-09-arithmetic-phenomena.html"
+    ]
+  },
+  {
+    "listing": "/posts/research/index.html",
+    "items": [
+      "/posts/research/systems/cells/index.html",
+      "/posts/research/systems/collatz/index.html",
+      "/posts/research/systems/ridges/index.html",
+      "/posts/research/systems/asemic/index.html",
+      "/posts/research/systems/attractors/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/works/index.html",
+    "items": [
+      "/posts/works/series/ridge/index.html",
+      "/posts/works/series/brush/index.html",
+      "/posts/works/series/dispyr/index.html",
+      "/posts/works/exhibitions/2024-02-ridge-regression.html",
+      "/posts/works/exhibitions/2023-01-odysseys.html",
+      "/posts/works/exhibitions/2022-09-arithmetic-phenomena.html",
+      "/posts/works/releases/2022-07-ridge-planting.html",
+      "/posts/works/releases/2022-07-dispyr-views.html",
+      "/posts/works/releases/2022-09-dispyr-studies.html",
+      "/posts/works/releases/2022-01-dispyr.html"
     ]
   }
 ]

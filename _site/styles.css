@@ -3,21 +3,140 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;600&display=swap');
 
-/* styles */
+/* global styles */
 
 a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.navbar-brand {
+  padding-right: 0.3em;
 }
 
-.hero-heading {
+@media (max-width: 576px) {
+  .navbar-brand { white-space: normal; line-height: 1.3; }
+}
+
+/* a simple list, light and clear */
+
+.questions p {
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed var(--bs-border-color);
+  color: var(--bs-secondary-color);
+  margin: 0;
+}
+.questions p:first-child {
+  border-top: 1px dashed var(--bs-border-color);
+}
+
+/* a strip, short sentence to link pages */
+.links p {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.4rem 0;
+  margin: 0;
+  color: var(--bs-tertiary-color);
+}
+
+.strip {
+  border-top: 1px solid var(--bs-border-color, #dee2e6);
+  border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.strip.header {
+  border-top: none;
+  padding: 2.5rem 0 0.75rem 0;
+  margin-bottom: 2rem;
+  align-items: baseline;
+}
+.strip.header p {
+  font-style: italic;
+  text-align: right;
+  max-width: 480px;
+}
+
+.strip p {
+  margin: 0;
+  color: var(--bs-secondary-color, #6c757d);
+}
+
+.strip-link {
+  font-size: 1rem;
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 2px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+/* box and tag containers */
+
+.box {
+  background: color-mix(in srgb, currentColor 5%, transparent);
+  padding: 1.5rem 1.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, currentColor 5%, transparent);
+  color: var(--bs-secondary-color);
+  padding: 2px 7px;
+  margin: 2px 2px 2px 0;
+}
+
+/* header styles */
+h2 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bs-secondary-color);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--bs-border-color);
+  padding-bottom: 0.4rem;
+}
+
+h3 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bs-secondary-color);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bs-tertiary-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quarto-listing h3 {
+  all: revert;
+}
+
+.home-heading {
   font-size: 1.3em; 
   margin: 3rem 0 2rem 0; 
   color: var(--bs-secondary-color);
 }
+
+/* image styles */
 
 .img-rounded img {
   border-radius: 5px;
@@ -37,6 +156,8 @@ a:hover {
   height: auto;
 }
 
+/* listings styles */
+
 .quarto-listing .card {
   border: none !important;
 }
@@ -47,19 +168,21 @@ a:hover {
 
 .quarto-listing .listing-subtitle {
   font-size: 0.9em;
+  color: var(--bs-tertiary-color);
+}
+
+.quarto-listing .listing-subtitle a {
+  color: inherit;
 }
 
 .quarto-listing .listing-title {
   font-size: 1em;
 }
 
-.navbar .dropdown-header {
-  font-weight: bold !important;
-  font-size: 0.85rem !important;
-  text-transform: capitalize !important;
-  letter-spacing: 0.5px !important;
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.25rem !important;
+@media (max-width: 768px) {
+  .quarto-post.image-right,
+  .quarto-post.image-left { flex-direction: row !important; gap: 1em; }
+  .quarto-post .thumbnail { align-self: flex-start; flex-shrink: 0; }
 }
 
 .asterism {
@@ -87,21 +210,13 @@ a:hover {
 
 .text-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
-}
-
-.text-col {
-  grid-column: span 1;
 }
 
 @media (max-width: 768px) {
   .text-grid {
     grid-template-columns: 1fr;
-  }
-
-  .text-col {
-    grid-column: span 1;
   }
 }
 
@@ -149,7 +264,6 @@ a:hover {
 .gallery-flow.three { column-count: 3; }
 .gallery-flow.four { column-count: 4; }
 
-/* responsive rules */
 @media (max-width: 768px) {
   .grid > .img-square {
     grid-column: span 12 !important;
@@ -158,6 +272,58 @@ a:hover {
   .img-square.two {
     column-count: 2; 
   }
+}
+
+/* full-screen image on home page. */
+.page-home #title-block-header { display: none; }
+.page-home #quarto-content > main { padding-top: 0; }
+
+.full-screen {
+  height: 100dvh;
+  margin-top: -82px;
+  overflow: hidden;
+}
+
+/* Quarto wraps images in <p> — reset its height and margins */
+.full-screen p {
+  height: 100%;
+  margin: 0;
+}
+
+.full-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bootstrap carousel sized to fill */
+.full-carousel,
+.full-carousel .carousel-inner,
+.full-carousel .carousel-item {
+  height: 100%;
+}
+
+.full-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-carousel .carousel-control-prev,
+.full-carousel .carousel-control-next {
+  opacity: 0.6;
+}
+
+.full-carousel .carousel-control-prev:hover,
+.full-carousel .carousel-control-next:hover {
+  opacity: 0.8;
+}
+
+.full-carousel .carousel-control-prev i,
+.full-carousel .carousel-control-next i {
+  font-size: 3rem;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.6));
 }
 
 /* hide footnote section */

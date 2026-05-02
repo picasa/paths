@@ -1,0 +1,28 @@
+---
+title: "Dispyr studies"
+subtitle: "4 digital works, Objkt platform, Online"
+date: "2022-01-13"
+image: "img/gallery/2022_09_objkt/202201_dispyr_ossau.webp"
+lightbox: true
+---
+
+```{r}
+#| include: false
+source(here::here("R/0_functions_web.r"))
+```
+
+An attempt to emulate etching aesthetics with code, methodically removing more and more information from topographical data.
+
+* 4 digital works, lossless bitmap, computed and rendered with R. Published as NFTs on the objkt platform ([link](https://objkt.com/explore/tokens/1?faContracts=KT1QntQaBm2dhB9V2eH74i142FjS1KXK2kAw&sort=timestamp:desc)).
+
+::: {.asterism}
+&#8258;
+:::
+
+::: {.column-body-inset .gallery-grid}
+```{r}
+#| echo: false
+#| results: asis
+make_gallery(full = "img/gallery/2022_09_objkt", output = "md")
+```
+:::

@@ -1,0 +1,15 @@
+{
+  "hash": "f52ea5b8dee35ba631a0b5dd7965304c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Dispyr Views\"\nsubtitle: \"8 digital and physical works, Objkt platform, Online\"\ndate: \"2022-07-05\"\nimage: \"img/gallery/2022_07_objkt/ossau.webp\"\nlightbox: true\n---\n\n\n\nSelected fragments of the Pyrénées mountain range, based on real-world data from a digital elevation model (15x10 km region). The overall aesthetic is obtained by adding noise and discarding data as a function of a distance matrix.\n\n::: {.column-body-inset .gallery-grid}\n![](img/gallery/2022_07_objkt/20220703_ridges.webp){.lightbox}\n\n![](img/gallery/2022_07_objkt/20220715_ridges.webp){.lightbox}\n\n![](img/gallery/2022_07_objkt/20220716_ridges.webp){.lightbox}\n:::\n\n* 8 digital and physical works\n  * digital, 4960 x 3507 lossless bitmap, computed and rendered with R. Published as NFTs on the objkt platform ([link](https://objkt.com/explore/tokens/1?faContracts=KT1Aeoc32hMWkrLuej1WBwKNvwAWCqHPuFnr&sort=timestamp:desc)).\n  * ink on paper, plotted with Axidraw V3/A3 on 300 g/m2 paper (298x420 mm, A3) with Rotring Isograph 0.3mm pen.\n\n::: {.asterism}\n&#8258;\n:::\n\n::: {.column-body-inset .gallery-grid}\n<div> ![](img/gallery/2022_07_objkt/balaitous.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_objkt/cabaliros.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_objkt/canigo.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_objkt/carlit.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_objkt/montcalm.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_objkt/neouvielle.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_objkt/ossau.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_objkt/vignemale.webp){.lightbox group=\"default\"} </div>\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

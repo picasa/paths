@@ -1,0 +1,30 @@
+---
+title: "Ridge planting"
+subtitle: "4 digital and physical works, Teia platform, Online"
+date: "2022-07-15"
+image: "img/gallery/2022_07_teia/ridge_planting_392.webp"
+lightbox: true
+---
+
+```{r}
+#| include: false
+source(here::here("R/0_functions_web.r"))
+```
+
+Collaboration with Anthony Siracusa. This short series is an attempt to gradually move from code-generated to hand-drawn works. In a first step we generated about a hundred simple landscapes, using geographical data from the Alps mountain range. We then selected a dozen outputs, traced them using a pen-plotter, made a final selection and finally drawn plant shapes between the ridges.
+
+* 4 digital and physical works
+  * digital, 4960 x 3507 lossless bitmap, computed and rendered with R. Published as NFTs on the teia platform ([link](https://teia.art/pierre_casadebaig/collabs)).
+  * ink on paper (210 x 297 mm, A4), hand and machine-drawn, landscape digitally rendered.
+
+::: {.asterism}
+&#8258;
+:::
+
+::: {.column-body-inset .gallery-grid}
+```{r}
+#| echo: false
+#| results: asis
+make_gallery(full = "img/gallery/2022_07_teia", output = "md")
+```
+:::

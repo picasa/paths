@@ -1,0 +1,15 @@
+{
+  "hash": "66406a7c28976a63d41495fb03ec6ee9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Ridge planting\"\nsubtitle: \"4 digital and physical works, Teia platform, Online\"\ndate: \"2022-07-15\"\nimage: \"img/gallery/2022_07_teia/ridge_planting_392.webp\"\nlightbox: true\n---\n\n\n\nCollaboration with Anthony Siracusa. This short series is an attempt to gradually move from code-generated to hand-drawn works. In a first step we generated about a hundred simple landscapes, using geographical data from the Alps mountain range. We then selected a dozen outputs, traced them using a pen-plotter, made a final selection and finally drawn plant shapes between the ridges.\n\n* 4 digital and physical works\n  * digital, 4960 x 3507 lossless bitmap, computed and rendered with R. Published as NFTs on the teia platform ([link](https://teia.art/pierre_casadebaig/collabs)).\n  * ink on paper (210 x 297 mm, A4), hand and machine-drawn, landscape digitally rendered.\n\n::: {.asterism}\n&#8258;\n:::\n\n::: {.column-body-inset .gallery-grid}\n<div> ![](img/gallery/2022_07_teia/ridge_planting_100.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_teia/ridge_planting_129.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_teia/ridge_planting_392.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_07_teia/ridge_planting_442.webp){.lightbox group=\"default\"} </div>\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

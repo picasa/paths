@@ -1,100 +1,74 @@
 ---
-format: html 
+format: html
 listing:
-  - id: list-process
-    contents: "posts/process/*/*.qmd"
-    sort: "date desc"
-    type: grid
-    grid-columns: 1
-    fields: [image, title, subtitle]
-    image-height: 300px
-    categories: false
-    sort-ui: false
-    filter-ui: false
-  - id: list-systems
-    contents: "posts/systems/*/*.qmd"
+  - id: list-series
+    contents: "posts/works/series/*/*.qmd"
     sort: "date desc"
     type: grid
     grid-columns: 3
-    fields: [image, title]
-    image-height: 150px
+    fields: [image, title, subtitle]
+    image-height: 250px
     categories: false
     sort-ui: false
     filter-ui: false
 page-layout: full
-title-block-banner: true
 ---
 
-```{r, include=FALSE}
-source(here::here("R/0_functions_web.r"))
+:::{.column-screen .full-screen}
+
+```{=html}
+<div id="carousel" class="carousel slide full-carousel" data-bs-ride="false">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="posts/works/portfolio/img/gallery/20231105_ridges.webp" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="posts/works/portfolio/img/gallery/20211026_ridges.webp" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="posts/works/portfolio/img/gallery/20230108_brush.webp" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="posts/works/portfolio/img/gallery/20220426_ridges.webp" alt="">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <i class="bi bi-caret-left-fill" aria-hidden="true"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <i class="bi bi-caret-right-fill" aria-hidden="true"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
 ```
 
-:::{.column-body-outset style="font-size: 100%; margin-bottom: 2cm;"}
-
-::: {.grid}
-
-::: {.g-col-9 .center-container-v style="font-size: 150%;"}
-> **Algorithmic art, mainly designed for pen plotters.**
 :::
 
-:::
 
-<br> 
-
-::: {.grid}
-
-::: {.g-col-6 .gallery-flow .img-square .img-rounded} 
- ![](posts/works/portfolio/img/gallery/20231105_ridges.webp){.lightbox group="default"}
-:::
-
-::: {.g-col-6 .gallery-flow .two .img-square .img-rounded}
-```{r}
-#| echo: false
-#| results: asis
-
-list_images <- c(
-  "20230527_ridges","20230108_brush","20231026_ridges","20220426_ridges")
-
-make_gallery(
-  output = "md", full = "posts/works/portfolio/img/gallery", sort = "none",
-  pattern = list_images
-)
-
-```
-:::
-
-:::
+:::{.column-body}
 
 <br> 
 
 ::: {style="font-size: 1.1em"}
-Using a programming language, i write algorithms that guide a machine to create [drawings](posts/works/portfolio/index.qmd) from data. Each execution produces a different result.  
-By transforming data into ink on paper, i'm considering technology as a tool to [investigate](posts/works/statement/index.qmd), to probe questions rather than solve them. Sometimes the algorithm produces exactly what was expected; disappointingly predictable. Other times it generates something surprising, which can become the most interesting starting point for the next iteration. This process is a way to work with circumstances and surprises, whether they come from randomness or coding errors!
+> Using a programming language, i write algorithms that guide a machine to create drawings from data. Each execution produces a different result, a way to work with circumstances and surprises, whether they come from randomness or coding errors.
+:::
+
+## Series 
+
+::: {#list-series}
 :::
 
 <br> 
 
-::: {.asterism}
-&#8258;
-:::
+::: {.strip}
+By transforming data into ink on paper, i consider technology as a tool to investigate, leading to new questions and ideas.
 
-### Series {#section-process .hero-heading}
-
-::: {#list-process}
-:::
-
-### Systems {#section-systems .hero-heading}
-
-::: {#list-systems}
-:::
-
-<br> 
-
-::: {.asterism}
-&#8258;
+[research →](posts/research/index.qmd){.strip-link}
 :::
 
 :::
-
-
-

@@ -2,30 +2,20 @@ project:
   type: website
   
 website:
-  title: "Pierre Casadebaig"
+  title: "Pierre Casadebaig | *algorithmic drawing*"
   description: "A visual journal about algorithmic art, mainly designed for pen plotters."
-  site-url: art.casadebaig.net	
+  site-url: https://art.casadebaig.net
   navbar:
     background: "dark"
     right:
       - text: "Home"
         href: "index.qmd"
       - text: "Works"
-        menu:
-        - text: "Portfolio"
-          href: "posts/works/portfolio/index.qmd"
-        - text: "Published"          
-          href: "posts/works/published/index.qmd"
-      - text: "Process"
-        menu:
-        - text: "Series"
-          href: "index.qmd#section-process"
-        - text: "Systems"
-          href: "index.qmd#section-systems"
-      - href: "posts/works/statement/index.qmd"
-        text: "Research"
-      - href: about.qmd
-        text: "Bio"
+        href: "posts/works/index.qmd"
+      - text: "Research"          
+        href: "posts/research/index.qmd"
+      - text: "About"
+        href: "posts/about/index.qmd"
       - text: " "
       - href: https://github.com/picasa
         icon: github
@@ -36,7 +26,7 @@ website:
       - text: " "
         
   page-footer: 
-    center: "Copyright 2020-2025, Pierre Casadebaig. [{{< fa brands creative-commons >}}](https://creativecommons.org/licenses/by-sa/4.0/) Images." 
+    center: "Copyright 2020-2026, Pierre Casadebaig. Images [{{< fa brands creative-commons >}}](https://creativecommons.org/licenses/by-sa/4.0/)" 
 
 execute:
   freeze: auto
@@ -45,11 +35,10 @@ format:
   html:
     mainfont: Noto Sans Display
     css: styles.css
-    theme: 
-      light: flatly
-      dark: darkly
+    theme:
+      light: [flatly, custom.scss]
+      dark: [darkly, custom.scss]
     highlight-style: github
     fontsize: 100%
-    linkcolor: "#45947E"
 
   

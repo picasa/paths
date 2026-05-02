@@ -1,0 +1,15 @@
+{
+  "hash": "e2ded1b1f524440bad708da0c61d7585",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Odysseys\"\nsubtitle: \"8 digital and physical works, collective exhibition curated by Verse, London\"\ndate: \"2023-01-30\"\nimage: \"img/preview.webp\"\nlightbox: true\n---\n\n\n\nIn this collection of eight landscape representations, I used real elevation data produced by various public institutes to create digital representations of the Pyrénées mountain range. I selected pieces moving from realism to abstraction while staying in the landscape figurative style, a way to acknowledge mountains as scientific and mystic places.\n\n![](img/preview.webp)\n\nThese works were selected and presented during a collective exhibition ([*Odysseys*](https://verse.works/exhibitions/odysseys-pierre-casadebaig)), curated by the [Verse](https://verse.works) platform, in January 2023, at [Cromwell Place](https://www.cromwellplace.com), London.\n\n* 8 digital and physical works\n  * digital, lossless bitmap, computed and rendered with R. Published as NFTs on the verse platform ([link](https://verse.works/series/dispyr-by-pierre-casadebaig-1)).\n  * ink on paper, plotted with Axidraw V3/A3 on 220 g/m2 paper (various format) with Rotring Isograph pens, Pentel FL2B brush pen, Pilot Parallel pen.\n\n::: {.asterism}\n&#8258;\n:::\n\n::: {.column-body-inset .gallery-flow .three}\n<div> ![](img/gallery/2023_01_verse/1_raw.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/1_raw_framed.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/2_realistic.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/2_realistic_framed.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/3_transformed.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/3_transformed_framed.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/4_altered.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/4_altered_framed.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/5_fragmented.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/5_fragmented_framed.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/6_simplified.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/7_synthetic.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/7_synthetic_framed.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2023_01_verse/8_asemic.webp){.lightbox group=\"default\"} </div>\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

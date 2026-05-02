@@ -1,0 +1,35 @@
+---
+title: "Ridge Regression"
+subtitle: "128 digital and physical works, developed and curated in collaboration with Heft gallery, New York City"
+date: "2024-02-06"
+image: "../series/brush/img/gallery/ridge_002.webp"
+lightbox: true
+---
+
+```{r}
+#| include: false
+source(here::here("R/0_functions_web.r"))
+```
+
+This was my first attempt at a relatively long series of code generated works (*long-form*), built on my previous works on data-based landscape. By focusing on an evolutionary process applied to geology, it generates a variety of landscape elements that are then selected and recombined to create new landforms. This work is documented in two in-depth articles ([ridge](/posts/works/series/ridge) and [brush](/posts/works/series/brush) series).
+
+This series was developed and curated in collaboration with the [Heft](https://heftgallery.com/exhibition/ridge-regressions) gallery and released as NFT on the [verse](https://verse.works) platform.
+
+* 128 digital and physical works
+  * digital, computed and rendered with R, bitmap, scanned from the paper works. Published as NFTs on the verse platform ([link](https://verse.works/series/ridge-regression-by-pierre-casadebaig)).
+  * ink on paper, plotted with Axidraw V3/A3 on 220 g/m2 paper (148x210 mm, A5) with various pens.
+
+::: {.asterism}
+&#8258;
+:::
+
+::: {.column-body-inset .gallery-grid .small}
+```{r}
+#| echo: false
+#| results: asis
+#| 
+make_gallery(full = "../series/ridge/img/gallery/", output = "md")
+make_gallery(full = "../series/brush/img/gallery/", output = "md")
+
+```
+:::

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(defuddle parse *)",
+      "Bash(python3 -c ' *)",
+      "Bash(quarto render *)",
+      "Bash(python3)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:quarto.org)",
+      "Bash(quarto --path)",
+      "Bash(quarto --paths)",
+      "Bash(cwebp -version)",
+      "Bash(cwebp /Users/pierre/Documents/Personnel/generative/paths/posts/works/portfolio/img/gallery/20211026_ridges.jpeg -o /Users/pierre/Documents/Personnel/generative/paths/posts/works/portfolio/img/gallery/20211026_ridges.webp)"
+    ]
+  }
+}

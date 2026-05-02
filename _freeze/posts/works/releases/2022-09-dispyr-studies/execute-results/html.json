@@ -1,0 +1,15 @@
+{
+  "hash": "049fab3839a20f3e68536bd0cc79854c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Dispyr studies\"\nsubtitle: \"4 digital works, Objkt platform, Online\"\ndate: \"2022-01-13\"\nimage: \"img/gallery/2022_09_objkt/202201_dispyr_ossau.webp\"\nlightbox: true\n---\n\n\n\nAn attempt to emulate etching aesthetics with code, methodically removing more and more information from topographical data.\n\n* 4 digital works, lossless bitmap, computed and rendered with R. Published as NFTs on the objkt platform ([link](https://objkt.com/explore/tokens/1?faContracts=KT1QntQaBm2dhB9V2eH74i142FjS1KXK2kAw&sort=timestamp:desc)).\n\n::: {.asterism}\n&#8258;\n:::\n\n::: {.column-body-inset .gallery-grid}\n<div> ![](img/gallery/2022_09_objkt/202201_dispyr_ossau.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_09_objkt/202204_dispyr_alberes.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_09_objkt/202207_dispyr_carlit.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_09_objkt/202209_dispyr_atlantic.webp){.lightbox group=\"default\"} </div>\n<div> ![](img/gallery/2022_09_objkt/20240420_dispyr_izaga.webp){.lightbox group=\"default\"} </div>\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

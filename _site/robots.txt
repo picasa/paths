@@ -1,1 +1,1 @@
-Sitemap: art.casadebaig.net/sitemap.xml
+Sitemap: https://art.casadebaig.net/sitemap.xml
