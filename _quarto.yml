@@ -34,6 +34,7 @@ execute:
   
 format:
   html:
+    include-in-header: analytics.html
     mainfont: Noto Sans Display
     css: styles.css
     theme:

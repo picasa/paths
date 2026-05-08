@@ -11,7 +11,9 @@
       "Bash(quarto --path)",
       "Bash(quarto --paths)",
       "Bash(cwebp -version)",
-      "Bash(cwebp /Users/pierre/Documents/Personnel/generative/paths/posts/works/portfolio/img/gallery/20211026_ridges.jpeg -o /Users/pierre/Documents/Personnel/generative/paths/posts/works/portfolio/img/gallery/20211026_ridges.webp)"
+      "Bash(cwebp /Users/pierre/Documents/Personnel/generative/paths/posts/works/portfolio/img/gallery/20211026_ridges.jpeg -o /Users/pierre/Documents/Personnel/generative/paths/posts/works/portfolio/img/gallery/20211026_ridges.webp)",
+      "Bash(curl -s 'https://github.com/search?q=quarto+dark+mode+toggle+icon+css&type=discussions')",
+      "Bash(cwebp -q 85 /Users/pierre/Documents/Personnel/generative/paths/posts/about/img/pierre.jpg -o /Users/pierre/Documents/Personnel/generative/paths/posts/about/img/pierre.webp)"
     ]
   }
 }

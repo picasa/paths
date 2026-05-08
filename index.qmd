@@ -1,4 +1,5 @@
 ---
+pagetitle: "Pierre Casadebaig"
 format: html
 listing:
   - id: list-series
@@ -65,10 +66,19 @@ page-layout: full
 
 <br> 
 
-::: {.strip}
-By transforming data into ink on paper, i consider technology as a tool to investigate, leading to new questions and ideas.
+::: {.strip .grid}
+::: {}
+A digital and mechanical process that turns data into ink on paper.
+
+[works →](posts/works/index.qmd){.strip-link}
+:::
+
+::: {.span-2}
+A technology to play with aesthetics, and to question the practice itself.
 
 [research →](posts/research/index.qmd){.strip-link}
 :::
+:::
+
 
 :::

@@ -1,4 +1,5 @@
 ---
+pagetitle: "Works"
 format: html
 listing:
   - id: list-series

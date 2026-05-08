@@ -1,4 +1,5 @@
 ---
+pagetitle: "About"
 format: html
 listing: 
   - id: list-exhibitions
@@ -48,10 +49,12 @@ I am interested in algorithmic art, using computer code as a creative medium^[Le
 
 ### Contact
 
-![](img/pierre.jpg)
+![](img/pierre.webp)
 
 ::: {.links .box}
 email [pierre.casa@gmail.com](mailto:pierre.casa@gmail.com)
+
+portfolio [[en]() • [fr](../../img/book_fr.pdf)]{.link-pair}
 
 code [github](https://github.com/picasa)
 

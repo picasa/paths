@@ -1,4 +1,5 @@
 ---
+pagetitle: "Research"
 format: html
 listing:
   - id: list-systems
@@ -30,7 +31,7 @@ I use the R programming language to write algorithms that generate digital image
 
 I often start from existing datasets, treating them as malleable materials to craft diverse visual representations. The whole process is very much like repurposing a tool originally made for statistical analysis and quantitative display of information for artistic endeavors.
 
-By transforming data into ink on paper, i'm considering technology as a tool to investigate, to probe questions rather than solve them. Sometimes the algorithm produces exactly what was expected — disappointingly predictable. Other times it generates something surprising, which can become the most interesting starting point for the next iteration.
+By transforming data into ink on paper, i'm considering technology as a tool to investigate, to raise new questions rather than solve them. Sometimes the algorithm produces exactly what was expected, very predictable. Other times it generates something surprising, because of the randomness, an unexpected combination of factors, or even a coding error, and this can become an interesting starting point for the next iteration.
 
 ### Open questions
 
@@ -51,7 +52,7 @@ By transforming data into ink on paper, i'm considering technology as a tool to 
 ::: {.links}
 process book [{{< fa file-pdf >}}](../../img/book_fr.pdf)
 
-code examples [github →](https://github.com/picasa/generative_examples)
+code examples [{{< fa brands github >}}](https://github.com/picasa/generative_examples)
 :::
 
 
