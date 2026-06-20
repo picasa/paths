@@ -380,12 +380,12 @@ h4 {
 
 .full-carousel .carousel-control-prev,
 .full-carousel .carousel-control-next {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .full-carousel .carousel-control-prev:hover,
 .full-carousel .carousel-control-next:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .full-carousel .carousel-control-prev i,
@@ -394,11 +394,11 @@ h4 {
   filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.6));
 }
 
-/* caption naming the work shown, bottom-left, links to its series */
+/* caption for frontpage works, bottom-left, links to its series */
 .caption {
   position: absolute;
   left: 2rem;
-  bottom: 2rem;
+  bottom: 4rem;
   z-index: 3;
   display: inline-flex;
   align-items: center;
@@ -418,10 +418,6 @@ h4 {
   content: "\f285";
   font-size: 0.85em;
   opacity: 0.7;
-}
-
-@media (max-width: 576px) {
-  .caption { left: 1rem; bottom: 1rem; }
 }
 
 /* hide footnote section */
