@@ -14,7 +14,12 @@
       "Bash(cwebp /Users/pierre/Documents/Personnel/generative/paths/posts/works/portfolio/img/gallery/20211026_ridges.jpeg -o /Users/pierre/Documents/Personnel/generative/paths/posts/works/portfolio/img/gallery/20211026_ridges.webp)",
       "Bash(curl -s 'https://github.com/search?q=quarto+dark+mode+toggle+icon+css&type=discussions')",
       "Bash(cwebp -q 85 /Users/pierre/Documents/Personnel/generative/paths/posts/about/img/pierre.jpg -o /Users/pierre/Documents/Personnel/generative/paths/posts/about/img/pierre.webp)",
-      "Bash(ipconfig getifaddr *)"
+      "Bash(ipconfig getifaddr *)",
+      "Read(//Users/pierre/**)",
+      "Bash(mdfind -name \".obsidian\")",
+      "Bash(find ~/Documents -maxdepth 3 -type d -name \".obsidian\" 2>/dev/null | head; echo \"---\"; find ~ -maxdepth 5 -type d -iname \"*obsidian*\" 2>/dev/null | grep -v Library | head)",
+      "Read(//Users/pierre/Documents/**)",
+      "Bash(obsidian search *)"
     ]
   }
 }

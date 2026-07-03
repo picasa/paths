@@ -78,7 +78,7 @@ A digital and mechanical process that turns data into ink on paper.
 :::
 
 ::: {.span-2}
-A technology to play with aesthetics, and to question the practice itself.
+A technology to play with aesthetics.
 
 [research →](posts/research/index.qmd){.strip-link}
 :::
