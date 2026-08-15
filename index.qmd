@@ -4,7 +4,7 @@ format: html
 listing:
   - id: list-series
     contents: "posts/works/series/*/*.qmd"
-    sort: "date desc"
+    sort: "date asc"
     type: grid
     grid-columns: 3
     fields: [image, title, subtitle]
@@ -31,7 +31,7 @@ page-layout: full
     </div>
     <div class="carousel-item">
       <img src="posts/works/portfolio/img/gallery/20230108_brush.webp" alt="">
-      <a class="caption" href="posts/works/series/brush/index.qmd">2x3 km, f(42.5, 7.10), 210x297 mm, 2023</a>
+      <a class="caption" href="posts/works/series/loess/index.qmd">2x3 km, f(42.5, 7.10), 210x297 mm, 2023</a>
     </div>
     <div class="carousel-item">
       <img src="posts/works/portfolio/img/gallery/20220426_ridges.webp" alt="">
@@ -68,7 +68,12 @@ page-layout: full
 ::: {#list-series}
 :::
 
-<br> 
+
+::: {.asterism}
+&#8258;
+:::
+
+<br>
 
 ::: {.strip .grid}
 ::: {}
@@ -78,7 +83,7 @@ A digital and mechanical process that turns data into ink on paper.
 :::
 
 ::: {.span-2}
-A technology to play with aesthetics.
+What trace of a gesture remains in an algorithmic process ?
 
 [research →](posts/research/index.qmd){.strip-link}
 :::

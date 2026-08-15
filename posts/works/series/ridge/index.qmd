@@ -116,11 +116,11 @@ Each page of the series is divided into different sections, or "cells", by a gen
 > **Twelve random illustrations from the modular grid system.**
 > The page is randomly divided into up to three parts, with each part being a one-sixth multiple (e.g. 1/6, 2/6, 3/6, top left page). This partition is first applied on the y-axis of the page, and then on one or two  applied on the x-axis
 
-We designed four page styles using both fixed layouts and this modular grid system: two full-page landscapes ([*brush*](/posts/works/series/brush) and *cloud*), and two grid layouts with (*figure*) or without legend (*partition*).
+We designed four page styles using both fixed layouts and this modular grid system: two full-page landscapes ([*loess*](/posts/works/series/loess) and *cloud*), and two grid layouts with (*figure*) or without legend (*partition*).
 Three additional systems were used to complete the graphical novel aesthetic:
 
   1. clouds made from probabilistic stroke density (*cloud*)
-  2. glyphs that encode either the geographical coordinates (*brush*, one region) or the value of the random seeds (*figure*, n regions)
+  2. glyphs that encode either the geographical coordinates (*loess*, one region) or the value of the random seeds (*figure*, n regions)
   3. asemic text, used as a caption in the *figure* style.
 
 ::: {.column-body-inset .gallery-grid .small}
@@ -131,15 +131,15 @@ Three additional systems were used to complete the graphical novel aesthetic:
 :::
 
 > **An illustration of the four defined page styles.**
-> From left to right, two full-page landscapes ([*brush*](/posts/works/series/brush) and *cloud*), and two grid layouts with (*figure*) or without legend (*partition*). These images are vector files (they only represent strokes), which is all the information needed to drive a drawing machine.
+> From left to right, two full-page landscapes ([*loess*](/posts/works/series/loess) and *cloud*), and two grid layouts with (*figure*) or without legend (*partition*). These images are vector files (they only represent strokes), which is all the information needed to drive a drawing machine.
 
 
 ### Draw the digital works on paper
 
 All the vector outputs from this series were traced on paper (Canson mixed media, natural white, fine grain, 200 gsm, 148 x 210 mm) with a different set of pens : 
 
-* **brush pen** (Pentel FL2B, black ink): ridges in the *brush* design.
-* **calligraphy fountain pen** (Lamy Joy 1.5 mm): glyphs in the *brush* design (Sailor Shikiori Yodaki red ink) and in the *cloud* design (Pilot Iroshizuku take-sumi neutral black ink). 
+* **brush pen** (Pentel FL2B, black ink): ridges in the *loess* design.
+* **calligraphy fountain pen** (Lamy Joy 1.5 mm): glyphs in the *loess* design (Sailor Shikiori Yodaki red ink) and in the *cloud* design (Pilot Iroshizuku take-sumi neutral black ink). 
 * **calligraphy pens** (Pilot Parallel): hatched cloud in the *cloud* design (3.8 mm, Pilot Iroshizuku fuyu-syogun medium gray ink), bold writings in the *figure* design (1.5 mm, Pilot black ink).
 * **technical pens** (Rotring Isograph): ridges in the *cloud*, *figure*, and *grids* designs (0.3 mm), frames in the  *figure* and *grids* style (0.8 mm), and writings in the *figure* style (0.3 mm), all were drawn with the Pilot Iroshizuku take-sumi ink.
 
@@ -157,8 +157,8 @@ All the vector outputs from this series were traced on paper (Canson mixed media
 
 ## Iterations
 
-To view the algorithm output space, we generated 256 iterations per page style (1024 for the *brush* style).
-The final series gathers 128 works, a manual selection of 72 iterations from the *ridge regression* algorithm and 56 iterations from the previous [*brush*](/posts/works/series/brush/) algorithm. 
+To view the algorithm output space, we generated 256 iterations per page style (1024 for the *loess* style).
+The final series gathers 128 works, a manual selection of 72 iterations from the *ridge regression* algorithm and 56 iterations from the previous [*loess*](/posts/works/series/loess/) algorithm.
 
 So, none of these landscapes ever existed, and most of those which were generated were lost. At least, the ones traced on paper should have a longer existence than their digital twins.
 

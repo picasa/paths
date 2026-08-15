@@ -19,7 +19,19 @@
       "Bash(mdfind -name \".obsidian\")",
       "Bash(find ~/Documents -maxdepth 3 -type d -name \".obsidian\" 2>/dev/null | head; echo \"---\"; find ~ -maxdepth 5 -type d -iname \"*obsidian*\" 2>/dev/null | grep -v Library | head)",
       "Read(//Users/pierre/Documents/**)",
-      "Bash(obsidian search *)"
+      "Bash(obsidian search *)",
+      "Bash(find /usr/local -path \"*share/schema*\" -name \"*listing*\" 2>/dev/null | head; ls /usr/local/quarto*/share/schema 2>/dev/null | head)",
+      "Read(//usr/local/**)",
+      "Bash(grep -n -A12 \"name: sort\" /Applications/quarto/share/schema/document-listing.yml | head -60)",
+      "Read(//Applications/quarto/share/schema/**)",
+      "Bash(grep -rn \"sort\" /Applications/quarto/share/schema/definitions.yml | head -30)",
+      "Bash(cd /Users/pierre/Documents/Personnel/generative && ls functions projects 2>/dev/null; echo \"=== grep ===\"; grep -rli \"brush\" projects functions --include=\"*.qmd\" --include=\"*.r\" --include=\"*.R\" --include=\"*.md\" 2>/dev/null | head -20)",
+      "Read(//Users/pierre/Documents/Personnel/generative/**)",
+      "Bash(grep -rn -A6 \"aliases\" /Applications/quarto/share/schema/definitions.yml | head -20; echo \"===\"; grep -rn \"aliases\" /Applications/quarto/share/schema/*.yml | head)",
+      "Bash(grep -rni \"brush\" /Users/pierre/Documents/Personnel/generative/projects/landscape/R/landscape_book.qmd)",
+      "Read(//Users/pierre/Documents/Personnel/generative/projects/landscape/R/**)",
+      "Bash(git mv *)",
+      "Bash(cd /Users/pierre/Documents/Personnel/generative && grep -rn \"page_brush\\\\|\\\\\"brush\\\\\"\" functions/ projects/landscape --include=\"*.r\" --include=\"*.R\" 2>/dev/null | head -15)"
     ]
   }
 }

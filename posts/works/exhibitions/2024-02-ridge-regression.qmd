@@ -2,7 +2,7 @@
 title: "Ridge Regression"
 subtitle: "128 digital and physical works, developed and curated in collaboration with Heft gallery, New York City"
 date: "2024-02-06"
-image: "../series/brush/img/gallery/ridge_002.webp"
+image: "../series/loess/img/gallery/ridge_002.webp"
 lightbox: true
 ---
 
@@ -11,7 +11,7 @@ lightbox: true
 source(here::here("R/0_functions_web.r"))
 ```
 
-This was my first attempt at a relatively long series of code generated works (*long-form*), built on my previous works on data-based landscape. By focusing on an evolutionary process applied to geology, it generates a variety of landscape elements that are then selected and recombined to create new landforms. This work is documented in two in-depth articles ([ridge](/posts/works/series/ridge) and [brush](/posts/works/series/brush) series).
+This was my first attempt at a relatively long series of code generated works (*long-form*), built on my previous works on data-based landscape. By focusing on an evolutionary process applied to geology, it generates a variety of landscape elements that are then selected and recombined to create new landforms. This work is documented in two in-depth articles ([ridge](/posts/works/series/ridge) and [loess](/posts/works/series/loess) series).
 
 This series was developed and curated in collaboration with the [Heft](https://heftgallery.com/exhibition/ridge-regressions) gallery and released as NFT on the [verse](https://verse.works) platform.
 
@@ -29,7 +29,7 @@ This series was developed and curated in collaboration with the [Heft](https://h
 #| results: asis
 #| 
 make_gallery(full = "../series/ridge/img/gallery/", output = "md")
-make_gallery(full = "../series/brush/img/gallery/", output = "md")
+make_gallery(full = "../series/loess/img/gallery/", output = "md")
 
 ```
 :::

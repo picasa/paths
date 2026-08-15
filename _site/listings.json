@@ -2,9 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/works/series/ridge/index.html",
-      "/posts/works/series/brush/index.html",
-      "/posts/works/series/dispyr/index.html"
+      "/posts/works/series/dispyr/index.html",
+      "/posts/works/series/loess/index.html",
+      "/posts/works/series/ridge/index.html"
     ]
   },
   {
@@ -29,7 +29,7 @@
     "listing": "/posts/works/index.html",
     "items": [
       "/posts/works/series/ridge/index.html",
-      "/posts/works/series/brush/index.html",
+      "/posts/works/series/loess/index.html",
       "/posts/works/series/dispyr/index.html",
       "/posts/works/exhibitions/2024-02-ridge-regression.html",
       "/posts/works/exhibitions/2023-01-odysseys.html",

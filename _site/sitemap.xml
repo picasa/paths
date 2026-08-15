@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://art.casadebaig.net/index.html</loc>
-    <lastmod>2026-07-03T14:25:17.440Z</lastmod>
+    <lastmod>2026-08-15T08:21:16.835Z</lastmod>
   </url>
   <url>
     <loc>https://art.casadebaig.net/posts/works/exhibitions/2022-09-arithmetic-phenomena.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://art.casadebaig.net/posts/works/exhibitions/2024-02-ridge-regression.html</loc>
-    <lastmod>2026-05-02T13:46:43.268Z</lastmod>
+    <lastmod>2026-08-15T08:17:55.952Z</lastmod>
   </url>
   <url>
     <loc>https://art.casadebaig.net/posts/works/releases/2022-01-dispyr.html</loc>
@@ -21,8 +21,8 @@
     <lastmod>2026-05-01T20:41:37.300Z</lastmod>
   </url>
   <url>
-    <loc>https://art.casadebaig.net/posts/works/series/dispyr/index.html</loc>
-    <lastmod>2026-02-24T20:02:03.834Z</lastmod>
+    <loc>https://art.casadebaig.net/posts/works/series/loess/index.html</loc>
+    <lastmod>2026-08-15T08:17:16.415Z</lastmod>
   </url>
   <url>
     <loc>https://art.casadebaig.net/posts/about/index.html</loc>
@@ -58,11 +58,11 @@
   </url>
   <url>
     <loc>https://art.casadebaig.net/posts/works/series/ridge/index.html</loc>
-    <lastmod>2026-05-02T23:31:31.897Z</lastmod>
+    <lastmod>2026-08-15T08:17:41.307Z</lastmod>
   </url>
   <url>
-    <loc>https://art.casadebaig.net/posts/works/series/brush/index.html</loc>
-    <lastmod>2026-05-02T23:31:44.708Z</lastmod>
+    <loc>https://art.casadebaig.net/posts/works/series/dispyr/index.html</loc>
+    <lastmod>2026-02-24T20:02:03.834Z</lastmod>
   </url>
   <url>
     <loc>https://art.casadebaig.net/posts/works/releases/2022-07-dispyr-views.html</loc>

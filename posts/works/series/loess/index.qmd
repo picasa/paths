@@ -1,5 +1,5 @@
 ---
-title: "Brush"
+title: "Loess"
 subtitle: "Transcode altimetric data into simple movements, inspired by calligraphic lines."
 categories: [series]
 author: "Pierre Casadebaig"
@@ -51,7 +51,7 @@ The aim with this series was not to invent new landscapes, but to further simpli
 
 ![](img/fig_framed.webp)
 
-> **Two iterations from the dispyr / brush algorithm.** 148 x 210 mm, ink on paper.
+> **Two iterations from the dispyr / loess algorithm.** 148 x 210 mm, ink on paper.
 
 ## Process
 
