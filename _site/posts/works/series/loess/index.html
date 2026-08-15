@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Pierre Casadebaig">
 <meta name="dcterms.date" content="2023-01-10">
-<title>Brush – Pierre Casadebaig</title>
+<title>Loess – Pierre Casadebaig</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -303,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Brush</h1>
+      <h1 class="title">Loess</h1>
             <p class="subtitle lead">Transcode altimetric data into simple movements, inspired by calligraphic lines.</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">series</div>
@@ -382,10 +382,10 @@ ul.task-list li input[type="checkbox"] {
 <p>The aim with this series was not to invent new landscapes, but to further simplify existing ones to the point where only essential shapes remain. This work explores two processes: the simplification of a mass of high-resolution data into a few lines and, because of this simplicity, the physical rendering leaning into calligraphy aesthetics.</p>
 <p><a href="img/fig_framed.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="img/fig_framed.webp" class="img-fluid"></a></p>
 <blockquote class="blockquote">
-<p><strong>Two iterations from the dispyr / brush algorithm.</strong> 148 x 210 mm, ink on paper.</p>
+<p><strong>Two iterations from the dispyr / loess algorithm.</strong> 148 x 210 mm, ink on paper.</p>
 </blockquote>
 </section><section id="process" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="process">Process</h2>
-<p>On the digital side, the processing is identical to the previous <a href="../../../../posts/process/dispyr"><em>dispyr</em></a> algorithm, with parameters tuned to remove 90% of the initial dataset. One addition was to use a non-parametric smoothing method (loess) to give more weight and character to long lines. In the generated vector file, a new smooth line will be overlaid on the original jagged line to emulate a back-and-forth stroke with the brush.</p>
+<p>On the digital side, the processing is identical to the previous <a href="../../../../posts/works/series/dispyr"><em>dispyr</em></a> algorithm, with parameters tuned to remove 90% of the initial dataset. One addition was to use a non-parametric smoothing method (loess) to give more weight and character to long lines. In the generated vector file, a new smooth line will be overlaid on the original jagged line to emulate a back-and-forth stroke with the brush.</p>
 <p>At this point, emulating a brush aesthetic in digital outputs would mean coding for physics: how the lines are drawn irregularly due to the pen interaction with the paper texture (hard), or even how the ink is diffused as a function of the quantity deposited by a brush (much harder).<br>
 Working on the physical aspect of this work felt more rewarding. While the brush movement is handled by the generated vector files, the brush tip height relative to the paper surface and the speed of brush up and down movement are machine parameters. While it seems natural when holding a brush in hand, it took a surprising amount of time to get those settings right on a machine. Those settings depended on the brush brand and size (softness), and on the movement speed.</p>
 <div class="column-body-inset gallery-grid small">
@@ -416,7 +416,7 @@ Working on the physical aspect of this work felt more rewarding. While the brush
 </blockquote>
 <p>All the vector outputs from this series were traced on 200gsm paper (Canson mixed media, natural white, fine grain) with two pens: a Pentel brush (FL2B, black ink) for the ridges and a fountain pen (Lamy Joy 1.5 mm, Sailor Shikiori Yodaki red ink) for the red glyphs.</p>
 </section><section id="iterations" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="iterations">Iterations</h2>
-<p>In the end, the outputs of this algorithm were used as a part of a larger series mixing different aesthetics (<a href="../../../../posts/process/ridge"><em>ridge regression</em></a>). We generated 1024 iterations and manually curated the 56 presented here.</p>
+<p>In the end, the outputs of this algorithm were used as a part of a larger series mixing different aesthetics (<a href="../../../../posts/works/series/ridge"><em>ridge regression</em></a>). We generated 1024 iterations and manually curated the 56 presented here.</p>
 <p><br></p>
 <div class="column-screen-inset gallery-grid small">
 <div>
