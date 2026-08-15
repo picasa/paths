@@ -403,7 +403,7 @@ window.Quarto = {
 </div>
 <section id="inspiration-and-aims" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="inspiration-and-aims">Inspiration and aims</h2>
 <p>This work explores data-based landscape representations. The generated landscapes are neither real nor completely fictional, but created by a computational process from authentic data.</p>
-<p>The process again draws from Cozens leading ideas on imaginative landscapes (<em>A New Method of Assisting the Invention in Drawing Original Compositions of Landscape</em>, 1785), where he mentions concentrating elements otherwise “dispersed in nature”. In a previous algorithm (<a href="../../../../posts/process/dispyr"><em>dispyr</em></a>), each landscape was unequivocally linked to a piece of topographical data, and this project explores the combination of dispersed elements into an imaginative new landscapes.</p>
+<p>The process again draws from Cozens leading ideas on imaginative landscapes (<em>A New Method of Assisting the Invention in Drawing Original Compositions of Landscape</em>, 1785), where he mentions concentrating elements otherwise “dispersed in nature”. In a previous algorithm (<a href="../../../../posts/works/series/dispyr"><em>dispyr</em></a>), each landscape was unequivocally linked to a piece of topographical data, and this project explores the combination of dispersed elements into an imaginative new landscapes.</p>
 <div class="column-body-inset gallery-grid">
 <div>
 <a href="img/reference/segers1638.webp" class="lightbox" data-gallery="default"><img src="img/reference/segers1638.webp" class="img-fluid"></a>
@@ -431,7 +431,7 @@ window.Quarto = {
 </blockquote>
 </section><section id="process" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="process">Process</h2>
 <section id="generate-a-library-of-landscape-elements" class="level3"><h3 class="anchored" data-anchor-id="generate-a-library-of-landscape-elements">Generate a library of landscape elements</h3>
-<p>The initial step is to generate a collection of simplified landscape forms by repeatedly sampling a vast region through small “windows”. We base the landscape topography on observed data, rather than data generated from mathematical functions. Specifically, we focus on the variations in land height in South-West France, encoded in a digital elevation model (DEM, here IGN <a href="https://geoservices.ign.fr/rgealti#telechargement5m">RGE Alti 5m</a>, 5x5 m cells). The 3D data surrounding a given location (within a 3x3 km square) is transformed into a series of 2D lines, referred to as a landscape element. Adjustments to the <a href="../../../../posts/process/dispyr"><em>dispyr</em></a> algorithm, allowed for a transition from a realistic depiction of topography to more simplified forms.</p>
+<p>The initial step is to generate a collection of simplified landscape forms by repeatedly sampling a vast region through small “windows”. We base the landscape topography on observed data, rather than data generated from mathematical functions. Specifically, we focus on the variations in land height in South-West France, encoded in a digital elevation model (DEM, here IGN <a href="https://geoservices.ign.fr/rgealti#telechargement5m">RGE Alti 5m</a>, 5x5 m cells). The 3D data surrounding a given location (within a 3x3 km square) is transformed into a series of 2D lines, referred to as a landscape element. Adjustments to the <a href="../../../../posts/works/series/dispyr"><em>dispyr</em></a> algorithm, allowed for a transition from a realistic depiction of topography to more simplified forms.</p>
 <p><a href="img/fig_profile.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="img/fig_profile.webp" class="img-fluid"></a></p>
 <blockquote class="blockquote">
 <p><strong>Navigating the parameter space to extract contours and forms.</strong> The top image exhibits a high level of detail, keeping the complexity and features of the real terrain. The middle image represents a shift towards abstraction while retaining recognizable elements of mountain landscapes. It simplifies details and textures, and alters the projection to create more empty space. The bottom image further abstracts the concept of mountain landscapes. This style uses minimal lines and shading to convey the idea of mountains, focusing on the silhouette and basic structure rather than detailed textures.</p>
@@ -459,10 +459,10 @@ window.Quarto = {
 <blockquote class="blockquote">
 <p><strong>Twelve random illustrations from the modular grid system.</strong> The page is randomly divided into up to three parts, with each part being a one-sixth multiple (e.g.&nbsp;1/6, 2/6, 3/6, top left page). This partition is first applied on the y-axis of the page, and then on one or two applied on the x-axis</p>
 </blockquote>
-<p>We designed four page styles using both fixed layouts and this modular grid system: two full-page landscapes (<a href="../../../../posts/process/brush"><em>brush</em></a> and <em>cloud</em>), and two grid layouts with (<em>figure</em>) or without legend (<em>partition</em>). Three additional systems were used to complete the graphical novel aesthetic:</p>
+<p>We designed four page styles using both fixed layouts and this modular grid system: two full-page landscapes (<a href="../../../../posts/works/series/loess"><em>loess</em></a> and <em>cloud</em>), and two grid layouts with (<em>figure</em>) or without legend (<em>partition</em>). Three additional systems were used to complete the graphical novel aesthetic:</p>
 <ol type="1">
 <li>clouds made from probabilistic stroke density (<em>cloud</em>)</li>
-<li>glyphs that encode either the geographical coordinates (<em>brush</em>, one region) or the value of the random seeds (<em>figure</em>, n regions)</li>
+<li>glyphs that encode either the geographical coordinates (<em>loess</em>, one region) or the value of the random seeds (<em>figure</em>, n regions)</li>
 <li>asemic text, used as a caption in the <em>figure</em> style.</li>
 </ol>
 <div class="column-body-inset gallery-grid small">
@@ -480,15 +480,15 @@ window.Quarto = {
 </div>
 </div>
 <blockquote class="blockquote">
-<p><strong>An illustration of the four defined page styles.</strong> From left to right, two full-page landscapes (<a href="../../../../posts/process/brush"><em>brush</em></a> and <em>cloud</em>), and two grid layouts with (<em>figure</em>) or without legend (<em>partition</em>). These images are vector files (they only represent strokes), which is all the information needed to drive a drawing machine.</p>
+<p><strong>An illustration of the four defined page styles.</strong> From left to right, two full-page landscapes (<a href="../../../../posts/works/series/loess"><em>loess</em></a> and <em>cloud</em>), and two grid layouts with (<em>figure</em>) or without legend (<em>partition</em>). These images are vector files (they only represent strokes), which is all the information needed to drive a drawing machine.</p>
 </blockquote>
 </section><section id="draw-the-digital-works-on-paper" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="draw-the-digital-works-on-paper">Draw the digital works on paper</h3>
 <p>All the vector outputs from this series were traced on paper (Canson mixed media, natural white, fine grain, 200 gsm, 148 x 210 mm) with a different set of pens :</p>
 <ul>
 <li>
-<strong>brush pen</strong> (Pentel FL2B, black ink): ridges in the <em>brush</em> design.</li>
+<strong>brush pen</strong> (Pentel FL2B, black ink): ridges in the <em>loess</em> design.</li>
 <li>
-<strong>calligraphy fountain pen</strong> (Lamy Joy 1.5 mm): glyphs in the <em>brush</em> design (Sailor Shikiori Yodaki red ink) and in the <em>cloud</em> design (Pilot Iroshizuku take-sumi neutral black ink).</li>
+<strong>calligraphy fountain pen</strong> (Lamy Joy 1.5 mm): glyphs in the <em>loess</em> design (Sailor Shikiori Yodaki red ink) and in the <em>cloud</em> design (Pilot Iroshizuku take-sumi neutral black ink).</li>
 <li>
 <strong>calligraphy pens</strong> (Pilot Parallel): hatched cloud in the <em>cloud</em> design (3.8 mm, Pilot Iroshizuku fuyu-syogun medium gray ink), bold writings in the <em>figure</em> design (1.5 mm, Pilot black ink).</li>
 <li>
@@ -518,7 +518,7 @@ window.Quarto = {
 <p><strong>Details from work-in-progress iterations.</strong></p>
 </blockquote>
 </section></section><section id="iterations" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="iterations">Iterations</h2>
-<p>To view the algorithm output space, we generated 256 iterations per page style (1024 for the <em>brush</em> style). The final series gathers 128 works, a manual selection of 72 iterations from the <em>ridge regression</em> algorithm and 56 iterations from the previous <a href="../../../../posts/works/series/brush/"><em>brush</em></a> algorithm.</p>
+<p>To view the algorithm output space, we generated 256 iterations per page style (1024 for the <em>loess</em> style). The final series gathers 128 works, a manual selection of 72 iterations from the <em>ridge regression</em> algorithm and 56 iterations from the previous <a href="../../../../posts/works/series/loess/"><em>loess</em></a> algorithm.</p>
 <p>So, none of these landscapes ever existed, and most of those which were generated were lost. At least, the ones traced on paper should have a longer existence than their digital twins.</p>
 <p><br></p>
 <div class="column-screen-inset gallery-grid small">
