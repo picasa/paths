@@ -32,11 +32,7 @@ library(patchwork)
 library(sf)
 library(stars)
 
-# personal functions
-library(generate)
-
 # functions
-source(here::here("R/generative/0_rendering.r"))
 source(here::here("R/generative/0_functions_ridge.r"))
 source(here::here("R/generative/0_functions_dispyr.r"))
 source(here::here("R/0_functions_web.r"))
