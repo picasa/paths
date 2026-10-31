@@ -28,8 +28,8 @@ This series was developed and curated in collaboration with the [Heft](https://h
 #| echo: false
 #| results: asis
 #| 
-make_gallery(full = "../series/ridge/img/gallery/", output = "md")
-make_gallery(full = "../series/loess/img/gallery/", output = "md")
+make_gallery(full = "../series/ridge/img/gallery/")
+make_gallery(full = "../series/loess/img/gallery/")
 
 ```
 :::

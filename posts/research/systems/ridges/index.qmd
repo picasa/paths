@@ -26,7 +26,7 @@ Adding noise or removing information from the original DEM data seems to create 
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md")
+make_gallery()
 
 ```
 ::: 

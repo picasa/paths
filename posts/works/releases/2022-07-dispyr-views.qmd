@@ -33,6 +33,6 @@ Selected fragments of the Pyrénées mountain range, based on real-world data fr
 ```{r}
 #| echo: false
 #| results: asis
-make_gallery(full = "img/gallery/2022_07_objkt", output = "md", pattern = "^(?!.*ridges)")
+make_gallery(full = "img/gallery/2022_07_objkt", pattern = "^(?!.*ridges)")
 ```
 :::

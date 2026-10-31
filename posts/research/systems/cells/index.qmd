@@ -26,7 +26,7 @@ The aim was to search for a balance between the algorithm capacity to generate v
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md")
+make_gallery()
 
 ```
 ::: 

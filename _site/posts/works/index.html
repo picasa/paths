@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,14 +44,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-23bbe8b5e4efc1e257f6d59dce478b08.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2ba5bf1354190806fd3a2dca15f8f28d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-ccfdc923c3ee0422cc889b606dfbbcc3.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2ba5bf1354190806fd3a2dca15f8f28d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fc25463ada719a2ef56546a68bdfc508.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-b9c8101f2e9ecb0851fe7e8412a007a7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-fc25463ada719a2ef56546a68bdfc508.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-82669fbc8bb9384ca87813177b0b8b03.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-dce3f0ac056ac498c5b3fdf311b79c8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-82669fbc8bb9384ca87813177b0b8b03.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -167,9 +170,12 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 <script defer="" src="https://cloud.umami.is/script.js" data-website-id="dfd67454-172e-4fd6-93b9-a462aabacd01"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;600&amp;family=Noto+Sans+Mono:wght@300;400;600&amp;display=swap">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -371,7 +377,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Pierre Casadebaig | <em>algorithmic drawing</em></span>
+    <span class="navbar-title">Pierre Casadebaig</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -380,10 +386,6 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../../posts/works/index.html" aria-current="page"> 
 <span class="menu-text">Works</span></a>
@@ -452,7 +454,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="series">Series</h2>
 <div id="listing-list-series" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1707174000000" data-listing-file-modified-sort="1786781861307" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1684">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1707174000000" data-listing-file-modified-sort="1793460633040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1679">
 <div class="thumbnail"><a href="../../posts/works/series/ridge/index.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/series/ridge/img/fig_detail_d.webp" class="thumbnail-image" style="height: 100px;">
@@ -474,7 +476,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="c2VyaWVz" data-listing-date-sort="1673305200000" data-listing-file-modified-sort="1786782514672" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="742">
+<div class="quarto-post image-right" data-index="1" data-categories="c2VyaWVz" data-listing-date-sort="1673305200000" data-listing-file-modified-sort="1793460633041" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737">
 <div class="thumbnail"><a href="../../posts/works/series/loess/index.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/series/loess/img/preview.webp" class="thumbnail-image" style="height: 100px;">
@@ -496,7 +498,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1669330800000" data-listing-file-modified-sort="1789804135048" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3823">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1669330800000" data-listing-file-modified-sort="1793466914077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3816">
 <div class="thumbnail"><a href="../../posts/works/series/dispyr/index.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/series/dispyr/img/preview.webp" class="thumbnail-image" style="height: 100px;">
@@ -526,7 +528,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="exhibitions">Exhibitions</h2>
 <div id="listing-list-exhibitions" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1707174000000" data-listing-file-modified-sort="1786781875952" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="147">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1707174000000" data-listing-file-modified-sort="1793460633043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
 <div class="thumbnail"><a href="../../posts/works/exhibitions/2024-02-ridge-regression.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/series/loess/img/gallery/ridge_002.webp" class="thumbnail-image" style="height: 100px;">
@@ -548,7 +550,7 @@ Feb 6, 2024
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1675033200000" data-listing-file-modified-sort="1777743254135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1675033200000" data-listing-file-modified-sort="1793460633043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
 <div class="thumbnail"><a href="../../posts/works/exhibitions/2023-01-odysseys.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/exhibitions/img/preview.webp" class="thumbnail-image" style="height: 100px;">
@@ -570,7 +572,7 @@ Jan 30, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1663624800000" data-listing-file-modified-sort="1777724493870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1663624800000" data-listing-file-modified-sort="1777979883786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
 <div class="thumbnail"><a href="../../posts/works/exhibitions/2022-09-arithmetic-phenomena.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/exhibitions/img/gallery/2022_09_verse/conflated_conflent.webp" class="thumbnail-image" style="height: 100px;">
@@ -600,7 +602,7 @@ Sep 20, 2022
 <h2 class="anchored" data-anchor-id="releases">Releases</h2>
 <div id="listing-list-releases" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1657836000000" data-listing-file-modified-sort="1777668097300" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="116">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1657836000000" data-listing-file-modified-sort="1793460633042" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
 <div class="thumbnail"><a href="../../posts/works/releases/2022-07-ridge-planting.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/releases/img/gallery/2022_07_teia/ridge_planting_392.webp" class="thumbnail-image" style="height: 100px;">
@@ -622,7 +624,7 @@ Jul 15, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1656972000000" data-listing-file-modified-sort="1777667318769" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="103">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1656972000000" data-listing-file-modified-sort="1793460633042" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="100">
 <div class="thumbnail"><a href="../../posts/works/releases/2022-07-dispyr-views.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/releases/img/gallery/2022_07_objkt/ossau.webp" class="thumbnail-image" style="height: 100px;">
@@ -644,7 +646,7 @@ Jul 5, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1642028400000" data-listing-file-modified-sort="1777668158479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1642028400000" data-listing-file-modified-sort="1793460633043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../../posts/works/releases/2022-09-dispyr-studies.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/releases/img/gallery/2022_09_objkt/202201_dispyr_ossau.webp" class="thumbnail-image" style="height: 100px;">
@@ -666,7 +668,7 @@ Jan 13, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1641423600000" data-listing-file-modified-sort="1777764676642" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1641423600000" data-listing-file-modified-sort="1793460633043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="126">
 <div class="thumbnail"><a href="../../posts/works/releases/2022-01-dispyr.html" class="no-external">
 
 <img loading="lazy" src="../../posts/works/releases/img/gallery/2022_01_objkt/dispyr_141.webp" class="thumbnail-image" style="height: 100px;">
@@ -699,6 +701,9 @@ Jan 6, 2022
 </div>
 <p><br></p>
 <div class="column-screen-inset gallery-flow four">
+<div>
+<a href="portfolio/img/gallery/20251025_loess.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20251025_loess.webp" class="img-fluid"></a>
+</div>
 <div>
 <a href="portfolio/img/gallery/20250110_ridges.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20250110_ridges.webp" class="img-fluid"></a>
 </div>
@@ -733,7 +738,7 @@ Jan 6, 2022
 <a href="portfolio/img/gallery/20240120_ridges.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20240120_ridges.webp" class="img-fluid"></a>
 </div>
 <div>
-<a href="portfolio/img/gallery/20240120_brush.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20240120_brush.webp" class="img-fluid"></a>
+<a href="portfolio/img/gallery/20240120_loess.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20240120_loess.webp" class="img-fluid"></a>
 </div>
 <div>
 <a href="portfolio/img/gallery/20240114_attractors.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20240114_attractors.webp" class="img-fluid"></a>
@@ -766,7 +771,7 @@ Jan 6, 2022
 <a href="portfolio/img/gallery/20230922_ridges.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230922_ridges.webp" class="img-fluid"></a>
 </div>
 <div>
-<a href="portfolio/img/gallery/20230903_ridges.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230903_ridges.webp" class="img-fluid"></a>
+<a href="portfolio/img/gallery/20230903_loess.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230903_loess.webp" class="img-fluid"></a>
 </div>
 <div>
 <a href="portfolio/img/gallery/20230528_ridges.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230528_ridges.webp" class="img-fluid"></a>
@@ -787,7 +792,7 @@ Jan 6, 2022
 <a href="portfolio/img/gallery/20230318_attractors.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230318_attractors.webp" class="img-fluid"></a>
 </div>
 <div>
-<a href="portfolio/img/gallery/20230305_brush.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230305_brush.webp" class="img-fluid"></a>
+<a href="portfolio/img/gallery/20230305_loess.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230305_loess.webp" class="img-fluid"></a>
 </div>
 <div>
 <a href="portfolio/img/gallery/20230301_attractors.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230301_attractors.webp" class="img-fluid"></a>
@@ -808,7 +813,7 @@ Jan 6, 2022
 <a href="portfolio/img/gallery/20230111_asemic.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230111_asemic.webp" class="img-fluid"></a>
 </div>
 <div>
-<a href="portfolio/img/gallery/20230108_brush.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230108_brush.webp" class="img-fluid"></a>
+<a href="portfolio/img/gallery/20230108_loess.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20230108_loess.webp" class="img-fluid"></a>
 </div>
 <div>
 <a href="portfolio/img/gallery/20221106_ukiyo.webp" class="lightbox" data-gallery="default"><img src="portfolio/img/gallery/20221106_ukiyo.webp" class="img-fluid"></a>

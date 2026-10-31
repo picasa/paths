@@ -23,6 +23,6 @@ An attempt to emulate etching aesthetics with code, methodically removing more a
 ```{r}
 #| echo: false
 #| results: asis
-make_gallery(full = "img/gallery/2022_09_objkt", output = "md")
+make_gallery(full = "img/gallery/2022_09_objkt")
 ```
 :::

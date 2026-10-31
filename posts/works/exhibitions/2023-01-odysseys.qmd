@@ -29,6 +29,6 @@ These works were selected and presented during a collective exhibition ([*Odysse
 ```{r}
 #| echo: false
 #| results: asis
-make_gallery(full = "img/gallery/2023_01_verse", output = "md")
+make_gallery(full = "img/gallery/2023_01_verse")
 ```
 :::

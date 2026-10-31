@@ -26,7 +26,7 @@ Ridge Regression is a series of imagined landscapes inspired by data visualizati
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md", max = 6)
+make_gallery(max = 6)
 
 ```
 ::: 
@@ -170,7 +170,7 @@ So, none of these landscapes ever existed, and most of those which were generate
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md")
+make_gallery()
 
 ```
 ::: 

@@ -25,6 +25,6 @@ Collaboration with Anthony Siracusa. This short series is an attempt to graduall
 ```{r}
 #| echo: false
 #| results: asis
-make_gallery(full = "img/gallery/2022_07_teia", output = "md")
+make_gallery(full = "img/gallery/2022_07_teia")
 ```
 :::

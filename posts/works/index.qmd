@@ -80,7 +80,7 @@ A selection digital works traced on paper. As if exploring the space defined by 
 #| echo: false
 #| results: asis
 
-make_gallery(full = "portfolio/img/gallery", output = "md", sort = "now")
+make_gallery(full = "portfolio/img/gallery", sort = "now")
 
 ```
 ::: 

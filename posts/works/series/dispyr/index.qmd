@@ -33,8 +33,8 @@ library(sf)
 library(stars)
 
 # functions
-source(here::here("R/generative/0_functions_ridge.r"))
-source(here::here("R/generative/0_functions_dispyr.r"))
+source(here::here("R/0_functions_ridge.r"))
+source(here::here("R/0_functions_dispyr.r"))
 source(here::here("R/0_functions_web.r"))
 
 # parameters
@@ -52,7 +52,7 @@ This work is an attempt to emulate etching drawings with code, by playing with n
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md", max = 12)
+make_gallery(max = 12)
 
 ```
 ::: 
@@ -675,7 +675,7 @@ These outputs were generated with the algorithm described previously, but based 
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md")
+make_gallery()
 
 ```
 ::: 

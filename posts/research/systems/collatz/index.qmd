@@ -30,7 +30,7 @@ On this series, rather than properly computing hidden line or polygons, I used a
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md")
+make_gallery()
 
 ```
 ::: 

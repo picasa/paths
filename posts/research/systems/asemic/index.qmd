@@ -28,7 +28,7 @@ Variation can be obtained by acting on the glyph aggregation method. If the glyp
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md")
+make_gallery()
 
 ```
 ::: 

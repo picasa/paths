@@ -27,7 +27,7 @@ This series explores alternatives to the usual modes of representing geographic 
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md", max = 6)
+make_gallery(max = 6)
 
 ```
 ::: 
@@ -95,7 +95,7 @@ In the end, the outputs of this algorithm were used as a part of a larger series
 #| echo: false
 #| results: asis
 
-make_gallery(output = "md")
+make_gallery()
 
 ```
 ::: 

@@ -25,6 +25,6 @@ A series of 16 curated iterations representing random fragments of the Pyrénée
 ```{r}
 #| echo: false
 #| results: asis
-make_gallery(full = "img/gallery/2022_01_objkt", output = "md")
+make_gallery(full = "img/gallery/2022_01_objkt")
 ```
 :::

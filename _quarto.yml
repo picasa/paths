@@ -6,11 +6,8 @@ website:
   description: "A visual journal about algorithmic art, mainly designed for pen plotters."
   site-url: https://art.casadebaig.net
   navbar:
-    background: "dark"
-    title: "Pierre Casadebaig | *algorithmic drawing*"
+    title: "Pierre Casadebaig"
     right:
-      - text: "Home"
-        href: "index.qmd"
       - text: "Works"
         href: "posts/works/index.qmd"
       - text: "Research"          
@@ -39,7 +36,7 @@ format:
     css: styles.css
     theme:
       light: [flatly, custom.scss]
-      dark: [darkly, custom.scss]
+      dark: [darkly, custom.scss, custom-dark.scss]
     highlight-style: github
     fontsize: 100%
 

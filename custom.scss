@@ -1,7 +1,14 @@
 /*-- scss:defaults --*/
 
-$theme-greyblue: #316384;
-$theme-greygreen: #649988;
-$link-color: $theme-greygreen;
+$theme-ink: #212529;
+$theme-blue: #3558a2;
+$link-color: $theme-ink !default;
+$link-hover-color: $theme-blue !default;
+$font-weight-base: 300;
+$font-family-monospace: "Noto Sans Mono", ui-monospace, monospace;
 
-
+$navbar-bg: transparent;
+$navbar-hl: $link-hover-color !default;
+$navbar-fg: #6c757d !default;
+$navbar-brand: $theme-ink !default;
+$navbar-brand-font-size: 1.5rem;
