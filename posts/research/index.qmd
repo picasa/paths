@@ -15,9 +15,9 @@ listing:
 ---
 
 ::: {.strip .header}
-### Research
+## Research
 
-*Ideas and open questions between data visualization and drawing.*
+*open questions between data visualization and drawing.*
 :::
 
 

@@ -66,8 +66,12 @@ figcaption,
   border-bottom: 1px solid var(--bs-border-color);
 }
 
-.strip.header h3 {
-  margin-top: 0;
+/* page title: larger, the strip draws the rule */
+.strip.header h2 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .strip.header p {
@@ -87,9 +91,8 @@ figcaption,
 
 .tag {
   display: inline-block;
-  font-size: 0.7rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: var(--bs-font-monospace);
   background: color-mix(in srgb, currentColor 5%, transparent);
   color: var(--bs-secondary-color);
   padding: 2px 7px;
@@ -97,12 +100,20 @@ figcaption,
 }
 
 /* header styles */
+
+/* post title: text color rather than the navbar grey, site max size */
+.quarto-title-banner h1 {
+  color: var(--bs-body-color);
+  font-size: 1.5rem;
+}
+
+h2, h3, h4 {
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
 h2 {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--bs-secondary-color);
+  font-size: 1rem;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--bs-border-color);
@@ -110,20 +121,14 @@ h2 {
 }
 
 h3 {
-  font-size: 0.85rem;
-  font-weight: 400;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 0.95rem;
   color: var(--bs-secondary-color);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
 
 h4 {
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 0.9rem;
   color: var(--bs-tertiary-color);
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -252,6 +257,10 @@ body div.gslide-description .gslide-title {
   scrollbar-width: none;
   padding: 0 0.75rem;
 }
+
+.gallery-band { cursor: grab; }
+.gallery-band.dragging { cursor: grabbing; user-select: none; }
+.gallery-band.dragging a { cursor: grabbing; }
 
 .gallery-band::-webkit-scrollbar {
   display: none;

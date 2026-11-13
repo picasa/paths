@@ -387,15 +387,16 @@ window.Quarto = {
 
 
 
-<div class="column-body" style="font-size: 1.15rem">
-<p><br></p>
-<section id="algorithmic-drawing" class="level2">
+<div class="column-body">
+<section id="algorithmic-drawing" class="level2 strip header">
 <h2 class="anchored" data-anchor-id="algorithmic-drawing">algorithmic drawing</h2>
+</section>
+</div>
+<div class="column-body" style="font-size: 1.15rem">
 <p><a href="./posts/works/index.html">data turned into ink</a><br>
 <a href="./posts/research/index.html">search for gesture in algorithms</a><br>
 <a href="./posts/about/index.html">biography and contact</a></p>
 <p><br></p>
-</section>
 </div>
 <div class="column-screen gallery-band">
 <div class="quarto-figure quarto-figure-center">
@@ -677,13 +678,13 @@ window.Quarto = {
 </div>
 <div class="column-body" style="font-size: 1.15rem">
 <p><br></p>
-<p>using a programming language, i write algorithms that guide a machine to create drawings from data. each execution produces a different result, a way to work with circumstances and surprises, whether they come from randomness or coding errors.</p>
+<p>using a statistical programming language, i write algorithms that guide a machine to create drawings from data. the code describes a process where each execution produces a different result, halfway between expectation and surprise.</p>
 <p><br></p>
 <section id="series" class="level2">
 <h2 class="anchored" data-anchor-id="series">Series</h2>
 <div id="listing-list-series" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1669330800000" data-listing-file-modified-sort="1793466914077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3816">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1669330800000" data-listing-file-modified-sort="1793518199240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3816">
 <a href="./posts/works/series/dispyr/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -699,7 +700,7 @@ Process topographical data into monochromatic ink sketches.
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="c2VyaWVz" data-listing-date-sort="1673305200000" data-listing-file-modified-sort="1793460633041" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737">
+<div class="g-col-1" data-index="1" data-categories="c2VyaWVz" data-listing-date-sort="1673305200000" data-listing-file-modified-sort="1793518199240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737">
 <a href="./posts/works/series/loess/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -715,7 +716,7 @@ Transcode altimetric data into simple movements, inspired by calligraphic lines.
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1707174000000" data-listing-file-modified-sort="1793460633040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1679">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1707174000000" data-listing-file-modified-sort="1793518199240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1679">
 <a href="./posts/works/series/ridge/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -741,6 +742,37 @@ Generate imaginative landscapes by merging random fragments of mountain ranges.
 
 
 </main> <!-- /main -->
+<script>
+// drag the gallery band with a mouse, a short click still opens the lightbox
+document.querySelectorAll(".gallery-band").forEach(band => {
+  let x0 = null, left0 = 0, moved = false;
+
+  band.addEventListener("pointerdown", e => {
+    if (e.pointerType !== "mouse" || e.button !== 0) return;
+    x0 = e.clientX; left0 = band.scrollLeft; moved = false;
+  });
+
+  band.addEventListener("pointermove", e => {
+    if (x0 === null) return;
+    const dx = e.clientX - x0;
+    if (!moved && Math.abs(dx) > 5) {
+      moved = true;
+      band.setPointerCapture(e.pointerId);
+      band.classList.add("dragging");
+    }
+    if (moved) band.scrollLeft = left0 - dx;
+  });
+
+  const stop = () => { x0 = null; band.classList.remove("dragging"); };
+  band.addEventListener("pointerup", stop);
+  band.addEventListener("pointercancel", stop);
+
+  band.addEventListener("click", e => {
+    if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+  }, true);
+  band.addEventListener("dragstart", e => e.preventDefault());
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

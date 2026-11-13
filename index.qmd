@@ -13,6 +13,7 @@ listing:
     sort-ui: false
     filter-ui: false
 page-layout: full
+include-after-body: gallery-band.html
 ---
 
 ```{r}
@@ -20,11 +21,15 @@ page-layout: full
 source(here::here("R/0_functions_web.r"))
 ```
 
-::: {.column-body style="font-size: 1.15rem"}
+::: {.column-body}
 
-<br>
-
+::: {.strip .header}
 ## algorithmic drawing
+:::
+
+:::
+
+::: {.column-body style="font-size: 1.15rem"}
 
 [data turned into ink](posts/works/index.qmd)  
 [search for gesture in algorithms](posts/research/index.qmd)  
@@ -54,7 +59,7 @@ list.files("posts/works/portfolio/img/gallery") |>
 
 <br>
 
-using a programming language, i write algorithms that guide a machine to create drawings from data. each execution produces a different result, a way to work with circumstances and surprises, whether they come from randomness or coding errors.
+using a statistical programming language, i write algorithms that guide a machine to create drawings from data. the code describes a process where each execution produces a different result, halfway between expectation and surprise.
 
 <br>
 

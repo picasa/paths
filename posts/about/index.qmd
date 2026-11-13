@@ -1,21 +1,12 @@
 ---
 pagetitle: "About"
 format: html
-listing: 
-  - id: list-exhibitions
-    contents: "../works/exhibitions/*.qmd"
-    sort: "date desc"
-    type: default
-    fields: [date, title, subtitle]
-    categories: false
-    sort-ui: false
-    filter-ui: false
 ---
 
 ::: {.strip .header}
-### About
+## About
 
-*Biologist and algorithmic artist.*
+*biologist and algorithmic artist.*
 :::
 
 
@@ -37,13 +28,8 @@ I am a biologist. I study how plants function, how they interact with each other
 
 I am interested in algorithmic art, using computer code as a creative medium^[Levin, G. (2021). Code As Creative Medium: A Handbook for Computational Art and Design. MIT Press.]. I use data visualization techniques, seeking the boundary between explanation and suggestion. Precise lines come easily from code and machines, i wonder how do we move from accuracy to expression. I readily adopt a systematic research approach to create images^[Molnar, V. (1984). Eloge de l’ordinateur (dans les arts visuels).].
 
-### Selected exhibitions
-
-::: {#list-exhibitions}
 :::
 
-
-:::
 
 ::: {.text-col}
 
@@ -52,7 +38,7 @@ I am interested in algorithmic art, using computer code as a creative medium^[Le
 ![](img/pierre.webp)
 
 ::: {.links .box}
-email [pierre.casa@gmail.com](mailto:pierre.casa@gmail.com)
+mail [pierre.casa@gmail.com](mailto:pierre.casa@gmail.com)
 
 portfolio [[en](../../img/book_en.pdf) • [fr](../../img/book_fr.pdf)]{.link-pair}
 

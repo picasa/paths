@@ -43,9 +43,9 @@ source(here::here("R/0_functions_web.r"))
 :::{.column-body}
 
 ::: {.strip .header}
-### Works
+## Works
 
-*Code-generated drawings for pen plotter. Algorithmic series, exhibitions, and published releases.*
+*series, exhibitions, releases, and portfolio.*
 :::
 
 A pen plotter works much like a human hand holding a pen or pencil. It is a two dimensional robotic arm with pen-holder, and this arm moves across the paper to draw lines - I'm using an AxiDraw model (A3/V3). The plotter receives instructions from a computer that drives the precise movements of the arm. These instructions (vector files) are the results produced by running a hopefully creative code.

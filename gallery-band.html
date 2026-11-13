@@ -1,0 +1,31 @@
+<script>
+// drag the gallery band with a mouse, a short click still opens the lightbox
+document.querySelectorAll(".gallery-band").forEach(band => {
+  let x0 = null, left0 = 0, moved = false;
+
+  band.addEventListener("pointerdown", e => {
+    if (e.pointerType !== "mouse" || e.button !== 0) return;
+    x0 = e.clientX; left0 = band.scrollLeft; moved = false;
+  });
+
+  band.addEventListener("pointermove", e => {
+    if (x0 === null) return;
+    const dx = e.clientX - x0;
+    if (!moved && Math.abs(dx) > 5) {
+      moved = true;
+      band.setPointerCapture(e.pointerId);
+      band.classList.add("dragging");
+    }
+    if (moved) band.scrollLeft = left0 - dx;
+  });
+
+  const stop = () => { x0 = null; band.classList.remove("dragging"); };
+  band.addEventListener("pointerup", stop);
+  band.addEventListener("pointercancel", stop);
+
+  band.addEventListener("click", e => {
+    if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+  }, true);
+  band.addEventListener("dragstart", e => e.preventDefault());
+});
+</script>

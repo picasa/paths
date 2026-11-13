@@ -8,14 +8,6 @@
     ]
   },
   {
-    "listing": "/posts/about/index.html",
-    "items": [
-      "/posts/works/exhibitions/2024-02-ridge-regression.html",
-      "/posts/works/exhibitions/2023-01-odysseys.html",
-      "/posts/works/exhibitions/2022-09-arithmetic-phenomena.html"
-    ]
-  },
-  {
     "listing": "/posts/research/index.html",
     "items": [
       "/posts/research/systems/cells/index.html",

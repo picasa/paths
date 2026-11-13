@@ -36,8 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -81,69 +79,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-list-exhibitions .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-list-exhibitions'] = new List('listing-list-exhibitions', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script defer="" src="https://cloud.umami.is/script.js" data-website-id="dfd67454-172e-4fd6-93b9-a462aabacd01"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;600&amp;family=Noto+Sans+Mono:wght@300;400;600&amp;display=swap">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -384,13 +324,12 @@ window.Quarto = {
 
 
 
-<section id="about" class="level3 strip header">
-<h3 class="anchored" data-anchor-id="about">About</h3>
-<p><em>Biologist and algorithmic artist.</em></p>
+<section id="about" class="level2 strip header">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p><em>biologist and algorithmic artist.</em></p>
 </section>
 <div class="text-grid">
-<div class="text-col">
-<section id="bio" class="level3">
+<section id="bio" class="level3 text-col">
 <h3 class="anchored" data-anchor-id="bio">Bio</h3>
 <p>I have a scientific background in biology and have maintained an artistic practice since 2021. I live and work in Toulouse.</p>
 <p>Currently, my scientific and artistic research coexist in a complementary manner, primarily sharing technical tools. I hope that the progressive convergence of these practices opens pathways toward original approaches to communicate the interdependencies of living systems.</p>
@@ -403,78 +342,17 @@ window.Quarto = {
 <p>I am interested in algorithmic art, using computer code as a creative medium<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. I use data visualization techniques, seeking the boundary between explanation and suggestion. Precise lines come easily from code and machines, i wonder how do we move from accuracy to expression. I readily adopt a systematic research approach to create images<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 </section>
 </section>
-<section id="selected-exhibitions" class="level3">
-<h3 class="anchored" data-anchor-id="selected-exhibitions">Selected exhibitions</h3>
-<div id="listing-list-exhibitions" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1707174000000" data-listing-file-modified-sort="1793460633043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/works/exhibitions/2024-02-ridge-regression.html" class="no-external">Ridge Regression</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/works/exhibitions/2024-02-ridge-regression.html" class="no-external">128 digital and physical works, developed and curated in collaboration with Heft gallery, New York City</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/works/exhibitions/2024-02-ridge-regression.html" class="no-external">
-<div class="listing-date">
-Feb 6, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1675033200000" data-listing-file-modified-sort="1793460633043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/works/exhibitions/2023-01-odysseys.html" class="no-external">Odysseys</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/works/exhibitions/2023-01-odysseys.html" class="no-external">8 digital and physical works, collective exhibition curated by Verse, London</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/works/exhibitions/2023-01-odysseys.html" class="no-external">
-<div class="listing-date">
-Jan 30, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1663624800000" data-listing-file-modified-sort="1777979883786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../posts/works/exhibitions/2022-09-arithmetic-phenomena.html" class="no-external">Arithmetic Phenomena</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../posts/works/exhibitions/2022-09-arithmetic-phenomena.html" class="no-external">1 digital work, collective exhibition curated by Verse</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../posts/works/exhibitions/2022-09-arithmetic-phenomena.html" class="no-external">
-<div class="listing-date">
-Sep 20, 2022
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-</div>
 <section id="contact" class="level3 text-col">
 <h3 class="anchored" data-anchor-id="contact">Contact</h3>
 <p><img src="img/pierre.webp" class="img-fluid"></p>
 <div class="links box">
-<p>email <a href="mailto:pierre.casa@gmail.com">pierre.casa@gmail.com</a></p>
+<p>mail <a href="mailto:pierre.casa@gmail.com">pierre.casa@gmail.com</a></p>
 <p>portfolio <span class="link-pair"><a href="../../img/book_en.pdf">en</a> • <a href="../../img/book_fr.pdf">fr</a></span></p>
 <p>code <a href="https://github.com/picasa">github</a></p>
 <p>science <a href="https://orcid.org/0000-0001-7225-936X">ORCID</a></p>
 </div>
 </section>
 </div>
-
 
 
 
